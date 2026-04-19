@@ -1,0 +1,981 @@
+{
+  "metadata": {
+    "experiment_name": "Perbandingan RAG Baseline vs RAG Hybrid",
+    "description": "Evaluasi performa retrieval dan kualitas jawaban",
+    "timestamp": "2026-04-18T00:37:40.375782",
+    "num_questions": 5,
+    "num_runs": 1,
+    "k": 5,
+    "pipelines": [
+      "baseline",
+      "hybrid"
+    ],
+    "ragas_enabled": true
+  },
+  "results": [
+    {
+      "question_id": "Q001",
+      "pipeline": "baseline",
+      "run": 1,
+      "success": true,
+      "answer": "Informasi mengenai cara mendaftar kerja praktik (KP) tidak tersedia dalam konteks yang diberikan.\n\nNamun, berikut adalah skema KP yang dijelaskan:\n1.  **Magang Mandiri KP**: Mahasiswa melaksanakan magang secara mandiri (durasi 4-6 bulan) dan dapat mengkonversi KP (3 SKS).\n2.  **KP Kelas Reg 2**: Melampirkan surat keterangan bekerja di instansi mitra tanpa mengikuti perkuliahan KP, dan wajib kelas.\n3.  **Magang Internal (SDM) UMB**: Mahasiswa dengan Biro SDM (dibayar UMB), magang di semua unit UMB, dan mahasiswa menyusun laporan kerja praktik.\n4.  **Magang Internal (Non-SDM) KP**: Hibah dosen, pengayaan materi (oleh Dosen) pemberian materi tambahan terkait dunia industri.",
+      "answer_length": 679,
+      "confidence": 0.194,
+      "metrics": {
+        "retrieval_time": 0,
+        "generation_time": 0,
+        "total_time": 5.640021800994873,
+        "documents_retrieved": 1,
+        "context_length": 0,
+        "avg_relevance_score": 0.1588102122772932,
+        "mrr": 1.0,
+        "precision_at_k": 0.2,
+        "recall_at_k": 0.2
+      },
+      "ragas": {
+        "faithfulness": 0.5,
+        "answer_relevancy": 1.0,
+        "context_precision": 1.0
+      },
+      "sources_count": 1,
+      "sources": [
+        {
+          "id": "doc_69dc5e0cc27f8_1776049676_chunk_0",
+          "content": "Kerja Praktek\nInna Sabily Karima, S.Kom., M.Kom.\n\nMerupakan bagian dari kurikulum sarjana Ilmu\nKomputer.\nBertujuan memberikan pengalaman nyata di dunia\nKerja Praktek industri/instansi.\n(KP) – Program\n...",
+          "score": 0.1588102122772932,
+          "metadata": {
+            "unified_index_timestamp": 1776049739.3365877,
+            "start_char": 0,
+            "chunk_index": 0,
+            "end_char": 977,
+            "chunk_id": "doc_69dc5e0cc27f8_1776049676_chunk_0",
+            "source": "69dc5e0cc27f8_1776049676.pdf",
+            "original_filename": "69dc5e0cc27f8_1776049676.pdf",
+            "document_id": "doc_69dc5e0cc27f8_1776049676",
+            "doc_id": "doc_0",
+            "chunk_size": 977
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69dc5e0cc27f8_1776049676_chunk_0"
+      ]
+    },
+    {
+      "question_id": "Q001",
+      "pipeline": "hybrid",
+      "run": 1,
+      "success": true,
+      "answer": "Informasi yang tersedia tidak menjelaskan secara rinci langkah-langkah pendaftaran kerja praktik. Namun, disebutkan bahwa pendaftaran kerja praktik mencakup:\n\n1.  Persyaratan administratif\n2.  Formulir pendaftaran\n3.  Batas waktu yang harus diikuti",
+      "answer_length": 248,
+      "confidence": 1.0,
+      "metrics": {
+        "retrieval_time": 0,
+        "generation_time": 0,
+        "total_time": 12.632024765014648,
+        "documents_retrieved": 5,
+        "context_length": 0,
+        "avg_relevance_score": 2.911383581161499,
+        "mrr": 1.0,
+        "precision_at_k": 0.2,
+        "recall_at_k": 0.2
+      },
+      "ragas": {
+        "faithfulness": 0.4,
+        "answer_relevancy": 0.9544,
+        "context_precision": 0.5
+      },
+      "sources_count": 5,
+      "sources": [
+        {
+          "id": "doc_69dc5e0cc27f8_1776049676_chunk_0",
+          "content": "Kerja Praktek\nInna Sabily Karima, S.Kom., M.Kom.\n\nMerupakan bagian dari kurikulum sarjana Ilmu\nKomputer.\nBertujuan memberikan pengalaman nyata di dunia\nKerja Praktek industri/instansi.\n(KP) – Program\n...",
+          "score": 3.9051575660705566,
+          "metadata": {
+            "chunk_id": "doc_69dc5e0cc27f8_1776049676_chunk_0",
+            "document_id": "doc_69dc5e0cc27f8_1776049676",
+            "chunk_index": 0,
+            "start_char": 0,
+            "end_char": 977,
+            "chunk_size": 977,
+            "original_filename": "69dc5e0cc27f8_1776049676.pdf",
+            "source": "69dc5e0cc27f8_1776049676.pdf",
+            "doc_id": "doc_0",
+            "unified_index_timestamp": 1776049739.3365877
+          }
+        },
+        {
+          "id": "doc_69dc5e0ccc731_1776049676_chunk_14",
+          "content": "gkah-langkah yang harus diambil oleh mahasiswa dalam mendaftar untuk Kerja Praktek\ndan MBKM. Ini mencakupinformasitentangpersyaratanadministratif,formulirpendaftaran,\ndanbataswaktuyangharusdiikuti.\n4....",
+          "score": 3.4616222381591797,
+          "metadata": {
+            "chunk_id": "doc_69dc5e0ccc731_1776049676_chunk_14",
+            "document_id": "doc_69dc5e0ccc731_1776049676",
+            "chunk_index": 14,
+            "start_char": 10707,
+            "end_char": 11646,
+            "chunk_size": 939,
+            "original_filename": "69dc5e0ccc731_1776049676.pdf",
+            "source": "69dc5e0ccc731_1776049676.pdf",
+            "doc_id": "doc_256",
+            "unified_index_timestamp": 1776049739.3369179
+          }
+        },
+        {
+          "id": "doc_69dc5e0ccc731_1776049676_chunk_95",
+          "content": "Inimencakuptanggal-tanggalpenting,durasisetiap\ntahapan,danbagaimanawaktudialokasikanuntukmasing-masingaspekkegiatan.\nDengan menjelaskan secara rinci langkah-langkah dan pendekatan yang diambil dalam\np...",
+          "score": 2.828976631164551,
+          "metadata": {
+            "chunk_id": "doc_69dc5e0ccc731_1776049676_chunk_95",
+            "document_id": "doc_69dc5e0ccc731_1776049676",
+            "chunk_index": 95,
+            "start_char": 73024,
+            "end_char": 74008,
+            "chunk_size": 984,
+            "original_filename": "69dc5e0ccc731_1776049676.pdf",
+            "source": "69dc5e0ccc731_1776049676.pdf",
+            "doc_id": "doc_337",
+            "unified_index_timestamp": 1776049739.3369684
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69dc5e0cc27f8_1776049676_chunk_0",
+        "doc_69dc5e0ccc731_1776049676_chunk_14",
+        "doc_69dc5e0ccc731_1776049676_chunk_95",
+        "doc_69dc5e0ccc731_1776049676_chunk_94",
+        "doc_69dc5e0ccc731_1776049676_chunk_51"
+      ]
+    },
+    {
+      "question_id": "Q002",
+      "pipeline": "baseline",
+      "run": 1,
+      "success": true,
+      "answer": "Informasi yang tersedia tidak cukup untuk menjawab pertanyaan mengenai syarat untuk mengikuti sidang tugas akhir.\n\nInformasi yang dapat diberikan:\n1.  Ujian tugas akhir adalah ujian tahap akhir yang menentukan kelulusan mahasiswa program magister UMB dan hak menyandang gelar magister.",
+      "answer_length": 285,
+      "confidence": 0.306,
+      "metrics": {
+        "retrieval_time": 0,
+        "generation_time": 0,
+        "total_time": 2.7557482719421387,
+        "documents_retrieved": 1,
+        "context_length": 0,
+        "avg_relevance_score": 0.2382153184159398,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0
+      },
+      "ragas": {
+        "faithfulness": 0.3333,
+        "answer_relevancy": 0.0,
+        "context_precision": 1.0
+      },
+      "sources_count": 1,
+      "sources": [
+        {
+          "id": "doc_69dc5e0cd35b6_1776049676_chunk_193",
+          "content": "2\nsesuai dengan ketentuan Program Studi yang tertuang\neksemplar.\ndalam buku Pedoman dan Bimbingan Penyusunan\nh. Surat tugas dosen pembimbing yang dikeluarkan\nTugas Akhir. oleh Ketua Program Studi.\n5. ...",
+          "score": 0.2382153184159398,
+          "metadata": {
+            "document_id": "doc_69dc5e0cd35b6_1776049676",
+            "unified_index_timestamp": 1776049739.3374755,
+            "chunk_size": 921,
+            "original_filename": "69dc5e0cd35b6_1776049676.pdf",
+            "source": "69dc5e0cd35b6_1776049676.pdf",
+            "end_char": 151510,
+            "start_char": 150589,
+            "chunk_index": 193,
+            "doc_id": "doc_1051",
+            "chunk_id": "doc_69dc5e0cd35b6_1776049676_chunk_193"
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69dc5e0cd35b6_1776049676_chunk_193"
+      ]
+    },
+    {
+      "question_id": "Q002",
+      "pipeline": "hybrid",
+      "run": 1,
+      "success": true,
+      "answer": "Berikut adalah syarat untuk mengikuti sidang tugas akhir:\n\n1.  Mendapatkan persetujuan dari dosen pembimbing akademik dengan melampirkan 10 sertifikat sebagai syarat kelulusan.\n2.  Melampirkan bukti screenshot/tangkapan layar yang ada di SIA.\n3.  Menyertakan seluruh berkas tugas akhir.\n4.  Menyertakan bukti pembayaran sidang TA.\n5.  Melakukan pendaftaran dengan melampirkan dokumen-dokumen penyerta melalui tautan yang diberikan saat sosialisasi.\n6.  Telah menempuh beban studi (SKS) minimal 127 SKS untuk program sarjana atau minimal 96 SKS untuk program diploma tiga, atau sesuai ketentuan program studi masing-masing.\n7.  Diwajibkan mengisi KRS di awal semester, termasuk jika melakukan perpanjangan penyelesaian tugas akhir.\n8.  Telah mengikuti kegiatan forum akademik/ilmiah dibuktikan dengan sertifikat keikutsertaan dengan jumlah sesuai yang disyaratkan program studi.\n9.  Telah mengikuti dan lulus tes sertifikasi profesi sesuai yang disyaratkan program studi dibuktikan dengan sertifikat profesi.\n10. Telah mengisi formulir SKPI melalui laman SKP penyelesaian tugas akhir.\n11. Telah mengikuti tes TOEFL dengan skor minimal 500 dibuktikan dengan sertifikat TOEFL.\n12. Tidak mempunyai pinjaman buku di perpustakaan dibuktikan dengan surat keterangan bebas pinjaman perpustakaan.\n13. Artikel ilmiah yang relevan harus memiliki ISSN dan volume atau salah satunya, tidak diperkenankan yang tidak memiliki ISSN dan volume dengan maksimal usia terbit artikel ilmiah 5 tahun.",
+      "answer_length": 1478,
+      "confidence": 1.0,
+      "metrics": {
+        "retrieval_time": 0,
+        "generation_time": 0,
+        "total_time": 17.521549463272095,
+        "documents_retrieved": 5,
+        "context_length": 0,
+        "avg_relevance_score": 4.6980010032653805,
+        "mrr": 1.0,
+        "precision_at_k": 0.2,
+        "recall_at_k": 0.2
+      },
+      "ragas": {
+        "faithfulness": 0.3571,
+        "answer_relevancy": 0.68,
+        "context_precision": 0.0
+      },
+      "sources_count": 5,
+      "sources": [
+        {
+          "id": "doc_69dc5e0cc5b65_1776049676_chunk_71",
+          "content": "arus memiliki ISSN dan Volume atau salah\nsatunya, tidak diperkenankan yang tidak memiliki ISSN dan Volume\ndengan maksimal usia terbit artikel ilmiah 5 tahun.\n5.2 Syarat Pendaftaran Sidang Tugas Akhir\n...",
+          "score": 5.101025581359863,
+          "metadata": {
+            "chunk_id": "doc_69dc5e0cc5b65_1776049676_chunk_71",
+            "document_id": "doc_69dc5e0cc5b65_1776049676",
+            "chunk_index": 71,
+            "start_char": 55467,
+            "end_char": 56418,
+            "chunk_size": 951,
+            "original_filename": "69dc5e0cc5b65_1776049676.pdf",
+            "source": "69dc5e0cc5b65_1776049676.pdf",
+            "doc_id": "doc_95",
+            "unified_index_timestamp": 1776049739.3367627
+          }
+        },
+        {
+          "id": "doc_69dc5e0cdac9f_1776049676_chunk_197",
+          "content": "arisme diharuskan mengulang dari mulai permohonan\npengajuan penyusunan tesis lagi, sepanjang batas\npada “Draft” tugas akhir.\nmasa studi belum habis.\n(10) Telah mengikuti test TOEFL (skor minimal 500)\n...",
+          "score": 4.624020099639893,
+          "metadata": {
+            "chunk_id": "doc_69dc5e0cdac9f_1776049676_chunk_197",
+            "document_id": "doc_69dc5e0cdac9f_1776049676",
+            "chunk_index": 197,
+            "start_char": 152984,
+            "end_char": 153930,
+            "chunk_size": 946,
+            "original_filename": "69dc5e0cdac9f_1776049676.pdf",
+            "source": "69dc5e0cdac9f_1776049676.pdf",
+            "doc_id": "doc_588",
+            "unified_index_timestamp": 1776049739.3371522
+          }
+        },
+        {
+          "id": "doc_69dc5e0cdac9f_1776049676_chunk_44",
+          "content": "sif bagi program studi\nyang melaksanakan ujian komprehensif terpisah\nPendaftaran dan Bimbingan Tugas Akhir ( Laporan\ndari sidang tugas akhir dibuktikan dengan surat\nMagang/Skripsi/ Karya Ilmiah Lain)\n...",
+          "score": 4.596986770629883,
+          "metadata": {
+            "chunk_id": "doc_69dc5e0cdac9f_1776049676_chunk_44",
+            "document_id": "doc_69dc5e0cdac9f_1776049676",
+            "chunk_index": 44,
+            "start_char": 33747,
+            "end_char": 34706,
+            "chunk_size": 959,
+            "original_filename": "69dc5e0cdac9f_1776049676.pdf",
+            "source": "69dc5e0cdac9f_1776049676.pdf",
+            "doc_id": "doc_435",
+            "unified_index_timestamp": 1776049739.3370316
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69dc5e0cc5b65_1776049676_chunk_71",
+        "doc_69dc5e0cdac9f_1776049676_chunk_197",
+        "doc_69dc5e0cdac9f_1776049676_chunk_44",
+        "doc_69dc5e0cd35b6_1776049676_chunk_44",
+        "doc_69dc5e0ce38b1_1776049676_chunk_44"
+      ]
+    },
+    {
+      "question_id": "Q003",
+      "pipeline": "baseline",
+      "run": 1,
+      "success": true,
+      "answer": "Informasi yang tersedia tidak menjelaskan prosedur pengisian SKPI. Konteks yang diberikan hanya menjelaskan tahapan penerimaan mahasiswa baru Pendidikan Akademik Jalur RPL.",
+      "answer_length": 172,
+      "confidence": 0.307,
+      "metrics": {
+        "retrieval_time": 0,
+        "generation_time": 0,
+        "total_time": 2.714107036590576,
+        "documents_retrieved": 1,
+        "context_length": 0,
+        "avg_relevance_score": 0.2382153184159398,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0
+      },
+      "ragas": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "context_precision": 1.0
+      },
+      "sources_count": 1,
+      "sources": [
+        {
+          "id": "doc_69dc5e0cdac9f_1776049676_chunk_270",
+          "content": "n mahasiswa membuat akun di laman\nmengisi form-form yang sudah ditentukan dengan\npendaftaran UMB dan mengisi data diri dan\nmelampirkan bukti pendidikan formal, nonformal,\npersyaratan yang dibutuhkan,\n...",
+          "score": 0.2382153184159398,
+          "metadata": {
+            "doc_id": "doc_661",
+            "end_char": 210784,
+            "chunk_index": 270,
+            "chunk_id": "doc_69dc5e0cdac9f_1776049676_chunk_270",
+            "document_id": "doc_69dc5e0cdac9f_1776049676",
+            "chunk_size": 992,
+            "source": "69dc5e0cdac9f_1776049676.pdf",
+            "unified_index_timestamp": 1776049739.3372009,
+            "original_filename": "69dc5e0cdac9f_1776049676.pdf",
+            "start_char": 209792
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69dc5e0cdac9f_1776049676_chunk_270"
+      ]
+    },
+    {
+      "question_id": "Q003",
+      "pipeline": "hybrid",
+      "run": 1,
+      "success": true,
+      "answer": "Prosedur pengisian SKPI adalah sebagai berikut:\n\n1.  Pada kolom aksi cepat, pilih “pengalaman mahasiswa (SKPI)”.\n2.  Pada halaman pengalaman mahasiswa, klik “+ tambah” untuk menambahkan sertifikat yang diminta.\n3.  Pada formulir pengisian, ada 4 isian yang harus diisi/dipilih:\n    *   **Kategori**:\n        *   Prestasi / penghargaan akademik / olahraga / kesenian (untuk sertifikat/piagam prestasi).\n        *   Sertifikat profesi (untuk sertifikat profesi yang sudah didapatkan dari pelatihan, contohnya: CCNA, Oracle, FGA DTS, BNSP dst).\n        *   Magang industri / pengalaman kerja (untuk sertifikat bagi yang pernah magang di industri).\n        *   Kegiatan ilmiah nasional / internasional (untuk sertifikat seminar / workshop / konferensi yang diadakan di kampus).\n        *   Pengalaman organisasi (untuk sertifikat keanggotaan organisasi seperti: BEM, HIMTI dst).\n    *   **Tahun**: Isi dengan tahun didapatkannya sertifikat.\n    *   **Nama perusahaan**: Dapat diisi dengan penyelenggara pelatihan, seminar, atau organisasi yang mengeluarkan sertifikatnya.\n    *   **Posisi / jenis pengalaman**: Isi dengan posisi / nama pelatihan.",
+      "answer_length": 1142,
+      "confidence": 1.0,
+      "metrics": {
+        "retrieval_time": 0,
+        "generation_time": 0,
+        "total_time": 5.940244436264038,
+        "documents_retrieved": 5,
+        "context_length": 0,
+        "avg_relevance_score": 1.0302656888961792,
+        "mrr": 0.3333,
+        "precision_at_k": 0.2,
+        "recall_at_k": 0.2
+      },
+      "ragas": {
+        "faithfulness": 0.2308,
+        "answer_relevancy": 0.9606,
+        "context_precision": 0.6389
+      },
+      "sources_count": 5,
+      "sources": [
+        {
+          "id": "doc_69dc5e0ccc731_1776049676_chunk_15",
+          "content": "dan Pengalaman: Panduan ini akan membahas\nbagaimana Kerja Praktek dan MBKM dapat membantu mahasiswa mengembangkan\nketerampilan teknis dan profesionalyangrelevandenganbidangTeknikInformatika.Ini juga\na...",
+          "score": 2.4993603229522705,
+          "metadata": {
+            "chunk_id": "doc_69dc5e0ccc731_1776049676_chunk_15",
+            "document_id": "doc_69dc5e0ccc731_1776049676",
+            "chunk_index": 15,
+            "start_char": 11446,
+            "end_char": 12446,
+            "chunk_size": 1000,
+            "original_filename": "69dc5e0ccc731_1776049676.pdf",
+            "source": "69dc5e0ccc731_1776049676.pdf",
+            "doc_id": "doc_257",
+            "unified_index_timestamp": 1776049739.3369186
+          }
+        },
+        {
+          "id": "doc_69dc5e0cc776b_1776049676_chunk_6",
+          "content": "Usaha\n11\nPanduan Pasca Sidang\n\n2. Tanda Terima Penyerahan Tugas Akhir dari Perpustakaan\n12\nPanduan Pasca Sidang\n\n3. Pengisian SKPI (cetak pdf via SIA dalam status diajukan)\n13\nPanduan Pasca Sidang\n\n4....",
+          "score": 1.7744733095169067,
+          "metadata": {
+            "chunk_id": "doc_69dc5e0cc776b_1776049676_chunk_6",
+            "document_id": "doc_69dc5e0cc776b_1776049676",
+            "chunk_index": 6,
+            "start_char": 4593,
+            "end_char": 5593,
+            "chunk_size": 541,
+            "original_filename": "69dc5e0cc776b_1776049676.pdf",
+            "source": "69dc5e0cc776b_1776049676.pdf",
+            "doc_id": "doc_23",
+            "unified_index_timestamp": 1776049739.3366275
+          }
+        },
+        {
+          "id": "doc_69dc5e0ccf4db_1776049676_chunk_0",
+          "content": "P engisian\nb. Pada halaman Pengalaman Mahasiswa pada panel diatas bisa di\nklik “+ Tambah” untuk menambahkan Sertifikat yg diminta.\nSKPI\na. Pada kolom Aksi Cepat pilih “Pengalaman Mahasiswa (SKPI)”\n\nc....",
+          "score": 1.536422848701477,
+          "metadata": {
+            "chunk_id": "doc_69dc5e0ccf4db_1776049676_chunk_0",
+            "document_id": "doc_69dc5e0ccf4db_1776049676",
+            "chunk_index": 0,
+            "start_char": 0,
+            "end_char": 997,
+            "chunk_size": 997,
+            "original_filename": "69dc5e0ccf4db_1776049676.pdf",
+            "source": "69dc5e0ccf4db_1776049676.pdf",
+            "doc_id": "doc_101",
+            "unified_index_timestamp": 1776049739.3367672
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69dc5e0ccc731_1776049676_chunk_15",
+        "doc_69dc5e0cc776b_1776049676_chunk_6",
+        "doc_69dc5e0ccf4db_1776049676_chunk_0",
+        "doc_69dc5e0cd35b6_1776049676_chunk_271",
+        "doc_69dc5e0cc9a87_1776049676_chunk_90"
+      ]
+    },
+    {
+      "question_id": "Q004",
+      "pipeline": "baseline",
+      "run": 1,
+      "success": true,
+      "answer": "Informasi yang tersedia tidak menjelaskan apa itu program MBKM dan bagaimana cara mengikutinya.\n\nInformasi yang tersedia menjelaskan tentang:\n1.  Pengisian detail untuk sertifikat:\n    *   Nama Perusahaan: Diisi dengan penyelenggara pelatihan, seminar, atau organisasi yang mengeluarkan sertifikat.\n    *   Posisi / jenis pengalaman: Diisi dengan posisi/nama pelatihan (contoh: Peserta Seminar Sinaptika, Ketua BEM, Sertifikasi BNSP).\n    *   Posisi / jenis pengalaman (EN): Sama seperti di atas namun dalam bahasa Inggris.\n2.  Proses pengajuan sertifikat:\n    *   Data sertifikat yang diajukan akan muncul dalam status diajukan.\n    *   Proses ini dilanjutkan sampai ada 10 sertifikat.\n    *   Setelah 10 sertifikat terinput, klik \"Cetak\" dan gunakan fungsi \"Save as PDF\".",
+      "answer_length": 773,
+      "confidence": 0.247,
+      "metrics": {
+        "retrieval_time": 0,
+        "generation_time": 0,
+        "total_time": 2.8250041007995605,
+        "documents_retrieved": 1,
+        "context_length": 0,
+        "avg_relevance_score": 0.1588102122772932,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0
+      },
+      "ragas": {
+        "faithfulness": 0.8182,
+        "answer_relevancy": 0.0,
+        "context_precision": 0.0
+      },
+      "sources_count": 1,
+      "sources": [
+        {
+          "id": "doc_69dc5e0ccf4db_1776049676_chunk_1",
+          "content": "apatkannya sertifikat\n- Nama Perusahaan : dapat di isi dengan penyelenggara\npelatihan, seminar, organisasi yg mengeluarkan sertifikatnya\n- Posisi / jenis pengalaman : isi dengan posisi/nama pelatihan\n...",
+          "score": 0.1588102122772932,
+          "metadata": {
+            "end_char": 1797,
+            "source": "69dc5e0ccf4db_1776049676.pdf",
+            "chunk_id": "doc_69dc5e0ccf4db_1776049676_chunk_1",
+            "original_filename": "69dc5e0ccf4db_1776049676.pdf",
+            "chunk_index": 1,
+            "doc_id": "doc_102",
+            "chunk_size": 580,
+            "unified_index_timestamp": 1776049739.3367682,
+            "start_char": 797,
+            "document_id": "doc_69dc5e0ccf4db_1776049676"
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69dc5e0ccf4db_1776049676_chunk_1"
+      ]
+    },
+    {
+      "question_id": "Q004",
+      "pipeline": "hybrid",
+      "run": 1,
+      "success": true,
+      "answer": "Program MBKM (Merdeka Belajar – Kampus Merdeka) adalah wadah bagi mahasiswa program studi teknik informatika untuk mengaplikasikan pengetahuan teoritis yang telah diperoleh di dalam kelas ke dalam dunia nyata, disesuaikan dengan minat dalam mempelajari pembelajaran bidang ilmu informatika.\n\nCara mengikutinya (memilih program MBKM yang sesuai):\n1.  **Penelitian Program:** Lakukan penelitian mendalam tentang program MBKM yang dipertimbangkan.\n2.  **Reputasi dan Kualitas:** Cari tahu reputasi program, kualitas, kesesuaian dengan minat, serta manfaat yang dapat diperoleh.\n3.  **Kesempatan Praktis:** Pilih program yang menawarkan kesempatan untuk mengembangkan keterampilan praktis dan mengaplikasikan pengetahuan dalam situasi nyata.\n4.  **Relevansi dengan Karir:** Pertimbangkan bagaimana program MBKM dapat mendukung tujuan karir Anda, apakah mata kuliah yang ditawarkan akan memberikan pengetahuan dan keterampilan yang sesuai dengan yang dibutuhkan dalam industri.\n5.  **Fleksibilitas dan Komitmen:** Pastikan program MBKM yang Anda pilih sesuai dengan jadwal dan komitmen lain, mempertimbangkan faktor-faktor seperti waktu, tingkat kesulitan, dan jumlah mata kuliah yang harus diambil.\n6.  **Setelah pertemuan dengan dosen pembimbing:**\n    *   Pastikan untuk mengikuti pedoman dan saran yang telah diberikan.\n    *   Jangan ragu untuk meminta bantuan atau klarifikasi jika ada hal yang tidak jelas.",
+      "answer_length": 1408,
+      "confidence": 1.0,
+      "metrics": {
+        "retrieval_time": 0,
+        "generation_time": 0,
+        "total_time": 7.4955363273620605,
+        "documents_retrieved": 5,
+        "context_length": 0,
+        "avg_relevance_score": 4.793146705627441,
+        "mrr": 0.25,
+        "precision_at_k": 0.2,
+        "recall_at_k": 0.2
+      },
+      "ragas": {
+        "faithfulness": 0.5,
+        "answer_relevancy": 0.9195,
+        "context_precision": 0.8056
+      },
+      "sources_count": 5,
+      "sources": [
+        {
+          "id": "doc_69dc5e0ccc731_1776049676_chunk_72",
+          "content": "engan minat dalam mempelajari pembelajaran bidang ilmu Informatika.\nBerikut adalah penjelasan mengenai bagaimana memilih tempat Kerja Praktek dan Program\nMBKM yangsesuai:\nMemilihTempatKerjaPraktek:\n1....",
+          "score": 6.187649726867676,
+          "metadata": {
+            "chunk_id": "doc_69dc5e0ccc731_1776049676_chunk_72",
+            "document_id": "doc_69dc5e0ccc731_1776049676",
+            "chunk_index": 72,
+            "start_char": 55403,
+            "end_char": 56357,
+            "chunk_size": 954,
+            "original_filename": "69dc5e0ccc731_1776049676.pdf",
+            "source": "69dc5e0ccc731_1776049676.pdf",
+            "doc_id": "doc_314",
+            "unified_index_timestamp": 1776049739.336954
+          }
+        },
+        {
+          "id": "doc_69dc5e0ccc731_1776049676_chunk_71",
+          "content": "ikap\nketerbukaan dan kesungguhan mahasiswa dalam menjalankan laporan KP dan MBKM\nmereka.\n1. Setelah pertemuan, pastikan untuk mengikuti pedoman dan saran yang telah\ndiberikan oleh dosen pembimbing.\n2....",
+          "score": 4.854222774505615,
+          "metadata": {
+            "chunk_id": "doc_69dc5e0ccc731_1776049676_chunk_71",
+            "document_id": "doc_69dc5e0ccc731_1776049676",
+            "chunk_index": 71,
+            "start_char": 54665,
+            "end_char": 55603,
+            "chunk_size": 938,
+            "original_filename": "69dc5e0ccc731_1776049676.pdf",
+            "source": "69dc5e0ccc731_1776049676.pdf",
+            "doc_id": "doc_313",
+            "unified_index_timestamp": 1776049739.3369536
+          }
+        },
+        {
+          "id": "doc_69dc5e0ccc731_1776049676_chunk_76",
+          "content": "mlahmatakuliahyangharusdiambil.\nMemilih tempat Kerja Praktek dan Program MBKM adalah kesempatan untukmengarahkan\npendidikan Anda ke arah yang sesuai dengan minat, aspirasi, dan tujuankarirAnda.Dengan\n...",
+          "score": 4.440291404724121,
+          "metadata": {
+            "start_char": 58444,
+            "document_id": "doc_69dc5e0ccc731_1776049676",
+            "chunk_size": 995,
+            "chunk_id": "doc_69dc5e0ccc731_1776049676_chunk_76",
+            "doc_id": "doc_318",
+            "unified_index_timestamp": 1776049739.3369567,
+            "end_char": 59439,
+            "source": "69dc5e0ccc731_1776049676.pdf",
+            "chunk_index": 76,
+            "original_filename": "69dc5e0ccc731_1776049676.pdf"
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69dc5e0ccc731_1776049676_chunk_72",
+        "doc_69dc5e0ccc731_1776049676_chunk_71",
+        "doc_69dc5e0ccc731_1776049676_chunk_76",
+        "doc_69dc5e0ccc731_1776049676_chunk_0",
+        "doc_69dc5e0ccc731_1776049676_chunk_75"
+      ]
+    },
+    {
+      "question_id": "Q005",
+      "pipeline": "baseline",
+      "run": 1,
+      "success": true,
+      "answer": "Informasi yang tersedia tidak memuat jumlah SKS minimal untuk mengambil tugas akhir.\n\nInformasi yang tersedia mengenai SKS adalah:\n1.  Beban belajar Program Magister bagi mahasiswa pindahan dari perguruan tinggi lain dihitung dengan sistem konversi menggunakan rumus: ∑Beban sks pada prodi di UMB - ∑ Beban sks yang diakui.\n2.  Beban belajar program doktor paling sedikit 42 sks dan sebanyak-banyaknya 50 sks.",
+      "answer_length": 409,
+      "confidence": 0.222,
+      "metrics": {
+        "retrieval_time": 0,
+        "generation_time": 0,
+        "total_time": 3.708894968032837,
+        "documents_retrieved": 1,
+        "context_length": 0,
+        "avg_relevance_score": 0.1588102122772932,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0
+      },
+      "ragas": {
+        "faithfulness": 0.25,
+        "answer_relevancy": 0.0,
+        "context_precision": 0.0
+      },
+      "sources_count": 1,
+      "sources": [
+        {
+          "id": "doc_69dc5e0cdac9f_1776049676_chunk_175",
+          "content": "elas) kali termasuk satu kali Ujian Akhir b. Peringkat akreditasi program studi minimal B bagi\nSemester (UAS) untuk setiap mata kuliah yang diikuti. mahasiswa program Magister pindahan dari perguruan\n...",
+          "score": 0.1588102122772932,
+          "metadata": {
+            "doc_id": "doc_566",
+            "chunk_index": 175,
+            "end_char": 137115,
+            "unified_index_timestamp": 1776049739.3371334,
+            "original_filename": "69dc5e0cdac9f_1776049676.pdf",
+            "start_char": 136151,
+            "chunk_id": "doc_69dc5e0cdac9f_1776049676_chunk_175",
+            "source": "69dc5e0cdac9f_1776049676.pdf",
+            "chunk_size": 964,
+            "document_id": "doc_69dc5e0cdac9f_1776049676"
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69dc5e0cdac9f_1776049676_chunk_175"
+      ]
+    },
+    {
+      "question_id": "Q005",
+      "pipeline": "hybrid",
+      "run": 1,
+      "success": true,
+      "answer": "1.  Program Sarjana: Minimal 127 SKS\n2.  Program Diploma Tiga: Minimal 96 SKS",
+      "answer_length": 77,
+      "confidence": 1.0,
+      "metrics": {
+        "retrieval_time": 0,
+        "generation_time": 0,
+        "total_time": 5.358331203460693,
+        "documents_retrieved": 5,
+        "context_length": 0,
+        "avg_relevance_score": 3.77920823097229,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0
+      },
+      "ragas": {
+        "faithfulness": 0.5,
+        "answer_relevancy": 0.5369,
+        "context_precision": 0.0
+      },
+      "sources_count": 5,
+      "sources": [
+        {
+          "id": "doc_69dc5e0cdac9f_1776049676_chunk_208",
+          "content": "KRS online dan tidak\nIV : IPK ≥ 3,00 dan jumlah sks dengan minimal nilai mengajukan cuti akademik;\nB- ≥ 27; c. Mahasiswa yang melebihi masa studi;\nV : IPK ≥ 3,00 dan jumlah sks dengan minimal nilai d....",
+          "score": 4.559433460235596,
+          "metadata": {
+            "chunk_id": "doc_69dc5e0cdac9f_1776049676_chunk_208",
+            "document_id": "doc_69dc5e0cdac9f_1776049676",
+            "chunk_index": 208,
+            "start_char": 161478,
+            "end_char": 162448,
+            "chunk_size": 970,
+            "original_filename": "69dc5e0cdac9f_1776049676.pdf",
+            "source": "69dc5e0cdac9f_1776049676.pdf",
+            "doc_id": "doc_599",
+            "unified_index_timestamp": 1776049739.337161
+          }
+        },
+        {
+          "id": "doc_69dc5e0ce38b1_1776049676_chunk_44",
+          "content": "na dan minimal 96 sks untuk program\ndiploma tiga atau sesuai dengan ketentuan program\nstudi masing-masing.\n2. Mahasiswa yang akan menempuh tugas akhir\ndiwajibkan mengisi KRS diawal semester, termasuk\n...",
+          "score": 4.55821418762207,
+          "metadata": {
+            "start_char": 34050,
+            "unified_index_timestamp": 1776049739.3372347,
+            "source": "69dc5e0ce38b1_1776049676.pdf",
+            "end_char": 35024,
+            "chunk_size": 974,
+            "doc_id": "doc_711",
+            "document_id": "doc_69dc5e0ce38b1_1776049676",
+            "chunk_index": 44,
+            "chunk_id": "doc_69dc5e0ce38b1_1776049676_chunk_44",
+            "original_filename": "69dc5e0ce38b1_1776049676.pdf"
+          }
+        },
+        {
+          "id": "doc_69dc5e0ce38b1_1776049676_chunk_43",
+          "content": "n\nSetelah menjalani cuti akademik, mahasiswa\ndiberikan surat keterangan pernah kuliah serta\ndiwajibkan untuk mengaktifkan kembali statusnya\ntranskrip akademik; dengan melaksanakan pengisian KRS.\n019\n\n...",
+          "score": 4.093659400939941,
+          "metadata": {
+            "source": "69dc5e0ce38b1_1776049676.pdf",
+            "doc_id": "doc_710",
+            "original_filename": "69dc5e0ce38b1_1776049676.pdf",
+            "chunk_size": 994,
+            "chunk_index": 43,
+            "end_char": 34250,
+            "unified_index_timestamp": 1776049739.3372345,
+            "start_char": 33256,
+            "chunk_id": "doc_69dc5e0ce38b1_1776049676_chunk_43",
+            "document_id": "doc_69dc5e0ce38b1_1776049676"
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69dc5e0cdac9f_1776049676_chunk_208",
+        "doc_69dc5e0ce38b1_1776049676_chunk_44",
+        "doc_69dc5e0ce38b1_1776049676_chunk_43",
+        "doc_69dc5e0ce38b1_1776049676_chunk_57",
+        "doc_69dc5e0cdac9f_1776049676_chunk_176"
+      ]
+    }
+  ],
+  "summary": {
+    "baseline": {
+      "total_questions": 5,
+      "successful": 5,
+      "success_rate": 1.0,
+      "avg_retrieval_time": 0.0,
+      "avg_generation_time": 0.0,
+      "avg_total_time": 3.5288,
+      "avg_documents_retrieved": 1.0,
+      "avg_context_length": 0.0,
+      "avg_relevance_score": 0.1906,
+      "avg_confidence": 0.2552,
+      "avg_answer_length": 463.6,
+      "avg_mrr": 0.2,
+      "avg_precision_at_k": 0.04,
+      "avg_recall_at_k": 0.04,
+      "avg_faithfulness": 0.3803,
+      "avg_answer_relevancy": 0.2,
+      "avg_context_precision": 0.6
+    },
+    "hybrid": {
+      "total_questions": 5,
+      "successful": 5,
+      "success_rate": 1.0,
+      "avg_retrieval_time": 0.0,
+      "avg_generation_time": 0.0,
+      "avg_total_time": 9.7895,
+      "avg_documents_retrieved": 5.0,
+      "avg_context_length": 0.0,
+      "avg_relevance_score": 3.4424,
+      "avg_confidence": 1.0,
+      "avg_answer_length": 870.6,
+      "avg_mrr": 0.5167,
+      "avg_precision_at_k": 0.16,
+      "avg_recall_at_k": 0.16,
+      "avg_faithfulness": 0.3976,
+      "avg_answer_relevancy": 0.8103,
+      "avg_context_precision": 0.3889
+    }
+  },
+  "statistical_tests": [
+    {
+      "metric": "mrr",
+      "n_samples": 5,
+      "descriptive": {
+        "baseline": {
+          "mean": 0.2,
+          "std": 0.4472,
+          "min": 0.0,
+          "max": 1.0
+        },
+        "advanced": {
+          "mean": 0.5167,
+          "std": 0.458,
+          "min": 0.0,
+          "max": 1.0
+        }
+      },
+      "normality": {
+        "test": "Shapiro-Wilk",
+        "alpha": 0.05,
+        "baseline": {
+          "statistic": 0.5522,
+          "p_value": 0.0001,
+          "is_normal": "False"
+        },
+        "advanced": {
+          "statistic": 0.8525,
+          "p_value": 0.2025,
+          "is_normal": "True"
+        },
+        "both_normal": "False"
+      },
+      "hypothesis_test": {
+        "test": "Wilcoxon Signed-Rank Test",
+        "reason": "Data tidak berdistribusi normal",
+        "statistic": 0.0,
+        "p_value": 0.25,
+        "alpha": 0.05,
+        "significant": false,
+        "conclusion": "H0 DITERIMA (p=0.250000 >= α=0.05): Tidak terdapat perbedaan signifikan."
+      }
+    },
+    {
+      "metric": "precision_at_k",
+      "n_samples": 5,
+      "descriptive": {
+        "baseline": {
+          "mean": 0.04,
+          "std": 0.0894,
+          "min": 0.0,
+          "max": 0.2
+        },
+        "advanced": {
+          "mean": 0.16,
+          "std": 0.0894,
+          "min": 0.0,
+          "max": 0.2
+        }
+      },
+      "normality": {
+        "test": "Shapiro-Wilk",
+        "alpha": 0.05,
+        "baseline": {
+          "statistic": 0.5522,
+          "p_value": 0.0001,
+          "is_normal": "False"
+        },
+        "advanced": {
+          "statistic": 0.5522,
+          "p_value": 0.0001,
+          "is_normal": "False"
+        },
+        "both_normal": "False"
+      },
+      "hypothesis_test": {
+        "test": "Wilcoxon Signed-Rank Test",
+        "reason": "Data tidak berdistribusi normal",
+        "statistic": 0.0,
+        "p_value": 0.25,
+        "alpha": 0.05,
+        "significant": false,
+        "conclusion": "H0 DITERIMA (p=0.250000 >= α=0.05): Tidak terdapat perbedaan signifikan."
+      }
+    },
+    {
+      "metric": "recall_at_k",
+      "n_samples": 5,
+      "descriptive": {
+        "baseline": {
+          "mean": 0.04,
+          "std": 0.0894,
+          "min": 0.0,
+          "max": 0.2
+        },
+        "advanced": {
+          "mean": 0.16,
+          "std": 0.0894,
+          "min": 0.0,
+          "max": 0.2
+        }
+      },
+      "normality": {
+        "test": "Shapiro-Wilk",
+        "alpha": 0.05,
+        "baseline": {
+          "statistic": 0.5522,
+          "p_value": 0.0001,
+          "is_normal": "False"
+        },
+        "advanced": {
+          "statistic": 0.5522,
+          "p_value": 0.0001,
+          "is_normal": "False"
+        },
+        "both_normal": "False"
+      },
+      "hypothesis_test": {
+        "test": "Wilcoxon Signed-Rank Test",
+        "reason": "Data tidak berdistribusi normal",
+        "statistic": 0.0,
+        "p_value": 0.25,
+        "alpha": 0.05,
+        "significant": false,
+        "conclusion": "H0 DITERIMA (p=0.250000 >= α=0.05): Tidak terdapat perbedaan signifikan."
+      }
+    },
+    {
+      "metric": "faithfulness",
+      "n_samples": 5,
+      "descriptive": {
+        "baseline": {
+          "mean": 0.3803,
+          "std": 0.3041,
+          "min": 0.0,
+          "max": 0.8182
+        },
+        "advanced": {
+          "mean": 0.3976,
+          "std": 0.1123,
+          "min": 0.2308,
+          "max": 0.5
+        }
+      },
+      "normality": {
+        "test": "Shapiro-Wilk",
+        "alpha": 0.05,
+        "baseline": {
+          "statistic": 0.9867,
+          "p_value": 0.9671,
+          "is_normal": "True"
+        },
+        "advanced": {
+          "statistic": 0.9029,
+          "p_value": 0.4264,
+          "is_normal": "True"
+        },
+        "both_normal": "True"
+      },
+      "hypothesis_test": {
+        "test": "Paired Sample t-Test",
+        "reason": "Data berdistribusi normal",
+        "statistic": -0.1625,
+        "p_value": 0.878774,
+        "alpha": 0.05,
+        "significant": false,
+        "conclusion": "H0 DITERIMA (p=0.878774 >= α=0.05): Tidak terdapat perbedaan signifikan."
+      }
+    },
+    {
+      "metric": "answer_relevancy",
+      "n_samples": 5,
+      "descriptive": {
+        "baseline": {
+          "mean": 0.2,
+          "std": 0.4472,
+          "min": 0.0,
+          "max": 1.0
+        },
+        "advanced": {
+          "mean": 0.8103,
+          "std": 0.1917,
+          "min": 0.5369,
+          "max": 0.9606
+        }
+      },
+      "normality": {
+        "test": "Shapiro-Wilk",
+        "alpha": 0.05,
+        "baseline": {
+          "statistic": 0.5522,
+          "p_value": 0.0001,
+          "is_normal": "False"
+        },
+        "advanced": {
+          "statistic": 0.823,
+          "p_value": 0.1232,
+          "is_normal": "True"
+        },
+        "both_normal": "False"
+      },
+      "hypothesis_test": {
+        "test": "Wilcoxon Signed-Rank Test",
+        "reason": "Data tidak berdistribusi normal",
+        "statistic": 1.0,
+        "p_value": 0.125,
+        "alpha": 0.05,
+        "significant": false,
+        "conclusion": "H0 DITERIMA (p=0.125000 >= α=0.05): Tidak terdapat perbedaan signifikan."
+      }
+    },
+    {
+      "metric": "context_precision",
+      "n_samples": 5,
+      "descriptive": {
+        "baseline": {
+          "mean": 0.6,
+          "std": 0.5477,
+          "min": 0.0,
+          "max": 1.0
+        },
+        "advanced": {
+          "mean": 0.3889,
+          "std": 0.3711,
+          "min": 0.0,
+          "max": 0.8056
+        }
+      },
+      "normality": {
+        "test": "Shapiro-Wilk",
+        "alpha": 0.05,
+        "baseline": {
+          "statistic": 0.684,
+          "p_value": 0.0065,
+          "is_normal": "False"
+        },
+        "advanced": {
+          "statistic": 0.8632,
+          "p_value": 0.24,
+          "is_normal": "True"
+        },
+        "both_normal": "False"
+      },
+      "hypothesis_test": {
+        "test": "Wilcoxon Signed-Rank Test",
+        "reason": "Data tidak berdistribusi normal",
+        "statistic": 3.0,
+        "p_value": 0.625,
+        "alpha": 0.05,
+        "significant": false,
+        "conclusion": "H0 DITERIMA (p=0.625000 >= α=0.05): Tidak terdapat perbedaan signifikan."
+      }
+    }
+  ]
+}

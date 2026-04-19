@@ -1,0 +1,716 @@
+{
+  "metadata": {
+    "description": "Dataset pertanyaan evaluasi Sistem RAG Akademik UMB (Golden Set)",
+    "version": "1.0",
+    "total_questions": 50,
+    "categories": [
+      "prosedur",
+      "informasi",
+      "kebijakan",
+      "teknis",
+      "kontak"
+    ]
+  },
+  "questions": [
+    {
+      "id": "Q001",
+      "question": "Bagaimana cara mendaftar kerja praktik (KP)?",
+      "ground_truth_answer": "Terdapat beberapa skema KP: (1) Magang Mandiri - mahasiswa melaksanakan magang secara mandiri di instansi mitra, durasi 4-6 bulan, dibuktikan dengan surat keterangan magang mandiri, hasil magang dapat dikonversi 9 SKS; (2) KP Kelas Reguler 2 - melampirkan surat keterangan bekerja, konversi KP 3 SKS, wajib kelas; (3) Magang Internal SDM UMB - magang di semua unit UMB dibayar UMB, membuat laporan dan presentasi di kelas KP; (4) Magang Internal Non-SDM - hibah dosen; (5) Pengayaan Materi - pemberian materi tambahan terkait dunia industri oleh dosen.",
+      "category": "prosedur",
+      "source_document": "Sosialisasi KP 2025",
+      "relevant_chunks": [
+        "doc_69dc5e0cc27f8_1776049676_chunk_0",
+        "doc_69dc5e0cc27f8_1776049676_chunk_1",
+        "doc_69dc5e0cc27f8_1776049676_chunk_4",
+        "doc_69dc5e0cc27f8_1776049676_chunk_5",
+        "doc_69dc5e0cc27f8_1776049676_chunk_2"
+      ]
+    },
+    {
+      "id": "Q002",
+      "question": "Apa saja syarat untuk mengikuti sidang tugas akhir?",
+      "ground_truth_answer": "Syarat pendaftaran sidang Tugas Akhir: (a) Mendapatkan persetujuan dari dosen Pembimbing Akademik dengan melampirkan 10 sertifikat sebagai syarat kelulusan; (b) Melampirkan bukti Screenshot/tangkapan layar yang ada di SIA; (c) Tanda tangan Dosen Pembimbing tidak dapat diwakilkan kecuali dosen tersebut meninggal dunia, cuti, dan mengundurkan diri; (d) Seluruh berkas Tugas Akhir; (e) Bukti pembayaran sidang TA; (f) Melakukan pendaftaran dengan melampirkan dokumen-dokumen penyerta melalui tautan yang diberikan saat sosialisasi.",
+      "category": "prosedur",
+      "source_document": "Panduan TA SI-TI 2023/2024",
+      "relevant_chunks": [
+        "doc_69dc5e0cc5b65_1776049676_chunk_71",
+        "doc_69dc5e0cc4119_1776049676_chunk_0",
+        "doc_69dc5e0cc9a87_1776049676_chunk_133",
+        "doc_69dc5e0cdac9f_1776049676_chunk_250",
+        "doc_69dc5e0cd35b6_1776049676_chunk_250"
+      ]
+    },
+    {
+      "id": "Q003",
+      "question": "Bagaimana prosedur pengisian SKPI?",
+      "ground_truth_answer": "Pengisian SKPI dilakukan melalui SIA: (a) Pada kolom Aksi Cepat pilih 'Pengalaman Mahasiswa (SKPI)'; (b) Pada halaman Pengalaman Mahasiswa klik '+ Tambah' untuk menambahkan sertifikat; (c) Isi 4 isian: Kategori (Prestasi/Penghargaan Akademik, Sertifikat Profesi seperti CCNA/Oracle/BNSP, Magang Industri, Kegiatan Ilmiah, atau Pengalaman Organisasi seperti BEM/HIMTI), Tahun, Nama Perusahaan/Penyelenggara, Posisi/Jenis Pengalaman dalam bahasa Indonesia dan Inggris; (d) Input sampai 10 sertifikat; (e) Setelah 10 sertifikat terinput, klik 'Cetak' dan gunakan fungsi 'Save as PDF'.",
+      "category": "prosedur",
+      "source_document": "Panduan Pasca Sidang TI v1.4",
+      "relevant_chunks": [
+        "doc_69dc5e0ccf4db_1776049676_chunk_0",
+        "doc_69dc5e0cc776b_1776049676_chunk_4",
+        "doc_69dc5e0cc776b_1776049676_chunk_5",
+        "doc_69dc5e0ccf4db_1776049676_chunk_1",
+        "doc_69dc5e0cc776b_1776049676_chunk_3"
+      ]
+    },
+    {
+      "id": "Q004",
+      "question": "Apa itu program MBKM dan bagaimana cara mengikutinya?",
+      "ground_truth_answer": "MBKM (Merdeka Belajar Kampus Merdeka) adalah program yang memungkinkan mahasiswa belajar di luar program studi. Dalam konteks KP di UMB, program MBKM terintegrasi dengan skema Kerja Praktek. Mahasiswa dapat mengikuti magang mandiri dengan durasi 4-6 bulan di instansi mitra, dan hasil magang dapat dikonversi menjadi 9 SKS sesuai ketentuan program studi.",
+      "category": "informasi",
+      "source_document": "Panduan KP dan MBKM 2023",
+      "relevant_chunks": [
+        "doc_69dc5e0cc27f8_1776049676_chunk_1",
+        "doc_69dc5e0cc27f8_1776049676_chunk_0",
+        "doc_69dc5e0ccc731_1776049676_chunk_0",
+        "doc_69dc5e0ce38b1_1776049676_chunk_25",
+        "doc_69dc5e0cdac9f_1776049676_chunk_27"
+      ]
+    },
+    {
+      "id": "Q005",
+      "question": "Berapa jumlah SKS minimal untuk mengambil tugas akhir?",
+      "ground_truth_answer": "Persyaratan akademis untuk mengambil mata kuliah Tugas Akhir adalah: (a) Jumlah SKS LULUS + SKS Tempuh + TA >= 144 SKS; (b) Mengisi form yang disediakan untuk Klik TA saat pengisian KRS; (c) Telah lulus Mata Kuliah Ciri Universitas (MKCU) minimal B yaitu Pancasila, Agama, B. Indonesia, B. Inggris 1, B. Inggris 2, Kewarganegaraan, Kewirausahaan 1, Etik UMB; dan MKCU Pilihan minimal C+ yaitu Kewirausahaan 2/English for Computer 1 dan Kewirausahaan 3/English for Computer 2.",
+      "category": "kebijakan",
+      "source_document": "Panduan TA SI-TI 2023/2024",
+      "relevant_chunks": [
+        "doc_69dc5e0cc5b65_1776049676_chunk_14",
+        "doc_69dc5e0cc5b65_1776049676_chunk_15",
+        "doc_69dc5e0cc776b_1776049676_chunk_0",
+        "doc_69dc5e0cc9a87_1776049676_chunk_14",
+        "doc_69dc5e0ccc731_1776049676_chunk_17"
+      ]
+    },
+    {
+      "id": "Q006",
+      "question": "Apa saja tahapan pasca sidang tugas akhir di Teknik Informatika?",
+      "ground_truth_answer": "Tahapan pasca sidang: (1) Telah lulus minimal 144 SKS termasuk TA (bukan SKS Tempuh); (2) Telah lulus MKCU dengan nilai B; (3) Melengkapi 10 sertifikat untuk SKPI (minimal 7 sesuai bidang ilmu, sertifikat profesi, dan maksimal 2 di bidang minat bakat); (4) Submit semua berkas di Form Yudisium dalam waktu maksimal 2 minggu dari tanggal sidang via http://bit.ly/FormYudisiumTataUsahaTI; (5) Mendapatkan Tanda Terima Penyerahan TA; (6) Menyerahkan TA ke Perpustakaan dalam bentuk CD; (7) Mengisi Form Alumni; (8) Mendaftar wisuda.",
+      "category": "prosedur",
+      "source_document": "Panduan Pasca Sidang TI v1.4",
+      "relevant_chunks": [
+        "doc_69dc5e0cc776b_1776049676_chunk_0",
+        "doc_69dc5e0cc776b_1776049676_chunk_1",
+        "doc_69dc5e0cc4119_1776049676_chunk_4",
+        "doc_69dc5e0cc9a87_1776049676_chunk_133",
+        "doc_69dc5e0cc4119_1776049676_chunk_5"
+      ]
+    },
+    {
+      "id": "Q007",
+      "question": "Bagaimana panduan penulisan tugas akhir untuk program studi SI dan TI?",
+      "ground_truth_answer": "Panduan penulisan TA Fasilkom UMB mengacu pada Permendikbudristek No 53 Tahun 2023 dan SK Rektor UMB No: 01/108/C-SKEP/III/2020. Terdapat 4 skema TA: (1) Aplikatif (Proyek/Prototipe); (2) Riset (Metode/Model/Algoritma/Framework) → Skripsi; (3) Publikasi Ilmiah (Jurnal Accepted); (4) Media Ilmiah (Media Pembelajaran). Penulisan menggunakan kertas HVS A4 80gr, font Times New Roman 12pt, spasi 1.5, margin kiri 4cm, kanan/atas/bawah 3cm. Maksimal 90 halaman untuk Skripsi Program Sarjana.",
+      "category": "informasi",
+      "source_document": "Panduan TA SI-TI 2023/2024",
+      "relevant_chunks": [
+        "doc_69dc5e0cc5b65_1776049676_chunk_26",
+        "doc_69dc5e0cc5b65_1776049676_chunk_34",
+        "doc_69dc5e0cc5b65_1776049676_chunk_14",
+        "doc_69dc5e0cc5b65_1776049676_chunk_44",
+        "doc_69dc5e0cc5b65_1776049676_chunk_51"
+      ]
+    },
+    {
+      "id": "Q008",
+      "question": "Apa saja pelayanan yang tersedia di BAK?",
+      "ground_truth_answer": "Biro Administrasi Keuangan (BAK) UMB menyediakan pusat pelayanan informasi keuangan yang beroperasi Senin-Sabtu pukul 08:00-16:00. Kontak pelayanan: BAK-UMB Reguler-1 (0813 8936 5143), BAK1-UMB Reguler-1 & 2 (0851 7300 8754), BAK-UMB Reguler-2 (0813 1795 3366), BAK1-Reguler-1 & 2 (0851 8344 0664). Tersedia di Kampus Meruya (Reguler-1 dan Reguler-2), Kampus Warung Buncit, dan Kampus Menteng.",
+      "category": "kontak",
+      "source_document": "Daftar Pelayanan BAK 2024",
+      "relevant_chunks": [
+        "doc_69dc5e0cce421_1776049676_chunk_0",
+        "doc_69dc5e0cc4119_1776049676_chunk_5",
+        "doc_69dc5e0cdac9f_1776049676_chunk_0",
+        "doc_69dc5e0ce38b1_1776049676_chunk_0",
+        "doc_69dc5e0cd35b6_1776049676_chunk_0"
+      ]
+    },
+    {
+      "id": "Q009",
+      "question": "Siapa saja dosen di program studi Teknik Informatika?",
+      "ground_truth_answer": "Berdasarkan Tim Penyusun Panduan TA, dosen-dosen di Fasilkom UMB antara lain: Dr. Bambang Jokonowo, S.Si., M.TI. (Dekan Fakultas Ilmu Komputer), Dr. Afiyati, S.Si., M.T. (Wakil Dekan), Dr. Hadi Santoso, S.Kom., M.Kom. (Ketua Program Studi Teknik Informatika), Dr. Ruci Meiyanti, S.Kom., M.Kom. (Ketua Program Studi Sistem Informasi), Andi Nugroho, S.T., M.Kom. (Sekretaris Prodi SI), Yustika Erliani, SE., MMSI. (Sekretaris Prodi TI). Untuk Sosialisasi KP, Inna Sabily Karima, S.Kom., M.Kom.",
+      "category": "kontak",
+      "source_document": "Panduan TA SI-TI 2023/2024",
+      "relevant_chunks": [
+        "doc_69dc5e0cc5b65_1776049676_chunk_0",
+        "doc_69dc5e0cc5b65_1776049676_chunk_3",
+        "doc_69dc5e0cc27f8_1776049676_chunk_0",
+        "doc_69dc5e0cc5b65_1776049676_chunk_2",
+        "doc_69dc5e0cc5b65_1776049676_chunk_14"
+      ]
+    },
+    {
+      "id": "Q010",
+      "question": "Apa perbedaan antara program sarjana reguler 1 dan reguler 2?",
+      "ground_truth_answer": "Program Reguler 1 adalah program kuliah untuk mahasiswa reguler dengan pertemuan tatap muka di kampus. Program Reguler 2 menggunakan metode Fast Learning, yaitu perkuliahan tatap muka virtual dilaksanakan 8 kali (pertemuan ke-1, 3, 5, 7, 9, 11, 13, 15) dan perkuliahan online dilaksanakan 7 kali (pertemuan ke-2, 4, 6, 8, 10, 12, 14). UAS dilaksanakan pada pertemuan ke-16. Masing-masing memiliki BAK dan kontak layanan yang berbeda.",
+      "category": "informasi",
+      "source_document": "Buku Panduan Akademik",
+      "relevant_chunks": [
+        "doc_69dc5e0cdac9f_1776049676_chunk_42",
+        "doc_69dc5e0cdac9f_1776049676_chunk_187",
+        "doc_69dc5e0cdac9f_1776049676_chunk_248",
+        "doc_69dc5e0cd35b6_1776049676_chunk_42",
+        "doc_69dc5e0cd35b6_1776049676_chunk_248"
+      ]
+    },
+    {
+      "id": "Q011",
+      "question": "Bagaimana prosedur sosialisasi KP tahun 2025?",
+      "ground_truth_answer": "Sosialisasi KP 2025 mencakup penjelasan tentang KP sebagai bagian kurikulum sarjana Ilmu Komputer yang bertujuan memberikan pengalaman nyata di dunia industri. Kegiatan KP meliputi 16 minggu: pengayaan materi, 4 seminar topik series secara online, evaluasi resume seminar, teknik review jurnal, kunjungan industri (minimal 3 tempat berbeda), penyusunan laporan KP, UTS dan UAS berupa presentasi laporan. Mahasiswa wajib mengikuti seluruh rangkaian seminar dan membuat resume, review jurnal, serta laporan kunjungan industri.",
+      "category": "prosedur",
+      "source_document": "Sosialisasi KP 2025",
+      "relevant_chunks": [
+        "doc_69dc5e0cc27f8_1776049676_chunk_4",
+        "doc_69dc5e0cc27f8_1776049676_chunk_6",
+        "doc_69dc5e0cc27f8_1776049676_chunk_0",
+        "doc_69dc5e0cc27f8_1776049676_chunk_2",
+        "doc_69dc5e0cc27f8_1776049676_chunk_5"
+      ]
+    },
+    {
+      "id": "Q012",
+      "question": "Bagaimana cara mengajukan cuti akademik?",
+      "ground_truth_answer": "Prosedur cuti akademik: (1) Mahasiswa login melalui https://sso.mercubuana.ac.id atau https://sia.mercubuana.ac.id; (2) Memilih jenis pengajuan cuti di SIA; (3) Program studi mengecek dan menyetujui pengajuan; (4) BAK menyetujui pengajuan; (5) Biro Pembelajaran (BP) menyetujui dan memproses; (6) Status mahasiswa berubah menjadi cuti dan dapat dilihat di SIA. Ketentuan: maksimal 2 semester selama masa belajar, dikenakan biaya, dapat diambil setelah minimal 1 semester aktif, tidak dapat diambil di akhir masa belajar. Prosedur aktif kembali: melaksanakan pengisian KRS.",
+      "category": "prosedur",
+      "source_document": "Buku Panduan Akademik",
+      "relevant_chunks": [
+        "doc_69dc5e0cdac9f_1776049676_chunk_247",
+        "doc_69dc5e0cd35b6_1776049676_chunk_247",
+        "doc_69dc5e0ce38b1_1776049676_chunk_42",
+        "doc_69dc5e0cd35b6_1776049676_chunk_41",
+        "doc_69dc5e0cdac9f_1776049676_chunk_41"
+      ]
+    },
+    {
+      "id": "Q013",
+      "question": "Apa saja mata kuliah prasyarat untuk tugas akhir di Teknik Informatika?",
+      "ground_truth_answer": "Mahasiswa harus telah lulus Mata Kuliah Ciri Universitas (MKCU) minimal B, yaitu: Pancasila, Pendidikan Agama, Bahasa Indonesia, Bahasa Inggris 1, Bahasa Inggris 2, Kewarganegaraan, Kewirausahaan 1, dan Etik UMB. Selain itu, MKCU Pilihan harus lulus minimal C+, yaitu: Kewirausahaan 2/English for Computer 1 dan Kewirausahaan 3/English for Computer 2. Total SKS LULUS + SKS Tempuh + TA harus >= 144 SKS.",
+      "category": "kebijakan",
+      "source_document": "Panduan TA SI-TI 2023/2024",
+      "relevant_chunks": [
+        "doc_69dc5e0cc776b_1776049676_chunk_0",
+        "doc_69dc5e0cc5b65_1776049676_chunk_15",
+        "doc_69dc5e0cc5b65_1776049676_chunk_14",
+        "doc_69dc5e0cc9a87_1776049676_chunk_14",
+        "doc_69dc5e0cd35b6_1776049676_chunk_257"
+      ]
+    },
+    {
+      "id": "Q014",
+      "question": "Bagaimana panduan MPTI (Metodologi Penelitian TI) tahun 2023?",
+      "ground_truth_answer": "Panduan MPTI 2023 mencakup tahapan penelitian yang harus diikuti mahasiswa Teknik Informatika dalam menyusun penelitian, termasuk metode yang digunakan dan format pelaporan sesuai standar program studi.",
+      "category": "informasi",
+      "source_document": "Panduan MPTI 2023",
+      "relevant_chunks": [
+        "doc_69dc5e0cc9a87_1776049676_chunk_31",
+        "doc_69dc5e0ccc731_1776049676_chunk_40",
+        "doc_69dc5e0cc776b_1776049676_chunk_0",
+        "doc_69dc5e0cc9a87_1776049676_chunk_0",
+        "doc_69dc5e0cc9a87_1776049676_chunk_13"
+      ]
+    },
+    {
+      "id": "Q015",
+      "question": "Apa saja dokumen yang harus dikumpulkan setelah sidang tugas akhir?",
+      "ground_truth_answer": "Dokumen yang harus dikumpulkan setelah sidang TA: (1) Laporan Skripsi/Jurnal yang telah direvisi dalam format word dengan format penamaan TALK+NIM+NAMA.docx, lengkap dengan lampiran Asistensi Bimbingan, Luaran TA, Bukti submit jurnal, Naskah Jurnal, CV, Surat ijin riset, Lampiran Surat HKI, Sertifikat BNSP; (2) CV sesuai format dengan foto (CV+NIM+NAMA.doc); (3) PowerPoint presentasi sidang (PRESI+NIM+NAMA.ppt); (4) Aplikasi di-upload ke drive email SSO (APP+NIM+NAMA); (5) 10 Sertifikat + TOEIC/TOEFL (550/450) dalam 1 dokumen (CERT+NIM+NAMA.docx); (6) Bukti Sumbangan Alumni (BSB+NIM+NAMA.pdf); (7) Verifikasi Data Mahasiswa (VDM+NIM+NAMA.pdf). Semua diunggah ke https://bit.ly/FormYudisiumTataUsahaTI.",
+      "category": "prosedur",
+      "source_document": "Arahan Pasca Sidang TI",
+      "relevant_chunks": [
+        "doc_69dc5e0cc4119_1776049676_chunk_1",
+        "doc_69dc5e0cc4119_1776049676_chunk_2",
+        "doc_69dc5e0cc4119_1776049676_chunk_0",
+        "doc_69dc5e0cc4119_1776049676_chunk_3",
+        "doc_69dc5e0cc4119_1776049676_chunk_4"
+      ]
+    },
+    {
+      "id": "Q016",
+      "question": "Berapa IPK minimal untuk lulus program sarjana?",
+      "ground_truth_answer": "Mahasiswa program sarjana dinyatakan dapat melanjutkan studinya apabila memenuhi ketentuan IPK dan jumlah SKS per semester. Mahasiswa dinyatakan putus studi apabila pada akhir semester tidak dapat mencapai IPS/IPK dan jumlah SKS yang disyaratkan. Ketentuan spesifik per semester diatur dalam sistem evaluasi buku panduan akademik.",
+      "category": "kebijakan",
+      "source_document": "Buku Panduan Akademik",
+      "relevant_chunks": [
+        "doc_69dc5e0cdac9f_1776049676_chunk_255",
+        "doc_69dc5e0ce38b1_1776049676_chunk_52",
+        "doc_69dc5e0cd35b6_1776049676_chunk_206",
+        "doc_69dc5e0cd35b6_1776049676_chunk_255",
+        "doc_69dc5e0cdac9f_1776049676_chunk_52"
+      ]
+    },
+    {
+      "id": "Q017",
+      "question": "Apa saja program studi yang tersedia di Universitas Mercu Buana?",
+      "ground_truth_answer": "Program studi di UMB mencakup: Program Sarjana - Arsitektur, Teknik Sipil, Teknik Mesin, Teknik Elektro, Teknik Industri, Teknik Informatika, Sistem Informasi, Manajemen, Akuntansi, Ilmu Komunikasi, Psikologi. Program Diploma Tiga - Manajemen, Akuntansi. Program Magister - Magister Akuntansi, Magister Manajemen, Magister Ilmu Komunikasi, Magister Teknik Industri, Magister Teknik Elektro, Magister Teknik Sipil, Magister Teknik Mesin, Magister Arsitektur. Serta Program Profesi Insinyur.",
+      "category": "informasi",
+      "source_document": "Buku Panduan Akademik",
+      "relevant_chunks": [
+        "doc_69dc5e0cd35b6_1776049676_chunk_1",
+        "doc_69dc5e0cd35b6_1776049676_chunk_16",
+        "doc_69dc5e0cdac9f_1776049676_chunk_0",
+        "doc_69dc5e0cdac9f_1776049676_chunk_1",
+        "doc_69dc5e0cdac9f_1776049676_chunk_16"
+      ]
+    },
+    {
+      "id": "Q018",
+      "question": "Bagaimana prosedur pendaftaran mahasiswa baru di UMB?",
+      "ground_truth_answer": "Pendaftaran mahasiswa baru melalui jalur penerimaan yang tersedia (tercantum di buku panduan akademik) dengan memenuhi kriteria penerimaan, persyaratan pendaftaran, instrumen penerimaan, dan prosedur penerimaan. Terdapat sistem seleksi pendidikan dan proses registrasi mahasiswa baru. Untuk mahasiswa baru, pengisian KRS dilakukan oleh program studi dan dapat diakses langsung oleh mahasiswa pada SIA saat kegiatan pembukaan awal perkuliahan.",
+      "category": "prosedur",
+      "source_document": "Buku Panduan Akademik",
+      "relevant_chunks": [
+        "doc_69dc5e0cdac9f_1776049676_chunk_1",
+        "doc_69dc5e0cd35b6_1776049676_chunk_1",
+        "doc_69dc5e0cdac9f_1776049676_chunk_37",
+        "doc_69dc5e0cdac9f_1776049676_chunk_182",
+        "doc_69dc5e0cdac9f_1776049676_chunk_240"
+      ]
+    },
+    {
+      "id": "Q019",
+      "question": "Apa itu arahan pasca sidang dan apa saja isinya?",
+      "ground_truth_answer": "Arahan pasca sidang berisi petunjuk setelah sidang TA: (1) Mahasiswa yang LULUS harus melakukan REVISI paling lambat 14 hari kerja setelah tanggal sidang (yang lewat dari 14 hari akan disidangkan ulang); (2) Revisi dan konsultasi dengan dosen penguji dan pembimbing sampai mendapatkan tanda ACC berupa tanda tangan basah di halaman pengesahan; (3) Menyiapkan dan mengunggah berkas ke Form Yudisium; (4) Penyerahan TA ke perpustakaan (offline, hanya CD, kecuali Menteng); (5) Mengajukan Surat Keterangan Lulus (SKL) melalui https://linktr.ee/biropembelajaranumb; (6) Mengisi form alumni.",
+      "category": "informasi",
+      "source_document": "Arahan Pasca Sidang TI",
+      "relevant_chunks": [
+        "doc_69dc5e0cc4119_1776049676_chunk_0",
+        "doc_69dc5e0cc776b_1776049676_chunk_1",
+        "doc_69dc5e0cc9a87_1776049676_chunk_133",
+        "doc_69dc5e0ccc731_1776049676_chunk_138",
+        "doc_69dc5e0cc4119_1776049676_chunk_5"
+      ]
+    },
+    {
+      "id": "Q020",
+      "question": "Bagaimana cara mengonversi nilai KP atau MBKM ke dalam transkrip akademik?",
+      "ground_truth_answer": "Konversi nilai KP/MBKM disesuaikan dengan skema yang diikuti: (1) Magang Mandiri - hasil magang dapat dikonversi menjadi 9 SKS menjadi nilai Kerja Praktek sesuai ketentuan program studi, dibuktikan dengan surat keterangan magang mandiri dan logbook; (2) KP Kelas - konversi KP sebesar 3 SKS, mahasiswa wajib kelas dan membuat laporan serta presentasi; (3) Magang Internal SDM UMB - konversi KP 3 SKS, mahasiswa menyusun laporan kerja praktek dan presentasi di kelas KP.",
+      "category": "teknis",
+      "source_document": "Sosialisasi KP 2025",
+      "relevant_chunks": [
+        "doc_69dc5e0cc27f8_1776049676_chunk_1",
+        "doc_69dc5e0cc27f8_1776049676_chunk_0",
+        "doc_69dc5e0cc27f8_1776049676_chunk_2",
+        "doc_69dc5e0ccc731_1776049676_chunk_8",
+        "doc_69dc5e0ccc731_1776049676_chunk_17"
+      ]
+    },
+    {
+      "id": "Q021",
+      "question": "Apa saja skema tugas akhir yang tersedia di Fasilkom UMB?",
+      "ground_truth_answer": "Terdapat 4 skema TA: (1) Tugas Akhir Aplikatif (Proyek, Prototipe) - menghasilkan solusi konkret, perorangan atau kelompok maks 3 mahasiswa; (2) Tugas Akhir Riset (Metode, Model, Algoritma, Framework) → Skripsi - penelitian ilmiah, perorangan atau kelompok maks 3 mahasiswa; (3) Tugas Akhir Publikasi Ilmiah (Jurnal Accepted) - jurnal terindex Sinta 1-6, DOAJ, Scopus, Copernicus, Clarivate, nilai A (80-100); (4) Tugas Akhir Media Ilmiah - berupa Buku Monograf, Buku Referensi, Buku Chapter, atau Buku Modul Belajar (PPT, Word, Media Sosial), nilai 75-100.",
+      "category": "informasi",
+      "source_document": "Panduan TA SI-TI 2023/2024",
+      "relevant_chunks": [
+        "doc_69dc5e0cc5b65_1776049676_chunk_26",
+        "doc_69dc5e0cc5b65_1776049676_chunk_18",
+        "doc_69dc5e0cc5b65_1776049676_chunk_16",
+        "doc_69dc5e0cc5b65_1776049676_chunk_17",
+        "doc_69dc5e0cc5b65_1776049676_chunk_19"
+      ]
+    },
+    {
+      "id": "Q022",
+      "question": "Bagaimana komponen penilaian sidang tugas akhir?",
+      "ground_truth_answer": "Penilaian TA bervariasi per skema: (1) TA Aplikatif: Attitude/Disiplin/Sikap/Komunikasi/Presentasi (10-20), Konten laporan/produk (44-60), Daftar Referensi (7-10), PPT Presentasi (7-10); (2) TA Riset/Skripsi: Attitude (10-20), Konten/Metode/Algoritma (44-60), Daftar Referensi minimal 5 tahun terakhir (7-10), PPT (7-10); (3) TA Publikasi Ilmiah: Jurnal Sinta 1-6/Scopus/DOAJ/Copernicus nilai A (80-100); (4) TA Media Ilmiah: Buku Monograf/Referensi/Chapter/Modul Belajar (75-100).",
+      "category": "informasi",
+      "source_document": "Panduan TA SI-TI 2023/2024",
+      "relevant_chunks": [
+        "doc_69dc5e0cc5b65_1776049676_chunk_26",
+        "doc_69dc5e0cc5b65_1776049676_chunk_56",
+        "doc_69dc5e0cc5b65_1776049676_chunk_18",
+        "doc_69dc5e0cc5b65_1776049676_chunk_27",
+        "doc_69dc5e0cc5b65_1776049676_chunk_32"
+      ]
+    },
+    {
+      "id": "Q023",
+      "question": "Berapa batas waktu revisi setelah sidang tugas akhir?",
+      "ground_truth_answer": "Batas waktu revisi setelah sidang TA adalah paling lambat 14 hari kerja setelah tanggal sidang. Bagi mahasiswa yang lewat dari 14 hari akan disidangkan ulang. Mahasiswa yang tidak lulus sidang juga harus sidang ulang.",
+      "category": "kebijakan",
+      "source_document": "Arahan Pasca Sidang TI",
+      "relevant_chunks": [
+        "doc_69dc5e0cc4119_1776049676_chunk_0",
+        "doc_69dc5e0ccc731_1776049676_chunk_134",
+        "doc_69dc5e0cc5b65_1776049676_chunk_73",
+        "doc_69dc5e0cc9a87_1776049676_chunk_128",
+        "doc_69dc5e0cc9a87_1776049676_chunk_129"
+      ]
+    },
+    {
+      "id": "Q024",
+      "question": "Bagaimana format konfirmasi revisi ke dosen penguji?",
+      "ground_truth_answer": "Konfirmasi revisi ke dosen penguji dilakukan melalui WA, SMS, Email, atau media komunikasi lainnya dengan format: REVISI LAPORAN TA, HARI/TANGGAL SIDANG, ROOM 1/2/3 (sesuaikan dengan room masing-masing), NAMA/NIM, Link Google Drive File Revisi Laporan TA, Link Lembar Revisi Sidang TA. Proses revisi dilaksanakan langsung ke dosen penguji, kontak dosen bisa diminta ke TU Fasilkom, dan file Lembar Revisi dibagikan di grup TA.",
+      "category": "prosedur",
+      "source_document": "Panduan Pasca Sidang TI v1.4",
+      "relevant_chunks": [
+        "doc_69dc5e0cc776b_1776049676_chunk_2",
+        "doc_69dc5e0cc776b_1776049676_chunk_1",
+        "doc_69dc5e0cc4119_1776049676_chunk_2",
+        "doc_69dc5e0ccc731_1776049676_chunk_138",
+        "doc_69dc5e0cc4119_1776049676_chunk_0"
+      ]
+    },
+    {
+      "id": "Q025",
+      "question": "Bagaimana cara verifikasi data mahasiswa di SIA?",
+      "ground_truth_answer": "Verifikasi Data Mahasiswa dilakukan melalui SIA: (a) Buka SIA dan klik 'Detail Mahasiswa'; (b) Pada Kolom Aksi Cepat pilih 'Verifikasi Data Mahasiswa'; (c) Jika data sesuai, klik 'Data Telah Sesuai'; (d) Klik 'Print Bukti Verifikasi' dan print dengan fitur 'Save as PDF'. Pada kolom sesuai harus diceklis semuanya. Jika ada yang tidak sesuai, hubungi TU untuk langkah perubahannya. Berkas harus sudah sesuai semua untuk yudisium, diunggah dalam bentuk PDF dan di TTD di atas materai dengan format penamaan VDM+NIM+NAMA.pdf.",
+      "category": "prosedur",
+      "source_document": "Panduan Pasca Sidang TI v1.4",
+      "relevant_chunks": [
+        "doc_69dc5e0cc776b_1776049676_chunk_3",
+        "doc_69dc5e0cc4119_1776049676_chunk_3",
+        "doc_69dc5e0cc4119_1776049676_chunk_4",
+        "doc_69dc5e0cc776b_1776049676_chunk_2",
+        "doc_69dc5e0cc4119_1776049676_chunk_2"
+      ]
+    },
+    {
+      "id": "Q026",
+      "question": "Bagaimana prosedur penyerahan tugas akhir ke perpustakaan?",
+      "ground_truth_answer": "Penyerahan TA ke perpustakaan dilakukan setelah mendapatkan Tanda Terima Penyerahan TA dari TU Program Studi Teknik Informatika. Penyerahan sudah dilakukan secara offline, hanya CD (kecuali Menteng). Kontak perpustakaan: Kampus Meruya (082311232229, bit.ly/lib_meruya), Kampus Menteng (085219542932, bit.ly/menteng_lib), Kampus Warung Buncit/Pejaten (082135935955, bit.ly/warungbuncit_lib). Detail pengumpulan akan diinformasikan oleh Tim TU bersamaan dengan Tanda Terima.",
+      "category": "prosedur",
+      "source_document": "Arahan Pasca Sidang TI",
+      "relevant_chunks": [
+        "doc_69dc5e0cc4119_1776049676_chunk_5",
+        "doc_69dc5e0cc4119_1776049676_chunk_4",
+        "doc_69dc5e0cc776b_1776049676_chunk_1",
+        "doc_69dc5e0cc776b_1776049676_chunk_0",
+        "doc_69dc5e0cc5b65_1776049676_chunk_2"
+      ]
+    },
+    {
+      "id": "Q027",
+      "question": "Apa saja syarat dan ketentuan pengajuan Surat Keterangan Lulus (SKL)?",
+      "ground_truth_answer": "Syarat utama SKL: mahasiswa telah dinyatakan LULUS pada sistem SIA dan sudah mendapatkan tanda terima dari Prodi TI. Sistem SIA tidak akan berubah menjadi LULUS jika: dinyatakan sidang ulang/tidak lulus, belum mengumpulkan laporan ke Prodi TI, masih ada tunggakan biaya (sumbangan alumni dll), kurang SKS (wajib lulus 144/145 SKS), atau masih ada mata kuliah yang sedang diambil. Pengajuan SKL melalui https://linktr.ee/biropembelajaranumb. Form Alumni diisi di https://my.forms.app/tracerstudyumbctc/lulusand3s1. Jika ada kendala dalam 1x24 jam, hubungi admin di 0877123338.",
+      "category": "prosedur",
+      "source_document": "Arahan Pasca Sidang TI",
+      "relevant_chunks": [
+        "doc_69dc5e0cc4119_1776049676_chunk_6",
+        "doc_69dc5e0cc4119_1776049676_chunk_7",
+        "doc_69dc5e0cc4119_1776049676_chunk_5",
+        "doc_69dc5e0cc776b_1776049676_chunk_0",
+        "doc_69dc5e0cd35b6_1776049676_chunk_247"
+      ]
+    },
+    {
+      "id": "Q028",
+      "question": "Berapa biaya sumbangan buku alumni?",
+      "ground_truth_answer": "Biaya sumbangan buku alumni adalah Rp. 250.000,-. Pembayaran dilakukan melalui Bank dengan melihat kode prefix untuk 'Buku Alumni'. Jika tagihan belum muncul, hubungi BAK untuk membuka tagihan Buku Alumni.",
+      "category": "informasi",
+      "source_document": "Panduan Pasca Sidang TI v1.4",
+      "relevant_chunks": [
+        "doc_69dc5e0cc776b_1776049676_chunk_5",
+        "doc_69dc5e0cc4119_1776049676_chunk_3",
+        "doc_69dc5e0cdac9f_1776049676_chunk_35",
+        "doc_69dc5e0cdac9f_1776049676_chunk_180",
+        "doc_69dc5e0cdac9f_1776049676_chunk_192"
+      ]
+    },
+    {
+      "id": "Q029",
+      "question": "Apa ketentuan tentang jumlah referensi dalam tugas akhir?",
+      "ground_truth_answer": "Daftar pustaka yang digunakan harus merupakan terbitan terbaru (maksimal 5 tahun terakhir) dari jurnal ilmiah berindex (Scopus, IEEE Transaction, IEEE Explorer, Clarivate, Copernicus, DOAJ dan nasional terakreditasi). Format penulisan menggunakan format IEEE dan Reference Manager Mendeley. Mahasiswa diwajibkan mensitasi 2 (dua) artikel dari dosen program studi Sistem Informasi UMB, dan batasan minimal referensi yang digunakan sebanyak 15 artikel. Untuk proses bimbingan, referensi artikel jurnal harus memiliki ISSN dan Volume.",
+      "category": "kebijakan",
+      "source_document": "Panduan TA SI-TI 2023/2024",
+      "relevant_chunks": [
+        "doc_69dc5e0cc5b65_1776049676_chunk_32",
+        "doc_69dc5e0cc5b65_1776049676_chunk_41",
+        "doc_69dc5e0cc5b65_1776049676_chunk_70",
+        "doc_69dc5e0cc5b65_1776049676_chunk_14",
+        "doc_69dc5e0cc5b65_1776049676_chunk_33"
+      ]
+    },
+    {
+      "id": "Q030",
+      "question": "Bagaimana ketentuan proses bimbingan tugas akhir?",
+      "ground_truth_answer": "Ketentuan bimbingan TA: (1) Judul laporan TA maksimal 16 kata; (2) Proses bimbingan dilakukan di kampus sesuai jam kerja; (3) Bimbingan minimal 8 kali pertemuan tatap muka (termasuk maksimal 3 kali melalui email), harus tercatat pada Form Konsultasi TA di SIA yang diisikan oleh dosen Pembimbing lengkap dengan judul; (4) Referensi artikel jurnal harus memiliki ISSN dan Volume, dengan maksimal usia terbit 5 tahun. Tugas akhir harus diselesaikan dalam kurun waktu satu semester, perpanjangan hanya dengan alasan khusus dan disetujui Ketua Program Studi.",
+      "category": "kebijakan",
+      "source_document": "Panduan TA SI-TI 2023/2024",
+      "relevant_chunks": [
+        "doc_69dc5e0cc5b65_1776049676_chunk_70",
+        "doc_69dc5e0cdac9f_1776049676_chunk_43",
+        "doc_69dc5e0ce38b1_1776049676_chunk_43",
+        "doc_69dc5e0cd35b6_1776049676_chunk_43",
+        "doc_69dc5e0cd35b6_1776049676_chunk_188"
+      ]
+    },
+    {
+      "id": "Q031",
+      "question": "Apa visi dan misi Universitas Mercu Buana?",
+      "ground_truth_answer": "Visi UMB: Menjadi Universitas Unggul dan bereputasi internasional yang berkontribusi pada pengembangan masyarakat berkelanjutan tahun 2045. Misi: (1) Menyelenggarakan Tridharma Perguruan Tinggi yang berbasis riset dan kewirausahaan secara profesional.",
+      "category": "informasi",
+      "source_document": "Buku Panduan Akademik",
+      "relevant_chunks": [
+        "doc_69dc5e0ce38b1_1776049676_chunk_2",
+        "doc_69dc5e0cd35b6_1776049676_chunk_3",
+        "doc_69dc5e0cdac9f_1776049676_chunk_3",
+        "doc_69dc5e0cdac9f_1776049676_chunk_2",
+        "doc_69dc5e0cdac9f_1776049676_chunk_140"
+      ]
+    },
+    {
+      "id": "Q032",
+      "question": "Berapa jumlah sertifikat yang dibutuhkan untuk SKPI?",
+      "ground_truth_answer": "Dibutuhkan 10 sertifikat untuk dimasukkan ke SKPI (Surat Keterangan Pendamping Ijazah), berbeda dengan SKP. Ketentuan sertifikat: minimal 7 sertifikat sesuai bidang ilmu, termasuk sertifikat sertifikasi bidang profesi sesuai bidang ilmu, dan maksimal 2 sertifikat di bidang minat dan bakat.",
+      "category": "kebijakan",
+      "source_document": "Panduan Pasca Sidang TI v1.4",
+      "relevant_chunks": [
+        "doc_69dc5e0cc776b_1776049676_chunk_0",
+        "doc_69dc5e0cdac9f_1776049676_chunk_44",
+        "doc_69dc5e0cd35b6_1776049676_chunk_44",
+        "doc_69dc5e0cdac9f_1776049676_chunk_45",
+        "doc_69dc5e0cdac9f_1776049676_chunk_212"
+      ]
+    },
+    {
+      "id": "Q033",
+      "question": "Bagaimana sistematika penulisan tugas akhir?",
+      "ground_truth_answer": "Sistematika penulisan TA terdiri dari 3 bagian: (a) Bagian Awal: Halaman Sampul, Judul, Pernyataan Orisinalitas, Pengesahan, Kata Pengantar (maks 2 halaman), Pernyataan Persetujuan Publikasi, Abstrak (Indonesia & Inggris), Daftar Isi, Daftar Tabel/Gambar/Rumus/Notasi, Daftar Pustaka, Daftar Lampiran; (b) Bagian Isi: uraian/penjabaran/analisis; (c) Bagian Akhir: Daftar Pustaka dan Lampiran.",
+      "category": "informasi",
+      "source_document": "Panduan TA SI-TI 2023/2024",
+      "relevant_chunks": [
+        "doc_69dc5e0cc5b65_1776049676_chunk_27",
+        "doc_69dc5e0cc5b65_1776049676_chunk_42",
+        "doc_69dc5e0cc5b65_1776049676_chunk_51",
+        "doc_69dc5e0cc5b65_1776049676_chunk_53",
+        "doc_69dc5e0cc5b65_1776049676_chunk_55"
+      ]
+    },
+    {
+      "id": "Q034",
+      "question": "Apa saja spesifikasi format penulisan tugas akhir?",
+      "ground_truth_answer": "Spesifikasi penulisan TA: Kertas HVS putih polos 80gr ukuran A4 (21.5cm x 29.7cm). Margin: kiri 4cm, kanan 3cm, atas 3cm, bawah 3cm. Font Times New Roman 12pt, rata kiri kanan (justify), spasi 1.5. Huruf hitam pekat dan seragam, dicetak bolak balik. Jumlah halaman dihitung dari Bab Pendahuluan sampai Daftar Pustaka, Skripsi Program Sarjana maksimal 90 halaman. Lampiran lebih dari 10 lembar dilampirkan pada CD Softcopy.",
+      "category": "teknis",
+      "source_document": "Panduan TA SI-TI 2023/2024",
+      "relevant_chunks": [
+        "doc_69dc5e0cc5b65_1776049676_chunk_34",
+        "doc_69dc5e0cc9a87_1776049676_chunk_104",
+        "doc_69dc5e0ccc731_1776049676_chunk_110",
+        "doc_69dc5e0cc9a87_1776049676_chunk_103",
+        "doc_69dc5e0ccc731_1776049676_chunk_109"
+      ]
+    },
+    {
+      "id": "Q035",
+      "question": "Berapa lama maksimal masa cuti akademik?",
+      "ground_truth_answer": "Cuti akademik maksimal 2 (dua) semester selama masa belajar. Cuti dikenakan biaya sesuai ketentuan UMB. Cuti dapat diberikan kepada mahasiswa yang telah mengikuti kegiatan akademik sekurang-kurangnya 1 semester. Cuti tidak dapat diambil pada akhir masa belajar. Jika mahasiswa tidak mengisi KRS online dan tidak mengajukan cuti, maka dianggap Putus Studi.",
+      "category": "kebijakan",
+      "source_document": "Buku Panduan Akademik",
+      "relevant_chunks": [
+        "doc_69dc5e0cdac9f_1776049676_chunk_184",
+        "doc_69dc5e0ce38b1_1776049676_chunk_40",
+        "doc_69dc5e0cd35b6_1776049676_chunk_39",
+        "doc_69dc5e0cdac9f_1776049676_chunk_39",
+        "doc_69dc5e0cd35b6_1776049676_chunk_184"
+      ]
+    },
+    {
+      "id": "Q036",
+      "question": "Apa yang terjadi jika mahasiswa tidak mengisi KRS dan tidak mengajukan cuti?",
+      "ground_truth_answer": "Apabila mahasiswa tidak melakukan daftar ulang melalui pengisian KRS online dan tidak mengajukan cuti akademik, maka dianggap Putus Studi dari Universitas Mercu Buana. Kepada yang bersangkutan akan diberikan surat keterangan pernah kuliah serta transkrip akademik.",
+      "category": "kebijakan",
+      "source_document": "Buku Panduan Akademik",
+      "relevant_chunks": [
+        "doc_69dc5e0ce38b1_1776049676_chunk_42",
+        "doc_69dc5e0cdac9f_1776049676_chunk_186",
+        "doc_69dc5e0cd35b6_1776049676_chunk_186",
+        "doc_69dc5e0cdac9f_1776049676_chunk_207",
+        "doc_69dc5e0cdac9f_1776049676_chunk_245"
+      ]
+    },
+    {
+      "id": "Q037",
+      "question": "Bagaimana kegiatan kunjungan industri dalam program KP?",
+      "ground_truth_answer": "Kunjungan industri dalam program KP dibagi menjadi minimal 3 tempat industri berbeda untuk memperkaya wawasan. Mahasiswa melakukan observasi, diskusi, dan dokumentasi. Hasil kunjungan dituangkan dalam laporan kunjungan dan presentasi refleksi. Kunjungan industri dilaksanakan pada minggu ke-9, dan evaluasi hasil dilakukan pada minggu ke-10.",
+      "category": "informasi",
+      "source_document": "Sosialisasi KP 2025",
+      "relevant_chunks": [
+        "doc_69dc5e0cc27f8_1776049676_chunk_6",
+        "doc_69dc5e0cc27f8_1776049676_chunk_4",
+        "doc_69dc5e0cc27f8_1776049676_chunk_5",
+        "doc_69dc5e0cc27f8_1776049676_chunk_1",
+        "doc_69dc5e0cc5b65_1776049676_chunk_2"
+      ]
+    },
+    {
+      "id": "Q038",
+      "question": "Apa saja dokumen yang diminta dalam form yudisium?",
+      "ground_truth_answer": "Berkas untuk Form Yudisium: (1) Tanda Terima Penyerahan TA dari TU; (2) Tanda Terima Penyerahan TA dari Perpustakaan; (3) Pengisian SKPI (cetak PDF via SIA dalam status diajukan); (4) Bukti Transfer Sumbangan Buku Alumni Rp. 250.000,-; (5) Hasil Cetak Verifikasi Data Mahasiswa (sudah diceklis semua pada kolom 'Sudah Sesuai' dan di TTD materai); (6) Berkas HAKI (wajib isi bagian yang merah di template dan lampirkan KTP). Diberikan waktu maksimal 2 minggu dari tanggal sidang.",
+      "category": "prosedur",
+      "source_document": "Panduan Pasca Sidang TI v1.4",
+      "relevant_chunks": [
+        "doc_69dc5e0cc776b_1776049676_chunk_6",
+        "doc_69dc5e0cc4119_1776049676_chunk_4",
+        "doc_69dc5e0cc776b_1776049676_chunk_5",
+        "doc_69dc5e0cc4119_1776049676_chunk_3",
+        "doc_69dc5e0cc776b_1776049676_chunk_0"
+      ]
+    },
+    {
+      "id": "Q039",
+      "question": "Siapa yang menjabat sebagai Dekan Fakultas Ilmu Komputer UMB?",
+      "ground_truth_answer": "Dekan Fakultas Ilmu Komputer UMB adalah Dr. Bambang Jokonowo, S.Si, M.T.I.",
+      "category": "kontak",
+      "source_document": "Panduan TA SI-TI 2023/2024",
+      "relevant_chunks": [
+        "doc_69dc5e0cc5b65_1776049676_chunk_0",
+        "doc_69dc5e0cc5b65_1776049676_chunk_3",
+        "doc_69dc5e0cc5b65_1776049676_chunk_1",
+        "doc_69dc5e0cc5b65_1776049676_chunk_14",
+        "doc_69dc5e0cc5b65_1776049676_chunk_44"
+      ]
+    },
+    {
+      "id": "Q040",
+      "question": "Berapa jumlah minimal bimbingan tugas akhir?",
+      "ground_truth_answer": "Proses bimbingan dilakukan minimal sebanyak 8 (delapan) kali pertemuan tatap muka (termasuk maksimal 3 kali melalui email). Bimbingan harus tercatat pada Form Konsultasi Tugas Akhir di SIA yang diisikan oleh dosen Pembimbing lengkap dengan judul yang diangkat oleh mahasiswa.",
+      "category": "kebijakan",
+      "source_document": "Panduan TA SI-TI 2023/2024",
+      "relevant_chunks": [
+        "doc_69dc5e0cc5b65_1776049676_chunk_70",
+        "doc_69dc5e0cdac9f_1776049676_chunk_192",
+        "doc_69dc5e0cdac9f_1776049676_chunk_196",
+        "doc_69dc5e0ce38b1_1776049676_chunk_28",
+        "doc_69dc5e0cd35b6_1776049676_chunk_195"
+      ]
+    },
+    {
+      "id": "Q041",
+      "question": "Berapa jumlah kata maksimal untuk judul tugas akhir?",
+      "ground_truth_answer": "Judul laporan Tugas Akhir maksimal 16 kata.",
+      "category": "kebijakan",
+      "source_document": "Panduan TA SI-TI 2023/2024",
+      "relevant_chunks": [
+        "doc_69dc5e0cc5b65_1776049676_chunk_35",
+        "doc_69dc5e0cc5b65_1776049676_chunk_70",
+        "doc_69dc5e0cc5b65_1776049676_chunk_29",
+        "doc_69dc5e0cc5b65_1776049676_chunk_43",
+        "doc_69dc5e0cc5b65_1776049676_chunk_46"
+      ]
+    },
+    {
+      "id": "Q042",
+      "question": "Apa yang dimaksud dengan metode Fast Learning di UMB?",
+      "ground_truth_answer": "Fast Learning digunakan untuk metode pembelajaran Kelas Reguler 2. Ketentuan: pertemuan tatap muka virtual dilaksanakan 8 kali yaitu di pertemuan ke-1, ke-3, ke-5, ke-7, ke-9, ke-11, ke-13, dan ke-15. Perkuliahan online dilaksanakan 7 kali yaitu di pertemuan ke-2, ke-4, ke-6, ke-8, ke-10, ke-12, dan ke-14. UAS dilaksanakan pada pertemuan ke-16 sesuai jadwal pada Sistem Informasi Akademik (SIA). Diakses melalui https://fast.mercubuana.ac.id/.",
+      "category": "informasi",
+      "source_document": "Buku Panduan Akademik",
+      "relevant_chunks": [
+        "doc_69dc5e0cdac9f_1776049676_chunk_42",
+        "doc_69dc5e0cdac9f_1776049676_chunk_187",
+        "doc_69dc5e0cdac9f_1776049676_chunk_248",
+        "doc_69dc5e0cd35b6_1776049676_chunk_42",
+        "doc_69dc5e0cd35b6_1776049676_chunk_248"
+      ]
+    },
+    {
+      "id": "Q043",
+      "question": "Bagaimana cara akses Sistem Informasi Akademik (SIA) UMB?",
+      "ground_truth_answer": "SIA UMB dapat diakses melalui https://sso.mercubuana.ac.id atau https://sia.mercubuana.ac.id. Pengisian KRS, pencetakan KRS, verifikasi data mahasiswa, pengajuan cuti, dan akses Kartu Hasil Studi semuanya dilakukan melalui SIA. KRS dapat diisi melalui laptop/smartphone dengan fasilitas WiFi kampus atau jaringan internet pribadi.",
+      "category": "teknis",
+      "source_document": "Buku Panduan Akademik",
+      "relevant_chunks": [
+        "doc_69dc5e0cd35b6_1776049676_chunk_37",
+        "doc_69dc5e0cdac9f_1776049676_chunk_37",
+        "doc_69dc5e0cdac9f_1776049676_chunk_182",
+        "doc_69dc5e0cd35b6_1776049676_chunk_181",
+        "doc_69dc5e0cdac9f_1776049676_chunk_36"
+      ]
+    },
+    {
+      "id": "Q044",
+      "question": "Apa saja kategori sertifikat yang dapat dimasukkan ke SKPI?",
+      "ground_truth_answer": "Kategori sertifikat SKPI: (1) Prestasi/Penghargaan Akademik/Olahraga/Kesenian - untuk sertifikat/piagam prestasi; (2) Sertifikat Profesi - untuk sertifikat profesi dari pelatihan seperti CCNA, Oracle, FGA DTS, BNSP; (3) Magang Industri/Pengalaman Kerja - untuk sertifikat magang di industri; (4) Kegiatan Ilmiah Nasional/Internasional - untuk sertifikat seminar/workshop/konferensi; (5) Pengalaman Organisasi - untuk sertifikat keanggotaan organisasi seperti BEM, HIMTI.",
+      "category": "informasi",
+      "source_document": "Panduan Pasca Sidang TI v1.4",
+      "relevant_chunks": [
+        "doc_69dc5e0ccf4db_1776049676_chunk_0",
+        "doc_69dc5e0cc776b_1776049676_chunk_4",
+        "doc_69dc5e0cc776b_1776049676_chunk_3",
+        "doc_69dc5e0ccf4db_1776049676_chunk_1",
+        "doc_69dc5e0ce38b1_1776049676_chunk_24"
+      ]
+    },
+    {
+      "id": "Q045",
+      "question": "Berapa skor TOEFL atau TOEIC yang dibutuhkan untuk kelulusan?",
+      "ground_truth_answer": "Mahasiswa memerlukan skor TOEIC 550 atau TOEFL 450 sebagai syarat kelulusan. Sertifikat TOEIC/TOEFL diunggah bersama 10 sertifikat lainnya dalam 1 dokumen PDF/DOCX dengan format nama file CERT+NIM+NAMA.docx.",
+      "category": "kebijakan",
+      "source_document": "Arahan Pasca Sidang TI",
+      "relevant_chunks": [
+        "doc_69dc5e0cc4119_1776049676_chunk_2",
+        "doc_69dc5e0cdac9f_1776049676_chunk_268",
+        "doc_69dc5e0ce38b1_1776049676_chunk_183",
+        "doc_69dc5e0cd35b6_1776049676_chunk_268",
+        "doc_69dc5e0ce38b1_1776049676_chunk_184"
+      ]
+    },
+    {
+      "id": "Q046",
+      "question": "Bagaimana ketentuan pelaksanaan ujian sidang tugas akhir?",
+      "ground_truth_answer": "Mahasiswa yang sudah mendaftar sidang TA akan dijadwalkan setelah dilakukan verifikasi kelengkapan berkas oleh program studi. Pelaksanaan ujian sidang dilaksanakan sesuai jadwal yang ditetapkan.",
+      "category": "prosedur",
+      "source_document": "Panduan TA SI-TI 2023/2024",
+      "relevant_chunks": [
+        "doc_69dc5e0cc5b65_1776049676_chunk_71",
+        "doc_69dc5e0cc5b65_1776049676_chunk_72",
+        "doc_69dc5e0cdac9f_1776049676_chunk_193",
+        "doc_69dc5e0cdac9f_1776049676_chunk_198",
+        "doc_69dc5e0cd35b6_1776049676_chunk_197"
+      ]
+    },
+    {
+      "id": "Q047",
+      "question": "Apa saja kontak perpustakaan UMB?",
+      "ground_truth_answer": "Kontak Perpustakaan UMB: Kampus Meruya - nomor 082311232229, link pelayanan bit.ly/lib_meruya; Kampus Menteng - nomor 085219542932, link pelayanan bit.ly/menteng_lib; Kampus Warung Buncit/Pejaten - nomor 082135935955, link pelayanan bit.ly/warungbuncit_lib.",
+      "category": "kontak",
+      "source_document": "Arahan Pasca Sidang TI",
+      "relevant_chunks": [
+        "doc_69dc5e0cc4119_1776049676_chunk_5",
+        "doc_69dc5e0cce421_1776049676_chunk_0",
+        "doc_69dc5e0cc4119_1776049676_chunk_7",
+        "doc_69dc5e0cc776b_1776049676_chunk_1",
+        "doc_69dc5e0cdac9f_1776049676_chunk_0"
+      ]
+    },
+    {
+      "id": "Q048",
+      "question": "Apa saja yang harus diperhatikan saat mengisi KRS online?",
+      "ground_truth_answer": "Ketentuan KRS online: (1) KRS merupakan syarat untuk mengikuti kegiatan akademik setiap semester; (2) Pengisian dilaksanakan awal semester sesuai kalender akademik; (3) Mahasiswa tidak dalam status skorsing; (4) Pengisian melalui SIA (sso.mercubuana.ac.id atau sia.mercubuana.ac.id); (5) Jika tidak mengisi KRS dan tidak mengajukan cuti, dinyatakan Putus Studi; (6) Dapat diisi melalui laptop/smartphone; (7) Pencetakan KRS dilakukan mandiri; (8) Mahasiswa baru KRS diisi oleh prodi; (9) Harus menyelesaikan administrasi keuangan terlebih dahulu.",
+      "category": "prosedur",
+      "source_document": "Buku Panduan Akademik",
+      "relevant_chunks": [
+        "doc_69dc5e0cdac9f_1776049676_chunk_37",
+        "doc_69dc5e0cd35b6_1776049676_chunk_37",
+        "doc_69dc5e0cdac9f_1776049676_chunk_182",
+        "doc_69dc5e0cd35b6_1776049676_chunk_182",
+        "doc_69dc5e0cdac9f_1776049676_chunk_243"
+      ]
+    },
+    {
+      "id": "Q049",
+      "question": "Berapa lama tugas akhir harus diselesaikan?",
+      "ground_truth_answer": "Tugas akhir harus dapat diselesaikan dalam kurun waktu satu semester. Perpanjangan tugas akhir dapat dilakukan hanya dengan alasan khusus dan disetujui oleh Ketua Program Studi.",
+      "category": "kebijakan",
+      "source_document": "Buku Panduan Akademik",
+      "relevant_chunks": [
+        "doc_69dc5e0cdac9f_1776049676_chunk_43",
+        "doc_69dc5e0cdac9f_1776049676_chunk_188",
+        "doc_69dc5e0cdac9f_1776049676_chunk_250",
+        "doc_69dc5e0ce38b1_1776049676_chunk_43",
+        "doc_69dc5e0cd35b6_1776049676_chunk_43"
+      ]
+    },
+    {
+      "id": "Q050",
+      "question": "Apa saja media sosial resmi Teknik Informatika UMB?",
+      "ground_truth_answer": "Media sosial resmi Teknik Informatika UMB: Instagram @tekinfoumb, Facebook facebook.com/tekinfoumb/, YouTube youtube.com/@tekinfoumb2819. Untuk informasi pelayanan alumni dan agar tetap Keep In Touch, mahasiswa diminta follow akun-akun tersebut.",
+      "category": "kontak",
+      "source_document": "Arahan Pasca Sidang TI",
+      "relevant_chunks": [
+        "doc_69dc5e0cc4119_1776049676_chunk_7",
+        "doc_69dc5e0cc4119_1776049676_chunk_5",
+        "doc_69dc5e0cc5b65_1776049676_chunk_24",
+        "doc_69dc5e0cc5b65_1776049676_chunk_41",
+        "doc_69dc5e0cc776b_1776049676_chunk_0"
+      ]
+    }
+  ]
+}

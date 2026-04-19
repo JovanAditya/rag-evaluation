@@ -1,0 +1,73 @@
+# Konfigurasi Evaluasi RAG
+evaluation:
+  # Nama eksperimen
+  name: "Perbandingan RAG Baseline vs RAG Hybrid"
+  description: "Evaluasi performa retrieval dan kualitas jawaban"
+
+  # Jumlah pengulangan per pertanyaan untuk konsistensi
+  num_runs: 3
+
+  # Top-K untuk Precision@K dan Recall@K
+  k: 5
+
+  # Konfigurasi pipeline
+  pipelines:
+    baseline:
+      pipeline_type: "baseline"
+      use_reranking: false
+      max_results: 5
+
+    hybrid:
+      pipeline_type: "advanced"
+      use_reranking: true
+      max_results: 5
+      bm25_weight: 0.4
+      vector_weight: 0.6
+
+  # Metrik yang dievaluasi
+  metrics:
+    # Metrik retrieval (proposal)
+    retrieval:
+      - "mrr"              # Mean Reciprocal Rank
+      - "precision_at_k"   # Precision@K
+      - "recall_at_k"      # Recall@K
+    # Metrik operasional
+    operational:
+      - "retrieval_time"
+      - "generation_time"
+      - "total_time"
+      - "documents_retrieved"
+      - "avg_relevance_score"
+      - "answer_length"
+    # Metrik RAGAS (butuh API key)
+    quality:
+      - "faithfulness"
+      - "answer_relevancy"
+      - "context_precision"
+
+  # LLM Judge untuk RAGAS
+  # API key dibaca otomatis dari .env (hanya jika pakai Gemini)
+  ragas:
+    enabled: false  # Set true atau gunakan --ragas flag
+    judge_model: "ollama"  # ollama (lokal, gratis) / gemini (API)
+    ollama_model: "llama3.1:latest" # Model Ollama untuk RAGAS judge
+    gemini_model: "gemini-2.5-flash"  # Model Gemini (gratis)
+
+  # Statistik (otomatis berjalan setelah evaluasi)
+  statistics:
+    alpha: 0.05  # Taraf signifikansi
+    tests:
+      - "shapiro_wilk"     # Uji normalitas
+      - "paired_ttest"     # Uji parametrik (jika normal)
+      - "wilcoxon"         # Uji non-parametrik (jika tidak normal)
+
+  # Output
+  output:
+    results_dir: "results"
+    report_format: "html"  # html / pdf
+
+# Path ke data (di-override untuk lokal/docker)
+paths:
+  data_dir: "../data"
+  chroma_dir: "../data/chroma_db"
+  cache_dir: "../data/cache"

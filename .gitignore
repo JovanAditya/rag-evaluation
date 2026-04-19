@@ -1,0 +1,15 @@
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Log Files
+*.log
+pipeline.log
+
+# Cache Directories
+.cache/
+cache/
+
+# File Backup
+*backup*.json
