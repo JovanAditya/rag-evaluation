@@ -5,7 +5,7 @@ Modul evaluasi untuk membandingkan performa **RAG Baseline** (vector search) den
 ## 📁 Struktur
 
 ```
-evaluation/
+rag-evaluation/
 ├── config.yaml           # Konfigurasi evaluasi
 ├── questions.json        # Dataset pertanyaan + ground truth
 ├── run_evaluation.py     # Script utama evaluasi
@@ -37,7 +37,7 @@ export CHROMA_PERSIST_DIRECTORY=/path/to/rag-deploy/data/chroma_db
 ### 3. Jalankan Evaluasi
 
 ```bash
-cd evaluation/
+cd rag-evaluation/
 
 # Full evaluation (20 pertanyaan × 3 run)
 python run_evaluation.py
@@ -61,6 +61,27 @@ Output:
 - `results/quality_comparison.png` - Grafik perbandingan kualitas
 - `results/radar_comparison.png` - Radar chart multi-dimensi
 - `results/per_question_time.png` - Perbandingan per pertanyaan
+
+## 🧪 Evaluasi Kualitas (RAGAS)
+
+Modul ini mendukung evaluasi kualitas jawaban menggunakan framework **RAGAS**. Pengujian ini membutuhkan LLM sebagai hakim (*Judge*).
+
+### Persiapan RAGAS:
+1.  **Install RAGAS**:
+    ```bash
+    pip install ragas
+    ```
+2.  **Konfigurasi di `config.yaml`**:
+    Atur `ragas.enabled: true` dan pilih `judge_model` (`ollama` atau `gemini`).
+3.  **Jalankan dengan flag RAGAS**:
+    ```bash
+    python run_evaluation.py --ragas
+    ```
+
+Metrik RAGAS yang diukur:
+- **Faithfulness**: Seberapa akurat jawaban terhadap konteks.
+- **Answer Relevancy**: Relevansi jawaban terhadap pertanyaan.
+- **Context Precision**: Ketepatan sistem dalam mengambil dokumen.
 
 ## 📋 Metrik Evaluasi
 
