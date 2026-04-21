@@ -18,6 +18,7 @@ import time
 import yaml
 import logging
 import argparse
+import re
 import numpy as np
 from pathlib import Path
 from datetime import datetime
@@ -55,6 +56,81 @@ logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 )
 logger = logging.getLogger(__name__)
+
+# Konfigurasi retry untuk error 503/overloaded/rate-limit
+MAX_RETRIES = 5
+INITIAL_WAIT = 15   # Detik awal tunggu sebelum retry
+MAX_WAIT = 120      # Maksimum waktu tunggu (detik)
+BACKOFF_FACTOR = 2  # Faktor pengali exponential backoff
+
+# Pattern error yang bisa di-retry (503, 429, overloaded, dsb)
+RETRYABLE_PATTERNS = [
+    r"503",
+    r"429",
+    r"overloaded",
+    r"high demand",
+    r"rate.?limit",
+    r"resource.?exhausted",
+    r"service.?unavailable",
+    r"too many requests",
+    r"quota",
+    r"capacity",
+    r"temporarily",
+    r"try again",
+    r"server.?busy",
+    r"RESOURCE_EXHAUSTED",
+    r"ResourceExhausted",
+]
+
+
+def is_retryable_error(error_msg: str) -> bool:
+    """
+    Cek apakah error termasuk yang bisa di-retry.
+
+    Mendeteksi: HTTP 503/429, Gemini overloaded/high demand,
+    rate limit, resource exhausted, dsb.
+    """
+    if not error_msg:
+        return False
+    for pattern in RETRYABLE_PATTERNS:
+        if re.search(pattern, error_msg, re.IGNORECASE):
+            return True
+    return False
+
+
+def is_retryable_result(result: Dict[str, Any]) -> bool:
+    """
+    Cek apakah result evaluasi menunjukkan error yang bisa di-retry.
+
+    Selain cek field 'error', juga cek apakah answer mengandung
+    pesan error dari LLM generator (karena Gemini error di-catch
+    dan dikembalikan sebagai answer dengan success=False).
+
+    Kasus yang di-handle:
+    - pipeline.query() berhasil (no exception) tapi Gemini return 503
+    - _generate_gemini() menangkap error dan return {success: False, answer: pesan_error}
+    - Dari sisi evaluator, result tetap success=True karena no exception
+    - Retrieval berhasil (sources_count > 0), hanya generation yang gagal
+    """
+    # Cek error field
+    if result.get("error") and is_retryable_error(str(result["error"])):
+        return True
+
+    # Cek answer yang sebenarnya pesan error dari LLM
+    # Ini terjadi karena _generate_gemini() catch exception dan return
+    # user-friendly message sebagai answer, bukan raise exception
+    answer = result.get("answer", "")
+    error_answer_patterns = [
+        "server AI sedang sibuk",
+        "kuota layanan AI",
+        "tidak dapat terhubung",
+        "terjadi kesalahan saat memproses",
+    ]
+    for pattern in error_answer_patterns:
+        if pattern in answer:
+            return True
+
+    return False
 
 
 # ============================================================
@@ -293,7 +369,7 @@ def compute_ragas_metrics(
 # Evaluation Core
 # ============================================================
 
-def evaluate_single_question(
+def _evaluate_single_attempt(
     pipeline: AcademicRAG,
     question: Dict[str, Any],
     pipeline_name: str,
@@ -302,13 +378,11 @@ def evaluate_single_question(
     enable_ragas: bool = False,
     ragas_config: Optional[Dict] = None,
 ) -> Dict[str, Any]:
-    """Evaluate a single question against a pipeline."""
+    """Single attempt to evaluate a question (tanpa retry)."""
     q_text = question["question"]
     q_id = question["id"]
     relevant_chunks = question.get("relevant_chunks", [])
     ground_truth = question.get("ground_truth_answer", "")
-
-    logger.info(f"  [{pipeline_name}] Run {run_number} - {q_id}: {q_text[:60]}...")
 
     try:
         start_time = time.time()
@@ -331,9 +405,24 @@ def evaluate_single_question(
         # --- Konteks untuk RAGAS ---
         contexts = [s.get("content", s.get("text", "")) for s in sources]
 
-        # --- RAGAS Metrics (opsional) ---
+        # --- Cek apakah answer sebenarnya pesan error dari LLM ---
+        # Gemini 503/overloaded: _generate_gemini() catch exception dan
+        # return {success: False, answer: pesan_error} tanpa raise.
+        # Dari sisi pipeline.query(), ini terlihat sukses (no exception).
+        llm_error_patterns = [
+            "server AI sedang sibuk",
+            "kuota layanan AI",
+            "tidak dapat terhubung",
+            "terjadi kesalahan saat memproses",
+        ]
+        is_llm_error = any(p in answer for p in llm_error_patterns)
+
+        if is_llm_error:
+            logger.warning(f"  [{pipeline_name}] LLM error terdeteksi dalam answer: {answer[:80]}...")
+
+        # --- RAGAS Metrics (opsional) - SKIP jika answer error ---
         ragas_result = None
-        if enable_ragas and ragas_config:
+        if enable_ragas and ragas_config and not is_llm_error:
             ragas_result = compute_ragas_metrics(
                 question=q_text,
                 answer=answer,
@@ -341,12 +430,14 @@ def evaluate_single_question(
                 ground_truth=ground_truth,
                 ragas_config=ragas_config,
             )
+        elif is_llm_error and enable_ragas:
+            logger.info(f"  [{pipeline_name}] RAGAS dilewati karena LLM error")
 
         return {
             "question_id": q_id,
             "pipeline": pipeline_name,
             "run": run_number,
-            "success": True,
+            "success": not is_llm_error,  # False jika answer adalah pesan error LLM
             "answer": answer,
             "answer_length": len(answer),
             "confidence": result.get("confidence", 0),
@@ -363,7 +454,7 @@ def evaluate_single_question(
                 "precision_at_k": retrieval_metrics["precision_at_k"],
                 "recall_at_k": retrieval_metrics["recall_at_k"],
             },
-            "ragas": ragas_result,  # None jika tidak diaktifkan
+            "ragas": ragas_result,  # None jika tidak diaktifkan atau LLM error
             "sources_count": len(sources),
             "sources": sources[:3],
             "retrieved_chunk_ids": retrieved_ids,
@@ -390,6 +481,74 @@ def evaluate_single_question(
             },
             "ragas": None,
         }
+
+
+def evaluate_single_question(
+    pipeline: AcademicRAG,
+    question: Dict[str, Any],
+    pipeline_name: str,
+    run_number: int,
+    k: int = 5,
+    enable_ragas: bool = False,
+    ragas_config: Optional[Dict] = None,
+) -> Dict[str, Any]:
+    """
+    Evaluate a single question with automatic retry for 503/overloaded errors.
+
+    Menangani error dari Gemini API:
+    - HTTP 503 Service Unavailable
+    - HTTP 429 Too Many Requests / Rate Limit
+    - RESOURCE_EXHAUSTED (quota/high demand)
+    - Server overloaded / temporarily unavailable
+
+    Menggunakan exponential backoff: 15s -> 30s -> 60s -> 120s -> 120s
+    """
+    q_text = question["question"]
+    q_id = question["id"]
+
+    logger.info(f"  [{pipeline_name}] Run {run_number} - {q_id}: {q_text[:60]}...")
+
+    for attempt in range(1, MAX_RETRIES + 1):
+        result = _evaluate_single_attempt(
+            pipeline, question, pipeline_name, run_number,
+            k=k, enable_ragas=enable_ragas, ragas_config=ragas_config,
+        )
+
+        # Sukses — langsung return
+        if result.get("success") and not is_retryable_result(result):
+            if attempt > 1:
+                logger.info(f"  [{pipeline_name}] ✓ Berhasil setelah {attempt} percobaan")
+            return result
+
+        # Cek apakah error-nya bisa di-retry
+        error_msg = result.get("error", "") or result.get("answer", "")
+        if not is_retryable_error(error_msg) and not is_retryable_result(result):
+            # Error bukan tipe yang bisa di-retry, langsung return
+            logger.warning(f"  [{pipeline_name}] Error tidak bisa di-retry: {error_msg[:100]}")
+            return result
+
+        # Error bisa di-retry — hitung waktu tunggu
+        if attempt < MAX_RETRIES:
+            wait_time = min(INITIAL_WAIT * (BACKOFF_FACTOR ** (attempt - 1)), MAX_WAIT)
+            logger.warning(
+                f"  [{pipeline_name}] ⚠ Error 503/overloaded terdeteksi "
+                f"(percobaan {attempt}/{MAX_RETRIES}). "
+                f"Menunggu {wait_time:.0f} detik sebelum retry..."
+            )
+            logger.warning(f"  [{pipeline_name}]   Detail: {error_msg[:150]}")
+            time.sleep(wait_time)
+        else:
+            # Sudah habis semua retry
+            logger.error(
+                f"  [{pipeline_name}] ✗ Gagal setelah {MAX_RETRIES} percobaan. "
+                f"Error terakhir: {error_msg[:150]}"
+            )
+            # Tandai bahwa ini gagal setelah retry
+            result["retries_exhausted"] = True
+            result["total_attempts"] = MAX_RETRIES
+            return result
+
+    return result  # Fallback (seharusnya tidak tercapai)
 
 
 # ============================================================
@@ -660,9 +819,15 @@ def run_evaluation(config: Dict[str, Any], questions: List[Dict]) -> Dict[str, A
                 )
                 all_results.append(result)
                 
-                # Kasih jeda 5 dtik agar tidak melebihi 15 Request Per Minute dari Gemini
-                logger.info(f"  [Sleep] Menunggu 5 detik (Gemini Rate Limit Protection)...\n")
-                time.sleep(5)
+                # Kasih jeda antar request agar tidak melebihi rate limit Gemini
+                # Jeda lebih lama jika ada tanda-tanda overload
+                if result.get("retries_exhausted"):
+                    sleep_time = 30  # Jeda lebih lama setelah retry habis
+                    logger.warning(f"  [Sleep] Menunggu {sleep_time} detik (setelah retry habis)...\n")
+                else:
+                    sleep_time = 5
+                    logger.info(f"  [Sleep] Menunggu {sleep_time} detik (Gemini Rate Limit Protection)...\n")
+                time.sleep(sleep_time)
 
     results["results"] = all_results
 
