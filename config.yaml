@@ -49,7 +49,7 @@ evaluation:
   # API key dibaca otomatis dari .env (hanya jika pakai Gemini)
   ragas:
     enabled: false  # Set true atau gunakan --ragas flag
-    judge_model: "ollama"  # ollama (lokal, gratis) / gemini (API)
+    judge_model: "gemini"  # ollama (lokal, gratis) / gemini (API)
     ollama_model: "llama3.1:latest" # Model Ollama untuk RAGAS judge
     gemini_model: "gemini-2.5-flash"  # Model Gemini (gratis)
 

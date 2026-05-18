@@ -18,706 +18,385 @@
       "question": "Apa tujuan utama dari pelaksanaan Kerja Praktek (KP) di Program Studi Ilmu Komputer UMB?",
       "ground_truth_answer": "Memberikan pengalaman nyata di dunia industri, membantu mahasiswa mengaplikasikan teori ke praktik profesional, serta mendapatkan paparan langsung terhadap perkembangan teknologi informasi.",
       "category": "Kerja Praktek (KP)",
-      "source_document": "Sosialisasi KP 2025.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f2279b3_1778222578_chunk_0",
-        "doc_69fd85f23b6f2_1778222578_chunk_0",
-        "doc_69fd85f23b6f2_1778222578_chunk_12",
-        "doc_69fd85f23b6f2_1778222578_chunk_1",
-        "doc_69fd85f23b6f2_1778222578_chunk_6"
-      ]
+      "source_document": "Sosialisasi KP 2025.pdf"
     },
     {
       "id": "Q002",
       "question": "Berapa durasi pelaksanaan Magang Mandiri?",
       "ground_truth_answer": "Durasi magang mandiri adalah 4-6 bulan",
       "category": "Kerja Praktek (KP)",
-      "source_document": "Sosialisasi KP 2025.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f2279b3_1778222578_chunk_0",
-        "doc_69fd85f2279b3_1778222578_chunk_1"
-      ]
+      "source_document": "Sosialisasi KP 2025.pdf"
     },
     {
       "id": "Q003",
       "question": "Apa syarat minimal SKS untuk mengambil mata kuliah Kerja Praktek?",
       "ground_truth_answer": "Mahasiswa harus telah lulus minimal 90 SKS.",
       "category": "Kerja Praktek (KP)",
-      "source_document": "PANDUAN KP DAN MBKM 2023.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f23b6f2_1778222578_chunk_17",
-        "doc_69fd85f23b6f2_1778222578_chunk_20",
-        "doc_69fd85f23b6f2_1778222578_chunk_25",
-        "doc_69fd85f23b6f2_1778222578_chunk_18",
-        "doc_69fd85f23b6f2_1778222578_chunk_21"
-      ]
+      "source_document": "PANDUAN KP DAN MBKM 2023.pdf"
     },
     {
       "id": "Q004",
       "question": "Berapa IPK minimal yang disyaratkan untuk mendaftar Kerja Praktek?",
       "ground_truth_answer": "IPK minimal adalah 2,75.",
       "category": "Kerja Praktek (KP)",
-      "source_document": "PANDUAN KP DAN MBKM 2023.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f23b6f2_1778222578_chunk_20",
-        "doc_69fd85f23b6f2_1778222578_chunk_25",
-        "doc_69fd85f23b6f2_1778222578_chunk_18",
-        "doc_69fd85f23b6f2_1778222578_chunk_19",
-        "doc_69fd85f23b6f2_1778222578_chunk_24"
-      ]
+      "source_document": "PANDUAN KP DAN MBKM 2023.pdf"
     },
     {
       "id": "Q005",
       "question": "Apa yang harus dilakukan mahasiswa jika belum mendapatkan tempat magang setelah 4 minggu perkuliahan KP dimulai?",
       "ground_truth_answer": "Program Studi Teknik Informatika akan memberikan daftar magang yang tersedia dan wajib diikuti oleh mahasiswa tersebut.",
       "category": "Kerja Praktek (KP)",
-      "source_document": "PANDUAN KP DAN MBKM 2023.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f23b6f2_1778222578_chunk_18",
-        "doc_69fd85f23b6f2_1778222578_chunk_17",
-        "doc_69fd85f22acc3_1778222578_chunk_4",
-        "doc_69fd85f232c75_1778222578_chunk_0",
-        "doc_69fd85f237c35_1778222578_chunk_126"
-      ]
+      "source_document": "PANDUAN KP DAN MBKM 2023.pdf"
     },
     {
       "id": "Q006",
       "question": "Berapa kali minimal konsultasi dengan dosen pembimbing yang harus dicatat pada lembar konsultasi KP?",
       "ground_truth_answer": "Minimal sebanyak 6 kali konsultasi.",
       "category": "Kerja Praktek (KP)",
-      "source_document": "PANDUAN KP DAN MBKM 2023.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f23b6f2_1778222578_chunk_44"
-      ]
+      "source_document": "PANDUAN KP DAN MBKM 2023.pdf"
     },
     {
       "id": "Q007",
       "question": "Sebutkan 4 skema penyusunan Laporan Tugas Akhir yang tersedia di Fakultas Ilmu Komputer UMB!",
       "ground_truth_answer": "Skema Aplikatif, Skema Riset, Skema Publikasi Ilmiah, dan Skema Media Ilmiah.",
       "category": "Tugas Akhir (TA)",
-      "source_document": "Panduan Tugas Akhir - SI-TI 20232024_NewCover.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f22e22c_1778222578_chunk_2",
-        "doc_69fd85f22e22c_1778222578_chunk_3",
-        "doc_69fd85f22e22c_1778222578_chunk_44",
-        "doc_69fd85f22e22c_1778222578_chunk_26",
-        "doc_69fd85f22acc3_1778222578_chunk_1"
-      ]
+      "source_document": "Panduan Tugas Akhir - SI-TI 20232024_NewCover.pdf"
     },
     {
       "id": "Q008",
       "question": "Apa syarat jumlah SKS untuk dapat mengambil (Klik) mata kuliah Tugas Akhir?",
       "ground_truth_answer": "Jumlah SKS Lulus + SKS Tempuh + TA harus >= 144 SKS.",
       "category": "Tugas Akhir (TA)",
-      "source_document": "Panduan Tugas Akhir - SI-TI 20232024_NewCover.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f22e22c_1778222578_chunk_14",
-        "doc_69fd85f232c75_1778222578_chunk_0",
-        "doc_69fd85f237c35_1778222578_chunk_14",
-        "doc_69fd85f23b6f2_1778222578_chunk_17",
-        "doc_69fd85f23b6f2_1778222578_chunk_21"
-      ]
+      "source_document": "Panduan Tugas Akhir - SI-TI 20232024_NewCover.pdf"
     },
     {
       "id": "Q009",
       "question": "Berapa nilai minimal mata kuliah MKCU (seperti Bahasa Indonesia dan Pancasila) untuk mengambil TA?",
       "ground_truth_answer": "Minimal mendapatkan nilai B.",
       "category": "Tugas Akhir (TA)",
-      "source_document": "Panduan Tugas Akhir - SI-TI 20232024_NewCover.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f232c75_1778222578_chunk_0",
-        "doc_69fd85f22e22c_1778222578_chunk_14",
-        "doc_69fd85f22e22c_1778222578_chunk_15",
-        "doc_69fd85f237c35_1778222578_chunk_29",
-        "doc_69fd85f237c35_1778222578_chunk_125"
-      ]
+      "source_document": "Panduan Tugas Akhir - SI-TI 20232024_NewCover.pdf"
     },
     {
       "id": "Q010",
       "question": "Apa perbedaan utama antara Skema TA Aplikatif dan Skema TA Riset?",
       "ground_truth_answer": "Skema Aplikatif berfokus pada proyek pengembangan produk konkret/solusi praktis, sedangkan Skema Riset berfokus pada eksplorasi dan pemecahan masalah menggunakan metode riset ilmiah.",
       "category": "Tugas Akhir (TA)",
-      "source_document": "Panduan Tugas Akhir - SI-TI 20232024_NewCover.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f22e22c_1778222578_chunk_16",
-        "doc_69fd85f22e22c_1778222578_chunk_15",
-        "doc_69fd85f22e22c_1778222578_chunk_26",
-        "doc_69fd85f237c35_1778222578_chunk_9",
-        "doc_69fd85f22e22c_1778222578_chunk_53"
-      ]
+      "source_document": "Panduan Tugas Akhir - SI-TI 20232024_NewCover.pdf"
     },
     {
       "id": "Q011",
       "question": "Apa saja contoh bentuk produk yang dihasilkan dari skema Tugas Akhir Media Ilmiah?",
       "ground_truth_answer": "Bentuk produk yang dihasilkan dapat berupa video dokumenter, podcast, atau situs web interaktif.",
       "category": "Tugas Akhir (TA)",
-      "source_document": "Panduan Tugas Akhir - SI-TI 20232024_NewCover.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f22e22c_1778222578_chunk_18",
-        "doc_69fd85f22e22c_1778222578_chunk_19",
-        "doc_69fd85f22e22c_1778222578_chunk_24",
-        "doc_69fd85f22e22c_1778222578_chunk_26",
-        "doc_69fd85f22e22c_1778222578_chunk_2"
-      ]
+      "source_document": "Panduan Tugas Akhir - SI-TI 20232024_NewCover.pdf"
     },
     {
       "id": "Q012",
       "question": "Sebutkan apa saja kriteria penilaian 'Atitude' dalam ujian sidang Tugas Akhir!",
       "ground_truth_answer": "Kriteria penilaian 'Atitude' terdiri dari disiplin, sikap, komunikasi, dan penampilan presentasi (skor 10-20).",
       "category": "Tugas Akhir (TA)",
-      "source_document": "Panduan Tugas Akhir - SI-TI 20232024_NewCover.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f22e22c_1778222578_chunk_26"
-      ]
+      "source_document": "Panduan Tugas Akhir - SI-TI 20232024_NewCover.pdf"
     },
     {
       "id": "Q013",
       "question": "Berapa jumlah maksimal halaman Skripsi Program Sarjana menurut ketentuan penulisan Tugas Akhir?",
       "ground_truth_answer": "Skripsi Program Sarjana maksimal 90 halaman. Ketentuan jumlah halaman dihitung dari halaman nomor 1 di Bab Pendahuluan sampai dengan halaman Daftar Pustaka.",
       "category": "Tugas Akhir (TA)",
-      "source_document": "Panduan Tugas Akhir - SI-TI 20232024_NewCover.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f22e22c_1778222578_chunk_34",
-        "doc_69fd85f237c35_1778222578_chunk_104",
-        "doc_69fd85f23b6f2_1778222578_chunk_110",
-        "doc_69fd85f22e22c_1778222578_chunk_51",
-        "doc_69fd85f237c35_1778222578_chunk_3"
-      ]
+      "source_document": "Panduan Tugas Akhir - SI-TI 20232024_NewCover.pdf"
     },
     {
       "id": "Q014",
       "question": "Jenis kertas dan berat apa yang digunakan untuk pencetakan laporan Tugas Akhir?",
       "ground_truth_answer": "Kertas HVS Putih polos, ukuran A4 dengan berat 80 gram.",
       "category": "Tugas Akhir (TA)",
-      "source_document": "Panduan Tugas Akhir - SI-TI 20232024_NewCover.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f22e22c_1778222578_chunk_33",
-        "doc_69fd85f23b6f2_1778222578_chunk_109",
-        "doc_69fd85f237c35_1778222578_chunk_103",
-        "doc_69fd85f22e22c_1778222578_chunk_34",
-        "doc_69fd85f23b6f2_1778222578_chunk_117"
-      ]
+      "source_document": "Panduan Tugas Akhir - SI-TI 20232024_NewCover.pdf"
     },
     {
       "id": "Q015",
       "question": "Berapa batas waktu maksimal untuk melakukan revisi setelah dinyatakan lulus sidang TA?",
       "ground_truth_answer": "Maksimal 14 hari kerja setelah tanggal sidang.",
       "category": "Pasca Sidang & Yudisium",
-      "source_document": "Press Arahan PascaSidang TI UMB.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f22acc3_1778222578_chunk_0"
-      ]
+      "source_document": "Press Arahan PascaSidang TI UMB.pdf"
     },
     {
       "id": "Q016",
       "question": "Berapa lama durasi waktu maksimal yang diberikan kepada mahasiswa untuk melakukan presentasi saat sidang Tugas Akhir?",
       "ground_truth_answer": "Durasi presentasi maksimal adalah 7 menit.",
       "category": "Tugas Akhir (TA)",
-      "source_document": "Panduan Tugas Akhir - SI-TI 20232024_NewCover.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f22e22c_1778222578_chunk_73"
-      ]
+      "source_document": "Panduan Tugas Akhir - SI-TI 20232024_NewCover.pdf"
     },
     {
       "id": "Q017",
       "question": "Bukti tanda tangan revisi dari pembimbing dan penguji harus berupa apa di halaman pengesahan?",
       "ground_truth_answer": "Wajib berupa tanda tangan basah.",
       "category": "Pasca Sidang & Yudisium",
-      "source_document": "Press Arahan PascaSidang TI UMB.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f22acc3_1778222578_chunk_0",
-        "doc_69fd85f237c35_1778222578_chunk_132",
-        "doc_69fd85f237c35_1778222578_chunk_133",
-        "doc_69fd85f23b6f2_1778222578_chunk_82",
-        "doc_69fd85f23b6f2_1778222578_chunk_138"
-      ]
+      "source_document": "Press Arahan PascaSidang TI UMB.pdf"
     },
     {
       "id": "Q018",
       "question": "Apa format penamaan file PowerPoint presentasi sidang yang harus diunggah setelah mahasiswa melakukan revisi?",
       "ground_truth_answer": "Format penamaan filenya adalah PRESI+NIM+NAMA.ppt atau PRESI+NIM+NAMA.pptx.",
       "category": "Pasca Sidang & Yudisium",
-      "source_document": "Press Arahan PascaSidang TI UMB.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f22acc3_1778222578_chunk_2",
-        "doc_69fd85f22acc3_1778222578_chunk_1",
-        "doc_69fd85f22acc3_1778222578_chunk_4",
-        "doc_69fd85f22400f_1778222578_chunk_4",
-        "doc_69fd85f22acc3_1778222578_chunk_0"
-      ]
+      "source_document": "Press Arahan PascaSidang TI UMB.pdf"
     },
     {
       "id": "Q019",
       "question": "Bagi mahasiswa yang membuat aplikasi, apa format penamaan folder aplikasi yang diunggah ke Google Drive?",
       "ground_truth_answer": "APP+NIM+NAMA",
       "category": "Pasca Sidang & Yudisium",
-      "source_document": "Press Arahan PascaSidang TI UMB.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f22acc3_1778222578_chunk_2",
-        "doc_69fd85f22acc3_1778222578_chunk_4",
-        "doc_69fd85f232c75_1778222578_chunk_2",
-        "doc_69fd85f22acc3_1778222578_chunk_3",
-        "doc_69fd85f232c75_1778222578_chunk_0"
-      ]
+      "source_document": "Press Arahan PascaSidang TI UMB.pdf"
     },
     {
       "id": "Q020",
       "question": "Sebutkan skor minimal TOEFL/TOEIC yang menjadi syarat administrasi pasca sidang!",
       "ground_truth_answer": "Skor minimal TOEIC adalah 550 atau TOEFL adalah 450.",
       "category": "Pasca Sidang & Yudisium",
-      "source_document": "Press Arahan PascaSidang TI UMB.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f22acc3_1778222578_chunk_2",
-        "doc_69fd85f258427_1778222578_chunk_268",
-        "doc_69fd85f263ab0_1778222578_chunk_183",
-        "doc_69fd85f263ab0_1778222578_chunk_184",
-        "doc_69fd85f24a7ad_1778222578_chunk_268"
-      ]
+      "source_document": "Press Arahan PascaSidang TI UMB.pdf"
     },
     {
       "id": "Q021",
       "question": "Di mana mahasiswa dapat mengakses laporan keuangan untuk bukti sumbangan alumni?",
       "ground_truth_answer": "Diakses pada laman SIA melalui menu Login -> Detail Mahasiswa -> Tagihan.",
       "category": "Pasca Sidang & Yudisium",
-      "source_document": "Press Arahan PascaSidang TI UMB.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f22acc3_1778222578_chunk_3",
-        "doc_69fd85f22acc3_1778222578_chunk_2",
-        "doc_69fd85f22acc3_1778222578_chunk_6",
-        "doc_69fd85f22e22c_1778222578_chunk_1",
-        "doc_69fd85f258427_1778222578_chunk_242"
-      ]
+      "source_document": "Press Arahan PascaSidang TI UMB.pdf"
     },
     {
       "id": "Q022",
       "question": "Berapa lama durasi sesi tanya jawab antara penguji dan mahasiswa dalam sidang proposal MPTI?",
       "ground_truth_answer": "Sesi tanya jawab dan diskusi dalam sidang proposal MPTI berlangsung selama kurang lebih 20 menit.",
       "category": "Metodologi Penelitian (MPTI)",
-      "source_document": "Panduan MPTI - PRODI TI 20232024.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f237c35_1778222578_chunk_128"
-      ]
+      "source_document": "Panduan MPTI - PRODI TI 20232024.pdf"
     },
     {
       "id": "Q023",
       "question": "Bagaimana prosedur penyerahan Tugas Akhir ke perpustakaan bagi mahasiswa kampus Meruya, Warung Buncit, dan Menteng?",
       "ground_truth_answer": "Penyerahan TA ke perpustakaan dilakukan secara langsung (offline) dalam bentuk CD untuk kampus Meruya dan Warung Buncit, kecuali untuk kampus Menteng.",
       "category": "Pasca Sidang & Yudisium",
-      "source_document": "PANDUAN PASCA SIDANG TI v1.4.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f22acc3_1778222578_chunk_5",
-        "doc_69fd85f232c75_1778222578_chunk_1",
-        "doc_69fd85f22acc3_1778222578_chunk_4",
-        "doc_69fd85f258427_1778222578_chunk_251",
-        "doc_69fd85f24a7ad_1778222578_chunk_251"
-      ]
+      "source_document": "PANDUAN PASCA SIDANG TI v1.4.pdf"
     },
     {
       "id": "Q024",
       "question": "Berapa minimal sertifikat/kegiatan yang harus ada di SKPI?",
       "ground_truth_answer": "Minimal 10 sertifikat.",
       "category": "Administrasi Akademik & SKPI",
-      "source_document": "PANDUAN PASCA SIDANG TI v1.4.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f258427_1778222578_chunk_44",
-        "doc_69fd85f24a7ad_1778222578_chunk_44",
-        "doc_69fd85f232c75_1778222578_chunk_0",
-        "doc_69fd85f23fd6e_1778222578_chunk_0",
-        "doc_69fd85f237c35_1778222578_chunk_125"
-      ]
+      "source_document": "PANDUAN PASCA SIDANG TI v1.4.pdf"
     },
     {
       "id": "Q025",
       "question": "Berapa jumlah maksimal sertifikat dari kategori 'Minat dan Bakat' yang boleh dimasukkan oleh mahasiswa untuk keperluan SKPI?",
       "ground_truth_answer": "Mahasiswa diperbolehkan memasukkan maksimal 2 sertifikat dari kategori Minat dan Bakat.",
       "category": "Administrasi Akademik & SKPI",
-      "source_document": "PANDUAN PASCA SIDANG TI v1.4.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f232c75_1778222578_chunk_0",
-        "doc_69fd85f232c75_1778222578_chunk_3",
-        "doc_69fd85f23fd6e_1778222578_chunk_0",
-        "doc_69fd85f258427_1778222578_chunk_44",
-        "doc_69fd85f258427_1778222578_chunk_45"
-      ]
+      "source_document": "PANDUAN PASCA SIDANG TI v1.4.pdf"
     },
     {
       "id": "Q026",
       "question": "Apa menu yang dipilih di SIA untuk memulai pengisian data sertifikat SKPI?",
       "ground_truth_answer": "Pilih menu 'Pengalaman Mahasiswa (SKPI)' pada kolom Aksi Cepat.",
       "category": "Administrasi Akademik & SKPI",
-      "source_document": "Cara Pengisian SKPI.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f232c75_1778222578_chunk_3",
-        "doc_69fd85f23fd6e_1778222578_chunk_0",
-        "doc_69fd85f232c75_1778222578_chunk_2",
-        "doc_69fd85f232c75_1778222578_chunk_4",
-        "doc_69fd85f258427_1778222578_chunk_35"
-      ]
+      "source_document": "Cara Pengisian SKPI.pdf"
     },
     {
       "id": "Q027",
       "question": "Berapa bobot penilaian dari dosen pembimbing dan dosen penguji pada saat sidang proposal MPTI?",
       "ground_truth_answer": "Bobot penilaian adalah 60% dari Dosen Pembimbing dan 40% dari Dosen Penguji.",
       "category": "Metodologi Penelitian (MPTI)",
-      "source_document": "PANDUAN MPTI 2023.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f237c35_1778222578_chunk_131"
-      ]
+      "source_document": "PANDUAN MPTI 2023.pdf"
     },
     {
       "id": "Q028",
       "question": "Apa fungsi dari menu 'Verifikasi Data Mahasiswa' di SIA?",
       "ground_truth_answer": "Untuk memastikan kesesuaian data yang akan digunakan pada ijazah, transkrip, dan laporan PDDIKTI.",
       "category": "Administrasi Akademik & SKPI",
-      "source_document": "PANDUAN PASCA SIDANG TI v1.4.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f22acc3_1778222578_chunk_3",
-        "doc_69fd85f23b6f2_1778222578_chunk_52",
-        "doc_69fd85f232c75_1778222578_chunk_2",
-        "doc_69fd85f237c35_1778222578_chunk_43",
-        "doc_69fd85f237c35_1778222578_chunk_56"
-      ]
+      "source_document": "PANDUAN PASCA SIDANG TI v1.4.pdf"
     },
     {
       "id": "Q029",
       "question": "Dokumen apa yang harus dilampirkan oleh mahasiswa jika terdapat kekeliruan data tanggal lahir, tempat lahir, atau nama ibu kandung saat verifikasi data di SIA?",
       "ground_truth_answer": "Mahasiswa harus melampirkan dokumen pendukung seperti KTP, KK, Akte Kelahiran, atau Ijazah Terakhir dan melaporkannya ke Biro Administrasi Pembelajaran (BAP).",
       "category": "Administrasi Akademik & SKPI",
-      "source_document": "Press Arahan PascaSidang TI UMB.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f22acc3_1778222578_chunk_3",
-        "doc_69fd85f22acc3_1778222578_chunk_4",
-        "doc_69fd85f23b6f2_1778222578_chunk_46",
-        "doc_69fd85f22acc3_1778222578_chunk_2",
-        "doc_69fd85f232c75_1778222578_chunk_2"
-      ]
+      "source_document": "Press Arahan PascaSidang TI UMB.pdf"
     },
     {
       "id": "Q030",
       "question": "Apa syarat jumlah SKS minimal untuk mengambil mata kuliah Metodologi Penelitian (MPTI)?",
       "ground_truth_answer": "Jumlah minimal SKS Lulus adalah 110 SKS.",
       "category": "Metodologi Penelitian (MPTI)",
-      "source_document": "PANDUAN MPTI 2023.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f237c35_1778222578_chunk_14",
-        "doc_69fd85f23b6f2_1778222578_chunk_20",
-        "doc_69fd85f23b6f2_1778222578_chunk_25",
-        "doc_69fd85f237c35_1778222578_chunk_16",
-        "doc_69fd85f23b6f2_1778222578_chunk_21"
-      ]
+      "source_document": "PANDUAN MPTI 2023.pdf"
     },
     {
       "id": "Q031",
       "question": "Berapa IPK minimal untuk mengambil mata kuliah MPTI?",
       "ground_truth_answer": "IPK minimal adalah 2,50.",
       "category": "Metodologi Penelitian (MPTI)",
-      "source_document": "PANDUAN MPTI 2023.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f237c35_1778222578_chunk_15"
-      ]
+      "source_document": "PANDUAN MPTI 2023.pdf"
     },
     {
       "id": "Q032",
       "question": "Bolehkah mahasiswa mengambil MPTI dan TA secara berbarengan? Jika ya, apa syaratnya?",
       "ground_truth_answer": "Boleh, mahasiswa dapat mengambil MPTI dan TA secara berbarengan dengan syarat:\n1. Mengunggah surat komitmen/perjanjian kesanggupan menyelesaikan MPTI dan TA dalam 1 semester yang ditandatangani orang tua/wali di atas materai. Apabila MPTI tidak lulus, maka otomatis sidang TA juga gagal.\n2. Memiliki dan mengunggah IPK >= 3.25.\n3. Mengunggah Transkrip Nilai.\n4. Mengunggah Persetujuan Dosen Pembimbing Akademik (PA).",
       "category": "Metodologi Penelitian (MPTI)",
-      "source_document": "PANDUAN MPTI 2023.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f237c35_1778222578_chunk_16",
-        "doc_69fd85f23b6f2_1778222578_chunk_20",
-        "doc_69fd85f23b6f2_1778222578_chunk_21",
-        "doc_69fd85f23b6f2_1778222578_chunk_25",
-        "doc_69fd85f237c35_1778222578_chunk_17"
-      ]
+      "source_document": "PANDUAN MPTI 2023.pdf"
     },
     {
       "id": "Q033",
       "question": "Apa konsekuensi jika mahasiswa yang mengambil MPTI dan TA berbarengan ternyata tidak lulus mata kuliah MPTI?",
       "ground_truth_answer": "Otomatis sidang TA juga dinyatakan gagal.",
       "category": "Metodologi Penelitian (MPTI)",
-      "source_document": "PANDUAN MPTI 2023.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f237c35_1778222578_chunk_16",
-        "doc_69fd85f237c35_1778222578_chunk_17",
-        "doc_69fd85f237c35_1778222578_chunk_29",
-        "doc_69fd85f237c35_1778222578_chunk_30",
-        "doc_69fd85f237c35_1778222578_chunk_129"
-      ]
+      "source_document": "PANDUAN MPTI 2023.pdf"
     },
     {
       "id": "Q034",
       "question": "Sebutkan hak dan kewajiban mahasiswa (bukan dosen) dalam proses bimbingan MPTI!",
       "ground_truth_answer": "Hak Mahasiswa MPTI: (1) Mendapatkan bimbingan yang optimal; (2) Memperoleh klarifikasi dan penjelasan terkait tugas penelitian; (3) Mengajukan pertanyaan dan permohonan; (4) Diperlakukan dengan menghargai. Kewajiban Mahasiswa MPTI: (1) Melaksanakan penelitian dengan integritas (patuhi etika, hindari plagiarisme); (2) Menghormati waktu dan aturan; (3) Memanfaatkan bimbingan dengan baik; (4) Bertanggung jawab atas proposal dan hasil penelitian; (5) Berkomunikasi secara efektif.",
       "category": "Metodologi Penelitian (MPTI)",
-      "source_document": "PANDUAN MPTI 2023.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f237c35_1778222578_chunk_18",
-        "doc_69fd85f237c35_1778222578_chunk_19",
-        "doc_69fd85f237c35_1778222578_chunk_20"
-      ]
+      "source_document": "PANDUAN MPTI 2023.pdf"
     },
     {
       "id": "Q035",
       "question": "Sebutkan langkah-langkah penyelesaian konflik antara mahasiswa dan dosen pembimbing dalam proses MPTI!",
       "ground_truth_answer": "Langkah penyelesaian konflik MPTI: (1) Komunikasi Terbuka dan Jujur; (2) Identifikasi Akar Permasalahan; (3) Cari Solusi Bersama; (4) Tetap Mengutamakan Tujuan Akademik; (5) Melibatkan Struktural Program Studi Teknik Informatika jika diperlukan (sebagai mediator); (6) Jaga Etika dan Profesionalisme.",
       "category": "Metodologi Penelitian (MPTI)",
-      "source_document": "PANDUAN MPTI 2023.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f237c35_1778222578_chunk_25",
-        "doc_69fd85f237c35_1778222578_chunk_26",
-        "doc_69fd85f237c35_1778222578_chunk_27"
-      ]
+      "source_document": "PANDUAN MPTI 2023.pdf"
     },
     {
       "id": "Q036",
       "question": "Apakah mahasiswa diperkenankan mengganti Judul atau Topik riset yang telah disidangkan di MPTI saat menyusun Tugas Akhir?",
       "ground_truth_answer": "Mahasiswa diperkenankan mengganti Judul Tugas Akhir, namun dilarang keras mengganti Topik riset yang telah dibawakan pada saat sidang Mata Kuliah MPTI.",
       "category": "Metodologi Penelitian (MPTI)",
-      "source_document": "PANDUAN MPTI 2023.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f237c35_1778222578_chunk_63"
-      ]
+      "source_document": "PANDUAN MPTI 2023.pdf"
     },
     {
       "id": "Q037",
       "question": "Gaya penulisan referensi apa yang wajib digunakan dalam penulisan proposal MPTI?",
       "ground_truth_answer": "Wajib menggunakan gaya penulisan referensi APA style.",
       "category": "Metodologi Penelitian (MPTI)",
-      "source_document": "PANDUAN MPTI 2023.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f237c35_1778222578_chunk_32",
-        "doc_69fd85f237c35_1778222578_chunk_95",
-        "doc_69fd85f237c35_1778222578_chunk_123"
-      ]
+      "source_document": "PANDUAN MPTI 2023.pdf"
     },
     {
       "id": "Q038",
       "question": "Apa saja informasi yang harus disertakan dalam format konfirmasi revisi laporan TA ke dosen penguji?",
       "ground_truth_answer": "Format konfirmasi revisi TA ke dosen penguji harus mencantumkan: (1) Hari/Tanggal Sidang; (2) Room 1/2/3 (sesuaikan dengan room masing-masing); (3) Nama/NIM; (4) Link Google Drive File Revisi Laporan TA; (5) Link Lembar Revisi Sidang TA.",
       "category": "Pasca Sidang & Yudisium",
-      "source_document": "PANDUAN PASCA SIDANG TI v1.4.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f232c75_1778222578_chunk_2",
-        "doc_69fd85f232c75_1778222578_chunk_1"
-      ]
+      "source_document": "PANDUAN PASCA SIDANG TI v1.4.pdf"
     },
     {
       "id": "Q039",
       "question": "Sebutkan syarat administrasi yudisium nomor 2 mengenai kelulusan mata kuliah!",
       "ground_truth_answer": "Telah lulus mata kuliah Kewarganegaraan, Pancasila, Etik UMB, Bahasa Indonesia, Bahasa Inggris, Agama, dan MPTI dengan nilai minimal B.",
       "category": "Pasca Sidang & Yudisium",
-      "source_document": "PANDUAN PASCA SIDANG TI v1.4.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f232c75_1778222578_chunk_0",
-        "doc_69fd85f22e22c_1778222578_chunk_14",
-        "doc_69fd85f22e22c_1778222578_chunk_15",
-        "doc_69fd85f258427_1778222578_chunk_30",
-        "doc_69fd85f258427_1778222578_chunk_175"
-      ]
+      "source_document": "PANDUAN PASCA SIDANG TI v1.4.pdf"
     },
     {
       "id": "Q040",
       "question": "Ke mana mahasiswa harus menghubungi jika tagihan Pembayaran Sumbangan Buku Alumni belum muncul di bank?",
       "ground_truth_answer": "Mahasiswa harus menghubungi BAK (Biro Administrasi Keuangan) untuk membuka tagihan Buku Alumni tersebut.",
       "category": "Pasca Sidang & Yudisium",
-      "source_document": "PANDUAN PASCA SIDANG TI v1.4.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f232c75_1778222578_chunk_5",
-        "doc_69fd85f258427_1778222578_chunk_242",
-        "doc_69fd85f24a7ad_1778222578_chunk_242",
-        "doc_69fd85f258427_1778222578_chunk_35",
-        "doc_69fd85f258427_1778222578_chunk_180"
-      ]
+      "source_document": "PANDUAN PASCA SIDANG TI v1.4.pdf"
     },
     {
       "id": "Q041",
       "question": "Sebutkan lampiran khusus yang wajib diunggah oleh mahasiswa yang mengambil Skema Publikasi Ilmiah setelah melakukan revisi!",
       "ground_truth_answer": "Mahasiswa wajib melampirkan Lampiran Luaran Tugas Akhir, Bukti submit jurnal, dan Naskah Jurnal yang disubmit.",
       "category": "Tugas Akhir (TA)",
-      "source_document": "Press Arahan PascaSidang TI UMB.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f22acc3_1778222578_chunk_1",
-        "doc_69fd85f22acc3_1778222578_chunk_0",
-        "doc_69fd85f22e22c_1778222578_chunk_56",
-        "doc_69fd85f22e22c_1778222578_chunk_55",
-        "doc_69fd85f22e22c_1778222578_chunk_71"
-      ]
+      "source_document": "Press Arahan PascaSidang TI UMB.pdf"
     },
     {
       "id": "Q042",
       "question": "Informasi apa yang harus dicantumkan pada Halaman Sampul TA?",
       "ground_truth_answer": "Judul, jenis karya ilmiah, identitas penulis, institusi, dan tahun pengesahan.",
       "category": "Tugas Akhir (TA)",
-      "source_document": "Panduan Tugas Akhir - SI-TI 20232024_NewCover.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f22e22c_1778222578_chunk_28",
-        "doc_69fd85f237c35_1778222578_chunk_71",
-        "doc_69fd85f23b6f2_1778222578_chunk_80",
-        "doc_69fd85f23b6f2_1778222578_chunk_81",
-        "doc_69fd85f22e22c_1778222578_chunk_27"
-      ]
+      "source_document": "Panduan Tugas Akhir - SI-TI 20232024_NewCover.pdf"
     },
     {
       "id": "Q043",
       "question": "Apa guna dari Halaman Pernyataan Orisinalitas?",
       "ground_truth_answer": "Berisi pernyataan tertulis bahwa tugas akhir adalah hasil karya sendiri dan bukan plagiat.",
       "category": "Tugas Akhir (TA)",
-      "source_document": "Panduan Tugas Akhir - SI-TI 20232024_NewCover.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f22e22c_1778222578_chunk_28",
-        "doc_69fd85f22e22c_1778222578_chunk_44",
-        "doc_69fd85f22e22c_1778222578_chunk_55",
-        "doc_69fd85f22e22c_1778222578_chunk_29",
-        "doc_69fd85f22e22c_1778222578_chunk_56"
-      ]
+      "source_document": "Panduan Tugas Akhir - SI-TI 20232024_NewCover.pdf"
     },
     {
       "id": "Q044",
       "question": "Berapa jarak spasi yang digunakan di antara satu referensi dengan referensi lainnya dalam Daftar Pustaka?",
       "ground_truth_answer": "Jarak antara satu referensi dengan referensi yang berikutnya adalah 1,5 spasi.",
       "category": "Tugas Akhir (TA)",
-      "source_document": "Panduan Tugas Akhir - SI-TI 20232024_NewCover.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f22e22c_1778222578_chunk_41"
-      ]
+      "source_document": "Panduan Tugas Akhir - SI-TI 20232024_NewCover.pdf"
     },
     {
       "id": "Q045",
       "question": "Reference Manager apa yang direkomendasikan untuk mengelola daftar pustaka?",
       "ground_truth_answer": "Menggunakan Reference Manager 'Mendeley'.",
       "category": "Tugas Akhir (TA)",
-      "source_document": "Panduan Tugas Akhir - SI-TI 20232024_NewCover.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f22e22c_1778222578_chunk_32",
-        "doc_69fd85f22e22c_1778222578_chunk_41",
-        "doc_69fd85f237c35_1778222578_chunk_32",
-        "doc_69fd85f22e22c_1778222578_chunk_31",
-        "doc_69fd85f22e22c_1778222578_chunk_52"
-      ]
+      "source_document": "Panduan Tugas Akhir - SI-TI 20232024_NewCover.pdf"
     },
     {
       "id": "Q046",
       "question": "Apa saja kriteria kelulusan mahasiswa untuk mendapatkan predikat 'Dengan Pujian'?",
       "ground_truth_answer": "Kriterianya adalah: IPK > 3,75, lulus tepat waktu, dan nilai C pada transkrip maksimal dua mata kuliah (bukan mata kuliah utama).",
       "category": "Pasca Sidang & Yudisium",
-      "source_document": "Pedoman Akademik.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f24a7ad_1778222578_chunk_258"
-      ]
+      "source_document": "Pedoman Akademik.pdf"
     },
     {
       "id": "Q047",
       "question": "Berapa jarak margin (tepi kertas) kiri untuk pengetikan laporan TA?",
       "ground_truth_answer": "Batas kiri adalah 4 cm.",
       "category": "Tugas Akhir (TA)",
-      "source_document": "Panduan Tugas Akhir - SI-TI 20232024_NewCover.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f237c35_1778222578_chunk_104",
-        "doc_69fd85f23b6f2_1778222578_chunk_109",
-        "doc_69fd85f23b6f2_1778222578_chunk_110",
-        "doc_69fd85f22e22c_1778222578_chunk_33",
-        "doc_69fd85f22e22c_1778222578_chunk_34"
-      ]
+      "source_document": "Panduan Tugas Akhir - SI-TI 20232024_NewCover.pdf"
     },
     {
       "id": "Q048",
       "question": "Menurut ketentuan pengetikan dalam panduan TA, jenis huruf apa dan berapa ukuran poin yang harus digunakan untuk pengetikan isi laporan?",
       "ground_truth_answer": "Huruf menggunakan jenis huruf Times New Roman 12 poin (ukuran sebenarnya) dan diketik rapi (rata kiri kanan – justify).",
       "category": "Tugas Akhir (TA)",
-      "source_document": "Panduan Tugas Akhir - SI-TI 20232024_NewCover.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f23b6f2_1778222578_chunk_109",
-        "doc_69fd85f237c35_1778222578_chunk_103",
-        "doc_69fd85f237c35_1778222578_chunk_104",
-        "doc_69fd85f23b6f2_1778222578_chunk_110",
-        "doc_69fd85f23b6f2_1778222578_chunk_129"
-      ]
+      "source_document": "Panduan Tugas Akhir - SI-TI 20232024_NewCover.pdf"
     },
     {
       "id": "Q049",
       "question": "Berapa jumlah minimal referensi artikel jurnal yang harus ada dalam laporan Tugas Akhir?",
       "ground_truth_answer": "Daftar pustaka yang digunakan harus merupakan terbitan terbaru (maksimal 5 tahun terakhir) dari jurnal ilmiah berindex.",
       "category": "Tugas Akhir (TA)",
-      "source_document": "Panduan Tugas Akhir - SI-TI 20232024_NewCover.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f22e22c_1778222578_chunk_70"
-      ]
+      "source_document": "Panduan Tugas Akhir - SI-TI 20232024_NewCover.pdf"
     },
     {
       "id": "Q050",
       "question": "Bagaimana cara registrasi akun ULT bagi mahasiswa yang belum memiliki akun?",
       "ground_truth_answer": "Langkah registrasi akun ULT: (1) Tekan tombol Login di tampilan awal; (2) Klik link \"Belum punya akun? Daftar sekarang\"; (3) Pilih tipe pendaftar \"Mahasiswa\"; (4) Isi NIM dan klik tombol \"Periksa NIM\"; (5) Isi alamat email aktif dan buat password; (6) Klik tombol \"Daftar\".",
       "category": "Unit Layanan Terpadu (ULT)",
-      "source_document": "Buku Panduan ULT - Role Mahasiswa.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f22400f_1778222578_chunk_0"
-      ]
+      "source_document": "Buku Panduan ULT - Role Mahasiswa.pdf"
     },
     {
       "id": "Q051",
       "question": "Apakah mahasiswa dapat mengubah data pribadi yang ditampilkan pada fitur Profile di sistem ULT?",
       "ground_truth_answer": "Tidak, data diambil langsung dari database sehingga mahasiswa tidak dapat melakukan penambahan, perubahan, maupun penghapusan data.",
       "category": "Unit Layanan Terpadu (ULT)",
-      "source_document": "Buku Panduan ULT - Role Mahasiswa.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f22400f_1778222578_chunk_1",
-        "doc_69fd85f22400f_1778222578_chunk_0",
-        "doc_69fd85f237c35_1778222578_chunk_38",
-        "doc_69fd85f237c35_1778222578_chunk_66",
-        "doc_69fd85f237c35_1778222578_chunk_89"
-      ]
+      "source_document": "Buku Panduan ULT - Role Mahasiswa.pdf"
     },
     {
       "id": "Q052",
       "question": "Untuk keperluan apa saja fitur Pengajuan Surat Pengantar di ULT dapat digunakan oleh mahasiswa?",
       "ground_truth_answer": "Fitur ini dapat digunakan untuk mengajukan surat pengantar dengan keperluan Riset, Penelitian, atau Magang.",
       "category": "Unit Layanan Terpadu (ULT)",
-      "source_document": "Buku Panduan ULT - Role Mahasiswa.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f22400f_1778222578_chunk_1",
-        "doc_69fd85f22400f_1778222578_chunk_2",
-        "doc_69fd85f237c35_1778222578_chunk_124",
-        "doc_69fd85f237c35_1778222578_chunk_133",
-        "doc_69fd85f23b6f2_1778222578_chunk_130"
-      ]
+      "source_document": "Buku Panduan ULT - Role Mahasiswa.pdf"
     },
     {
       "id": "Q053",
       "question": "Berapa minimal jumlah bimbingan proposal dan bimbingan akhir yang harus dilakukan mahasiswa di ULT untuk dapat mendaftar sidang?",
       "ground_truth_answer": "Mahasiswa harus melakukan minimal 5 (lima) kali bimbingan proposal dan 8 (delapan) kali bimbingan akhir.",
       "category": "Unit Layanan Terpadu (ULT)",
-      "source_document": "Buku Panduan ULT - Role Mahasiswa.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f22400f_1778222578_chunk_4",
-        "doc_69fd85f22e22c_1778222578_chunk_70",
-        "doc_69fd85f258427_1778222578_chunk_196",
-        "doc_69fd85f24a7ad_1778222578_chunk_195",
-        "doc_69fd85f24a7ad_1778222578_chunk_196"
-      ]
+      "source_document": "Buku Panduan ULT - Role Mahasiswa.pdf"
     },
     {
       "id": "Q054",
       "question": "Apakah mahasiswa dapat mengubah atau menghapus data pengajuan bimbingan yang sudah dikirimkan di sistem ULT?",
       "ground_truth_answer": "Mahasiswa hanya dapat melakukan satu kali pengajuan bimbingan dalam satu periode dan data yang sudah dikirimkan tidak dapat diubah maupun dihapus.",
       "category": "Unit Layanan Terpadu (ULT)",
-      "source_document": "Buku Panduan ULT - Role Mahasiswa.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f22400f_1778222578_chunk_2",
-        "doc_69fd85f22400f_1778222578_chunk_3",
-        "doc_69fd85f258427_1778222578_chunk_196",
-        "doc_69fd85f24a7ad_1778222578_chunk_196",
-        "doc_69fd85f22400f_1778222578_chunk_0"
-      ]
+      "source_document": "Buku Panduan ULT - Role Mahasiswa.pdf"
     },
     {
       "id": "Q055",
       "question": "Bagaimana prosedur pendaftaran wisuda melalui sistem ULT?",
       "ground_truth_answer": "Mahasiswa menekan tombol Tambah pada halaman Pendaftaran Wisuda jika semua persyaratan terpenuhi, mengisi semua form dan upload dokumen yang dibutuhkan, lalu tekan Simpan. Setelah yakin, tekan tombol Kirim. Setelah disetujui, statusnya berubah menjadi SUDAH DIVERIFIKASI dan mahasiswa mendapatkan nomor wisuda.",
       "category": "Unit Layanan Terpadu (ULT)",
-      "source_document": "Buku Panduan ULT - Role Mahasiswa.pdf",
-      "relevant_chunks": [
-        "doc_69fd85f22400f_1778222578_chunk_7"
-      ]
+      "source_document": "Buku Panduan ULT - Role Mahasiswa.pdf"
     }
   ]
 }

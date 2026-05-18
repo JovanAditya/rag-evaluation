@@ -24,21 +24,29 @@ from pathlib import Path
 from datetime import datetime
 from typing import Dict, Any, List, Optional, Tuple
 
-# Add rag-model to path
+# Add rag-model to path (use root rag-model, not rag-api submodule)
 SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = SCRIPT_DIR.parent
-RAG_API_DIR = PROJECT_ROOT / "rag-api"
-RAG_MODEL_DIR = RAG_API_DIR / "rag-model"
+RAG_MODEL_DIR = PROJECT_ROOT / "rag-model"
 sys.path.insert(0, str(RAG_MODEL_DIR))
-sys.path.insert(0, str(RAG_API_DIR))
 
-# Load .env dari root project (berisi GEMINI_API_KEY, dll)
+# Load .env dari rag-model directory (prioritas konfigurasi generator)
 try:
     from dotenv import load_dotenv
-    load_dotenv(PROJECT_ROOT / ".env")
+    # Load .env dari rag-model
+    model_env = RAG_MODEL_DIR / ".env"
+    if model_env.exists():
+        load_dotenv(model_env)
+        print(f"✅ Loaded environment from: {model_env}")
+    else:
+        # Fallback ke root jika tidak ada
+        load_dotenv(PROJECT_ROOT / ".env")
 except ImportError:
-    # Fallback: baca .env secara manual
-    env_path = PROJECT_ROOT / ".env"
+    # Fallback: baca .env secara manual dari rag-model
+    env_path = RAG_MODEL_DIR / ".env"
+    if not env_path.exists():
+        env_path = PROJECT_ROOT / ".env"
+        
     if env_path.exists():
         with open(env_path) as f:
             for line in f:
@@ -46,6 +54,7 @@ except ImportError:
                 if line and not line.startswith("#") and "=" in line:
                     key, _, value = line.partition("=")
                     os.environ.setdefault(key.strip(), value.strip())
+        print(f"✅ Loaded environment manually from: {env_path}")
 
 from rag_model.core.config import RAGConfig, RetrievalConfig, IndexConfig
 from rag_model.core.pipeline import AcademicRAG
@@ -394,8 +403,9 @@ def _evaluate_single_attempt(
         sources = result.get("sources", [])
         answer = result.get("answer", "")
 
-        # Average relevance score (dari ChromaDB)
-        scores = [s.get("score", 0) for s in sources if s.get("score")]
+        # Average relevance score (dari ChromaDB atau Reranker)
+        # Gunakan 'is not None' karena skor 0.0 adalah nilai valid tapi dianggap Falsy di Python
+        scores = [s.get("score", 0) for s in sources if s.get("score") is not None]
         avg_score = sum(scores) / len(scores) if scores else 0
 
         # --- Metrik Retrieval: MRR, P@K, R@K ---
@@ -819,15 +829,17 @@ def run_evaluation(config: Dict[str, Any], questions: List[Dict]) -> Dict[str, A
                 )
                 all_results.append(result)
                 
-                # Kasih jeda antar request agar tidak melebihi rate limit Gemini
-                # Jeda lebih lama jika ada tanda-tanda overload
-                if result.get("retries_exhausted"):
-                    sleep_time = 30  # Jeda lebih lama setelah retry habis
-                    logger.warning(f"  [Sleep] Menunggu {sleep_time} detik (setelah retry habis)...\n")
-                else:
-                    sleep_time = 5
-                    logger.info(f"  [Sleep] Menunggu {sleep_time} detik (Gemini Rate Limit Protection)...\n")
-                time.sleep(sleep_time)
+                # Kasih jeda antar request hanya jika menggunakan Gemini (cloud API)
+                # Ollama berjalan lokal sehingga tidak perlu rate limit protection
+                llm_provider = os.environ.get("LLM_PROVIDER", "gemini").lower()
+                if llm_provider == "gemini":
+                    if result.get("retries_exhausted"):
+                        sleep_time = 30  # Jeda lebih lama setelah retry habis
+                        logger.warning(f"  [Sleep] Menunggu {sleep_time} detik (setelah retry habis)...\n")
+                    else:
+                        sleep_time = 5
+                        logger.info(f"  [Sleep] Menunggu {sleep_time} detik (Gemini Rate Limit Protection)...\n")
+                    time.sleep(sleep_time)
 
     results["results"] = all_results
 

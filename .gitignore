@@ -10,6 +10,7 @@ pipeline.log
 # Cache Directories
 .cache/
 cache/
+data/
 
 # File Backup
 *backup*.json

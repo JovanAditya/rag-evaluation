@@ -1,0 +1,2957 @@
+{
+  "metadata": {
+    "experiment_name": "Perbandingan RAG Baseline vs RAG Hybrid",
+    "description": "Evaluasi performa retrieval dan kualitas jawaban",
+    "timestamp": "2026-05-09T23:25:38.829807",
+    "num_questions": 7,
+    "num_runs": 3,
+    "k": 5,
+    "pipelines": [
+      "baseline",
+      "hybrid"
+    ],
+    "ragas_enabled": false
+  },
+  "results": [
+    {
+      "question_id": "Q008",
+      "pipeline": "baseline",
+      "run": 1,
+      "success": true,
+      "answer": "Syarat jumlah SKS minimal yang harus dicapai sebelum mahasiswa dapat mengambil mata kuliah Tugas Akhir (TA) di program studi Teknik Informatika Universitas Mercu Buana tidak disebutkan secara spesifik dalam dokumen referensi yang diberikan. Oleh karena itu, informasi tersebut belum tersedia di basis data kami. Namun, biasanya syarat SKS minimal untuk mengambil TA adalah setelah mahasiswa telah menyelesaikan sebagian besar kurikulum dan memiliki jumlah SKS yang cukup. Saran terbaik adalah berkonsultasi langsung dengan dosen pembimbing atau Tata Usaha Fasilkom UMB untuk informasi lebih lanjut.",
+      "answer_length": 598,
+      "confidence": 0.442,
+      "metrics": {
+        "retrieval_time": 2.2248260974884033,
+        "generation_time": 12.161812543869019,
+        "total_time": 14.474241018295288,
+        "documents_retrieved": 1,
+        "context_length": 968,
+        "avg_relevance_score": 0.2382153184159398,
+        "mrr": 1.0,
+        "precision_at_k": 0.2,
+        "recall_at_k": 0.2
+      },
+      "ragas": null,
+      "sources_count": 1,
+      "sources": [
+        {
+          "id": "doc_69fd85f23b6f2_1778222578_chunk_17",
+          "content": "am Studi Teknik\nInformatikadalammenjalanipengalamanKerjaPraktekdanMBKM.\n1.4 Syarat pengambilan Mata Kuliah Kerja Praktek dan MBKM\nSyaratmengambilmatakuliahKerjaPraktek(KP) danMBKM programstudi Teknik\n...",
+          "score": 0.2382153184159398,
+          "metadata": {
+            "end_char": 13948,
+            "unified_index_timestamp": 1778222630.9088435,
+            "document_id": "doc_69fd85f23b6f2_1778222578",
+            "chunk_index": 17,
+            "chunk_size": 946,
+            "chunk_id": "doc_69fd85f23b6f2_1778222578_chunk_17",
+            "original_filename": "69fd85f23b6f2_1778222578.pdf",
+            "doc_id": "doc_268",
+            "start_char": 13002,
+            "source": "69fd85f23b6f2_1778222578.pdf"
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f23b6f2_1778222578_chunk_17"
+      ]
+    },
+    {
+      "question_id": "Q008",
+      "pipeline": "hybrid",
+      "run": 1,
+      "success": true,
+      "answer": "Syarat jumlah SKS minimal yang harus dicapai oleh mahasiswa sebelum dapat mengambil tugas akhir adalah 127 SKS untuk program sarjana. Jika program studi memiliki ketentuan spesifik lainnya, maka syarat tersebut harus dipenuhi pula.",
+      "answer_length": 231,
+      "confidence": 0.876,
+      "metrics": {
+        "retrieval_time": 2.8148369789123535,
+        "generation_time": 3.8229408264160156,
+        "total_time": 10.325151920318604,
+        "documents_retrieved": 5,
+        "context_length": 4996,
+        "avg_relevance_score": 5.495699310302735,
+        "mrr": 1.0,
+        "precision_at_k": 0.2,
+        "recall_at_k": 0.2
+      },
+      "ragas": null,
+      "sources_count": 5,
+      "sources": [
+        {
+          "id": "doc_69fd85f23b6f2_1778222578_chunk_17",
+          "content": "am Studi Teknik\nInformatikadalammenjalanipengalamanKerjaPraktekdanMBKM.\n1.4 Syarat pengambilan Mata Kuliah Kerja Praktek dan MBKM\nSyaratmengambilmatakuliahKerjaPraktek(KP) danMBKM programstudi Teknik\n...",
+          "score": 5.737207412719727,
+          "metadata": {
+            "original_filename": "69fd85f23b6f2_1778222578.pdf",
+            "unified_index_timestamp": 1778222630.9088435,
+            "end_char": 13948,
+            "source": "69fd85f23b6f2_1778222578.pdf",
+            "doc_id": "doc_268",
+            "chunk_index": 17,
+            "start_char": 13002,
+            "chunk_id": "doc_69fd85f23b6f2_1778222578_chunk_17",
+            "document_id": "doc_69fd85f23b6f2_1778222578",
+            "chunk_size": 946,
+            "acronym_boosted": true,
+            "matched_acronyms": [
+              "SKS"
+            ]
+          }
+        },
+        {
+          "id": "doc_69fd85f258427_1778222578_chunk_31",
+          "content": "uluh empat) sks dan sebanyak-\ndikarenakan sakit/izin/perjalanan dinas dari kantor banyaknya 30 (tiga puluh) sks;\ntetap dihitung sebagai ketidakhadiran.\nf. Batas pengambilan sks untuk program Sarjana,\n...",
+          "score": 5.480076313018799,
+          "metadata": {
+            "chunk_size": 972,
+            "unified_index_timestamp": 1778222630.9089742,
+            "doc_id": "doc_431",
+            "chunk_index": 31,
+            "end_char": 24747,
+            "chunk_id": "doc_69fd85f258427_1778222578_chunk_31",
+            "start_char": 23775,
+            "document_id": "doc_69fd85f258427_1778222578",
+            "source": "69fd85f258427_1778222578.pdf",
+            "original_filename": "69fd85f258427_1778222578.pdf",
+            "acronym_boosted": true,
+            "matched_acronyms": [
+              "SKS"
+            ]
+          }
+        },
+        {
+          "id": "doc_69fd85f24a7ad_1778222578_chunk_31",
+          "content": "uluh empat) sks dan sebanyak-\ndikarenakan sakit/izin/perjalanan dinas dari kantor banyaknya 30 (tiga puluh) sks;\ntetap dihitung sebagai ketidakhadiran.\nf. Batas pengambilan sks untuk program Sarjana,\n...",
+          "score": 5.480076313018799,
+          "metadata": {
+            "source": "69fd85f24a7ad_1778222578.pdf",
+            "unified_index_timestamp": 1778222630.9093063,
+            "document_id": "doc_69fd85f24a7ad_1778222578",
+            "original_filename": "69fd85f24a7ad_1778222578.pdf",
+            "chunk_id": "doc_69fd85f24a7ad_1778222578_chunk_31",
+            "start_char": 23891,
+            "chunk_index": 31,
+            "chunk_size": 972,
+            "doc_id": "doc_898",
+            "end_char": 24863,
+            "acronym_boosted": true,
+            "matched_acronyms": [
+              "SKS"
+            ]
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f23b6f2_1778222578_chunk_17",
+        "doc_69fd85f258427_1778222578_chunk_31",
+        "doc_69fd85f24a7ad_1778222578_chunk_31",
+        "doc_69fd85f263ab0_1778222578_chunk_43",
+        "doc_69fd85f263ab0_1778222578_chunk_44"
+      ]
+    },
+    {
+      "question_id": "Q024",
+      "pipeline": "baseline",
+      "run": 1,
+      "success": true,
+      "answer": "Maaf, informasi tentang jumlah minimal sertifikat yang harus dilengkapi mahasiswa untuk pengisian SKPI tidak tersedia dalam konteks referensi yang diberikan. Mohon periksa kembali panduan terbaru dari prodi Teknik Informatika UMB atau hubungi staf Tata Usaha FASILKOM UMB untuk informasi lebih lanjut.",
+      "answer_length": 301,
+      "confidence": 0.515,
+      "metrics": {
+        "retrieval_time": 0.11280107498168945,
+        "generation_time": 3.097378730773926,
+        "total_time": 3.213062286376953,
+        "documents_retrieved": 1,
+        "context_length": 978,
+        "avg_relevance_score": 0.2382153184159398,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0
+      },
+      "ragas": null,
+      "sources_count": 1,
+      "sources": [
+        {
+          "id": "doc_69fd85f23b6f2_1778222578_chunk_18",
+          "content": "a usaha Fasilkom untuk surat keterangan akan magang untuk\ndidata. Jika, mahasiswa setelah memilih mata kuliah kerja praktek dan belum\nmendapat dalam kurun waktu 4 minggu perkuliahan maka prodi Teknik\n...",
+          "score": 0.2382153184159398,
+          "metadata": {
+            "original_filename": "69fd85f23b6f2_1778222578.pdf",
+            "unified_index_timestamp": 1778222630.9088445,
+            "doc_id": "doc_269",
+            "chunk_size": 955,
+            "chunk_index": 18,
+            "source": "69fd85f23b6f2_1778222578.pdf",
+            "document_id": "doc_69fd85f23b6f2_1778222578",
+            "chunk_id": "doc_69fd85f23b6f2_1778222578_chunk_18",
+            "end_char": 14703,
+            "start_char": 13748
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f23b6f2_1778222578_chunk_18"
+      ]
+    },
+    {
+      "question_id": "Q024",
+      "pipeline": "hybrid",
+      "run": 1,
+      "success": true,
+      "answer": "Mahasiswa harus melengkapi 10 sertifikat untuk di masukan ke SKPI (Surat Keterangan Pendamping Ijazah). Sertifikat tersebut terdiri dari minimal 7 sertifikat sesuai bidang ilmu, 1 sertifikat sertifikasi bidang profesi, dan maksimal 2 sertifikat dibidang minat dan bakat.",
+      "answer_length": 270,
+      "confidence": 0.901,
+      "metrics": {
+        "retrieval_time": 0.4260294437408447,
+        "generation_time": 4.762784957885742,
+        "total_time": 5.189913749694824,
+        "documents_retrieved": 5,
+        "context_length": 4992,
+        "avg_relevance_score": 4.405905532836914,
+        "mrr": 1.0,
+        "precision_at_k": 0.6,
+        "recall_at_k": 0.6
+      },
+      "ragas": null,
+      "sources_count": 5,
+      "sources": [
+        {
+          "id": "doc_69fd85f258427_1778222578_chunk_44",
+          "content": "sif bagi program studi\nyang melaksanakan ujian komprehensif terpisah\nPendaftaran dan Bimbingan Tugas Akhir ( Laporan\ndari sidang tugas akhir dibuktikan dengan surat\nMagang/Skripsi/ Karya Ilmiah Lain)\n...",
+          "score": 4.913562536239624,
+          "metadata": {
+            "original_filename": "69fd85f258427_1778222578.pdf",
+            "chunk_index": 44,
+            "chunk_id": "doc_69fd85f258427_1778222578_chunk_44",
+            "start_char": 33747,
+            "chunk_size": 959,
+            "doc_id": "doc_444",
+            "source": "69fd85f258427_1778222578.pdf",
+            "document_id": "doc_69fd85f258427_1778222578",
+            "end_char": 34706,
+            "unified_index_timestamp": 1778222630.908996,
+            "acronym_boosted": true,
+            "matched_acronyms": [
+              "SKPI"
+            ]
+          }
+        },
+        {
+          "id": "doc_69fd85f24a7ad_1778222578_chunk_44",
+          "content": "sif bagi program studi\nyang melaksanakan ujian komprehensif terpisah\nPendaftaran dan Bimbingan Tugas Akhir ( Laporan\ndari sidang tugas akhir dibuktikan dengan surat\nMagang/Skripsi/ Karya Ilmiah Lain)\n...",
+          "score": 4.913562536239624,
+          "metadata": {
+            "document_id": "doc_69fd85f24a7ad_1778222578",
+            "doc_id": "doc_911",
+            "start_char": 33905,
+            "chunk_index": 44,
+            "unified_index_timestamp": 1778222630.9093142,
+            "end_char": 34864,
+            "chunk_size": 959,
+            "chunk_id": "doc_69fd85f24a7ad_1778222578_chunk_44",
+            "source": "69fd85f24a7ad_1778222578.pdf",
+            "original_filename": "69fd85f24a7ad_1778222578.pdf",
+            "acronym_boosted": true,
+            "matched_acronyms": [
+              "SKPI"
+            ]
+          }
+        },
+        {
+          "id": "doc_69fd85f232c75_1778222578_chunk_0",
+          "content": "PASCA SIDANG\nTUGAS AKHIR\nv1.4\nPROGRAM STUDI\nTEKNIK INFORMATIKA\nUNIVERSITAS MERCU BUANA\n0\nPanduan Pasca Sidang\n\nTAHAPAN\nPROSES\nSAMPAI\nWISUDA\n1\nPanduan Pasca Sidang\n\nA. PERSYARATAN ADMINISTRASI\n1. Telah...",
+          "score": 4.290963649749756,
+          "metadata": {
+            "end_char": 952,
+            "original_filename": "69fd85f232c75_1778222578.pdf",
+            "chunk_size": 952,
+            "unified_index_timestamp": 1778222630.90862,
+            "chunk_id": "doc_69fd85f232c75_1778222578_chunk_0",
+            "doc_id": "doc_26",
+            "source": "69fd85f232c75_1778222578.pdf",
+            "chunk_index": 0,
+            "document_id": "doc_69fd85f232c75_1778222578",
+            "start_char": 0,
+            "acronym_boosted": true,
+            "matched_acronyms": [
+              "SKPI"
+            ]
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f258427_1778222578_chunk_44",
+        "doc_69fd85f24a7ad_1778222578_chunk_44",
+        "doc_69fd85f232c75_1778222578_chunk_0",
+        "doc_69fd85f258427_1778222578_chunk_45",
+        "doc_69fd85f24a7ad_1778222578_chunk_45"
+      ]
+    },
+    {
+      "question_id": "Q025",
+      "pipeline": "baseline",
+      "run": 1,
+      "success": true,
+      "answer": "Maaf, informasi tentang proporsi kategori sertifikat yang diminta untuk SKPI tidak tersedia dalam dokumen referensi yang diberikan. Mohon cek kembali panduan penerimaan mahasiswa baru atau kontak bagian Tata Usaha FASILKOM UMB untuk mendapatkan informasi lebih lanjut.",
+      "answer_length": 268,
+      "confidence": 0.5,
+      "metrics": {
+        "retrieval_time": 0.041860342025756836,
+        "generation_time": 2.7916245460510254,
+        "total_time": 2.8350889682769775,
+        "documents_retrieved": 1,
+        "context_length": 995,
+        "avg_relevance_score": 0.0794051061386466,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0
+      },
+      "ragas": null,
+      "sources_count": 1,
+      "sources": [
+        {
+          "id": "doc_69fd85f263ab0_1778222578_chunk_183",
+          "content": "Pengisian data dimaksudkan untuk mencatat\ndengan latar belakang Biru & Laki- laki dan merekam informasi/biodata tentang calon\ndengan latar belakang Merah); mahasiswa baru yang mendaftarkan diri. Data\n...",
+          "score": 0.0794051061386466,
+          "metadata": {
+            "chunk_size": 973,
+            "chunk_id": "doc_69fd85f263ab0_1778222578_chunk_183",
+            "chunk_index": 183,
+            "document_id": "doc_69fd85f263ab0_1778222578",
+            "source": "69fd85f263ab0_1778222578.pdf",
+            "doc_id": "doc_859",
+            "unified_index_timestamp": 1778222630.909283,
+            "original_filename": "69fd85f263ab0_1778222578.pdf",
+            "start_char": 142963,
+            "end_char": 143936
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f263ab0_1778222578_chunk_183"
+      ]
+    },
+    {
+      "question_id": "Q025",
+      "pipeline": "hybrid",
+      "run": 1,
+      "success": true,
+      "answer": "Untuk mengisi SKPI, terdapat beberapa kategori sertifikat yang dapat dipilih, yaitu:\n\n- Prestasi/Penghargaan Akademik/Olahraga/Kesenian untuk serfitikat/piagam prestasi.\n- Sertifikat Profesi untuk sertifikat profesi yang sudah didapatkan dari pelatihan, contohnya: CCNA, Oracle, FGA DTS, BNSP dst.\n- Magang Industri/Pengalaman Kerja untuk sertifikat bagi yang pernah magang di industri.\n- Kegiatan Ilmiah Nasional/Internasional untuk sertifikat seminar/workshop/konferensi yang diadakan di kampus.\n- Pengalaman Organisasi untuk sertifikat keanggotaan organisasi seperti: BEM, HIMTI dst.\n\nProporsi kategori sertifikat yang diminta tidak disebutkan dalam dokumen-dokumen yang diberikan. Oleh karena itu, kami sarankan Anda mengisi SKPI sesuai dengan pengalaman dan prestasi yang dimiliki.",
+      "answer_length": 786,
+      "confidence": 0.853,
+      "metrics": {
+        "retrieval_time": 0.4449493885040283,
+        "generation_time": 9.646816492080688,
+        "total_time": 10.09288763999939,
+        "documents_retrieved": 5,
+        "context_length": 4996,
+        "avg_relevance_score": 3.0952708780765534,
+        "mrr": 1.0,
+        "precision_at_k": 0.2,
+        "recall_at_k": 0.2
+      },
+      "ragas": null,
+      "sources_count": 5,
+      "sources": [
+        {
+          "id": "doc_69fd85f23fd6e_1778222578_chunk_0",
+          "content": "P engisian\nb. Pada halaman Pengalaman Mahasiswa pada panel diatas bisa di\nklik “+ Tambah” untuk menambahkan Sertifikat yg diminta.\nSKPI\na. Pada kolom Aksi Cepat pilih “Pengalaman Mahasiswa (SKPI)”\n\nc....",
+          "score": 5.335341930389404,
+          "metadata": {
+            "chunk_size": 997,
+            "original_filename": "69fd85f23fd6e_1778222578.pdf",
+            "start_char": 0,
+            "end_char": 997,
+            "chunk_index": 0,
+            "doc_id": "doc_110",
+            "source": "69fd85f23fd6e_1778222578.pdf",
+            "chunk_id": "doc_69fd85f23fd6e_1778222578_chunk_0",
+            "unified_index_timestamp": 1778222630.90872,
+            "document_id": "doc_69fd85f23fd6e_1778222578",
+            "acronym_boosted": true,
+            "matched_acronyms": [
+              "SKPI"
+            ]
+          }
+        },
+        {
+          "id": "doc_69fd85f263ab0_1778222578_chunk_45",
+          "content": "esaikan dalam kurun\n(8) Telah mengikuti dan lulus test sertifikasi profesi\nwaktu satu semester\nsesuai dengan yang disyaratkan oleh program\nstudi dibuktikan dengan sertifikat profesi\nUjian Tugas Akhir\n...",
+          "score": 3.1180171966552734,
+          "metadata": {
+            "original_filename": "69fd85f263ab0_1778222578.pdf",
+            "end_char": 35775,
+            "chunk_id": "doc_69fd85f263ab0_1778222578_chunk_45",
+            "chunk_size": 951,
+            "source": "69fd85f263ab0_1778222578.pdf",
+            "doc_id": "doc_721",
+            "document_id": "doc_69fd85f263ab0_1778222578",
+            "unified_index_timestamp": 1778222630.909192,
+            "chunk_index": 45,
+            "start_char": 34824,
+            "acronym_boosted": true,
+            "matched_acronyms": [
+              "SKPI"
+            ]
+          }
+        },
+        {
+          "id": "doc_69fd85f258427_1778222578_chunk_44",
+          "content": "sif bagi program studi\nyang melaksanakan ujian komprehensif terpisah\nPendaftaran dan Bimbingan Tugas Akhir ( Laporan\ndari sidang tugas akhir dibuktikan dengan surat\nMagang/Skripsi/ Karya Ilmiah Lain)\n...",
+          "score": 2.6389490365982056,
+          "metadata": {
+            "document_id": "doc_69fd85f258427_1778222578",
+            "chunk_size": 959,
+            "chunk_id": "doc_69fd85f258427_1778222578_chunk_44",
+            "start_char": 33747,
+            "chunk_index": 44,
+            "original_filename": "69fd85f258427_1778222578.pdf",
+            "source": "69fd85f258427_1778222578.pdf",
+            "end_char": 34706,
+            "doc_id": "doc_444",
+            "unified_index_timestamp": 1778222630.908996,
+            "acronym_boosted": true,
+            "matched_acronyms": [
+              "SKPI"
+            ]
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f23fd6e_1778222578_chunk_0",
+        "doc_69fd85f263ab0_1778222578_chunk_45",
+        "doc_69fd85f258427_1778222578_chunk_44",
+        "doc_69fd85f24a7ad_1778222578_chunk_44",
+        "doc_69fd85f258427_1778222578_chunk_45"
+      ]
+    },
+    {
+      "question_id": "Q049",
+      "pipeline": "baseline",
+      "run": 1,
+      "success": true,
+      "answer": "Ukuran poin standar yang digunakan dalam isi laporan TA adalah 12 poin, dengan menggunakan tipe huruf Times New Roman.",
+      "answer_length": 118,
+      "confidence": 0.544,
+      "metrics": {
+        "retrieval_time": 0.04560542106628418,
+        "generation_time": 1.4563958644866943,
+        "total_time": 1.5037004947662354,
+        "documents_retrieved": 1,
+        "context_length": 964,
+        "avg_relevance_score": 0.0794051061386466,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0
+      },
+      "ragas": null,
+      "sources_count": 1,
+      "sources": [
+        {
+          "id": "doc_69fd85f22e22c_1778222578_chunk_41",
+          "content": "i dalamnya tidak boleh lebih kecil dari 10 poin (ukuran\nsebenarnya).\n3.6 Daftar Pustaka\nJenis media yang makin berkembang memungkinkan penulis untuk mencari\nsumber informasi dari berbagai jenis media....",
+          "score": 0.0794051061386466,
+          "metadata": {
+            "chunk_id": "doc_69fd85f22e22c_1778222578_chunk_41",
+            "end_char": 33006,
+            "source": "69fd85f22e22c_1778222578.pdf",
+            "original_filename": "69fd85f22e22c_1778222578.pdf",
+            "chunk_size": 941,
+            "document_id": "doc_69fd85f22e22c_1778222578",
+            "chunk_index": 41,
+            "unified_index_timestamp": 1778222630.908661,
+            "doc_id": "doc_74",
+            "start_char": 32065
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f22e22c_1778222578_chunk_41"
+      ]
+    },
+    {
+      "question_id": "Q049",
+      "pipeline": "hybrid",
+      "run": 1,
+      "success": true,
+      "answer": "Ukuran font dan jenis huruf yang digunakan dalam isi Laporan Kerja Praktek (KP) dan Makalah Berbasis Kompetensi Manajemen (MBKM) di FASILKOM UMB harus sesuai dengan panduan penulisan. Menurut dokumen referensi, ukuran poin standar yang digunakan adalah 12 poin, dan jenis huruf yang disarankan adalah Times New Roman.",
+      "answer_length": 317,
+      "confidence": 0.908,
+      "metrics": {
+        "retrieval_time": 0.48117494583129883,
+        "generation_time": 4.507270336151123,
+        "total_time": 4.989789247512817,
+        "documents_retrieved": 5,
+        "context_length": 4924,
+        "avg_relevance_score": 5.771430921554566,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0
+      },
+      "ragas": null,
+      "sources_count": 5,
+      "sources": [
+        {
+          "id": "doc_69fd85f23b6f2_1778222578_chunk_84",
+          "content": "cepat isi Laporan Kerja Praktek untuk memutuskan apakah\nperlu membaca lebih lanjut atau tidak. Dalam pedoman ini penulisan abstrak dibuat 2\njenisyangberbahasaIndonesiadanBahasaInggris.\n\n2.8DAFTAR ISI\n...",
+          "score": 6.445774078369141,
+          "metadata": {
+            "doc_id": "doc_335",
+            "end_char": 65619,
+            "chunk_size": 967,
+            "source": "69fd85f23b6f2_1778222578.pdf",
+            "start_char": 64652,
+            "chunk_index": 84,
+            "chunk_id": "doc_69fd85f23b6f2_1778222578_chunk_84",
+            "document_id": "doc_69fd85f23b6f2_1778222578",
+            "original_filename": "69fd85f23b6f2_1778222578.pdf",
+            "unified_index_timestamp": 1778222630.9088912,
+            "acronym_boosted": true,
+            "matched_acronyms": [
+              "TA"
+            ]
+          }
+        },
+        {
+          "id": "doc_69fd85f23b6f2_1778222578_chunk_41",
+          "content": "tar Pustaka yang terdapat dalam\npanduan ini. Struktur ini membantu dalam menyusun penelitian dengan teratur dan\nlogis.\n2. Referensi dan Citasi: Mengutip sumber secara tepat dan mencantumkan referensi\n...",
+          "score": 5.751143455505371,
+          "metadata": {
+            "end_char": 32488,
+            "original_filename": "69fd85f23b6f2_1778222578.pdf",
+            "source": "69fd85f23b6f2_1778222578.pdf",
+            "chunk_index": 41,
+            "unified_index_timestamp": 1778222630.9088614,
+            "start_char": 31544,
+            "document_id": "doc_69fd85f23b6f2_1778222578",
+            "chunk_size": 944,
+            "doc_id": "doc_292",
+            "chunk_id": "doc_69fd85f23b6f2_1778222578_chunk_41"
+          }
+        },
+        {
+          "id": "doc_69fd85f22e22c_1778222578_chunk_41",
+          "content": "i dalamnya tidak boleh lebih kecil dari 10 poin (ukuran\nsebenarnya).\n3.6 Daftar Pustaka\nJenis media yang makin berkembang memungkinkan penulis untuk mencari\nsumber informasi dari berbagai jenis media....",
+          "score": 5.623129844665527,
+          "metadata": {
+            "chunk_size": 941,
+            "chunk_id": "doc_69fd85f22e22c_1778222578_chunk_41",
+            "document_id": "doc_69fd85f22e22c_1778222578",
+            "original_filename": "69fd85f22e22c_1778222578.pdf",
+            "end_char": 33006,
+            "start_char": 32065,
+            "unified_index_timestamp": 1778222630.908661,
+            "doc_id": "doc_74",
+            "source": "69fd85f22e22c_1778222578.pdf",
+            "chunk_index": 41
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f23b6f2_1778222578_chunk_84",
+        "doc_69fd85f23b6f2_1778222578_chunk_41",
+        "doc_69fd85f22e22c_1778222578_chunk_41",
+        "doc_69fd85f23b6f2_1778222578_chunk_42",
+        "doc_69fd85f237c35_1778222578_chunk_74"
+      ]
+    },
+    {
+      "question_id": "Q050",
+      "pipeline": "baseline",
+      "run": 1,
+      "success": true,
+      "answer": "Penomoran halaman untuk bagian awal laporan Tugas Akhir dimulai dari halaman yang berisi Kata Pengantar. Setiap bab, termasuk Kata Pengantar, dimulai pada halaman baru dan dilengkapi dengan judul sesuai ketentuan penulisan yang telah disebutkan.",
+      "answer_length": 245,
+      "confidence": 0.502,
+      "metrics": {
+        "retrieval_time": 0.037329912185668945,
+        "generation_time": 2.724125862121582,
+        "total_time": 2.762608528137207,
+        "documents_retrieved": 1,
+        "context_length": 1007,
+        "avg_relevance_score": 0.0794051061386466,
+        "mrr": 1.0,
+        "precision_at_k": 0.2,
+        "recall_at_k": 0.2
+      },
+      "ragas": null,
+      "sources_count": 1,
+      "sources": [
+        {
+          "id": "doc_69fd85f22e22c_1778222578_chunk_35",
+          "content": "uk halaman lampiran yang jumlahnya lebih dari 10\nlembar, di lampirkanpada CD Softcopy tugas akhir.\n3.4 Isi Tugas Akhir\nBagian tubuh/pokok memuat uraian/penjabaran/analisis yang dilakukan oleh\npenulis....",
+          "score": 0.0794051061386466,
+          "metadata": {
+            "document_id": "doc_69fd85f22e22c_1778222578",
+            "end_char": 28316,
+            "start_char": 27331,
+            "chunk_index": 35,
+            "chunk_size": 985,
+            "original_filename": "69fd85f22e22c_1778222578.pdf",
+            "source": "69fd85f22e22c_1778222578.pdf",
+            "unified_index_timestamp": 1778222630.9086556,
+            "doc_id": "doc_68",
+            "chunk_id": "doc_69fd85f22e22c_1778222578_chunk_35"
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f22e22c_1778222578_chunk_35"
+      ]
+    },
+    {
+      "question_id": "Q050",
+      "pipeline": "hybrid",
+      "run": 1,
+      "success": true,
+      "answer": "Penomoran halaman untuk bagian awal Laporan Tugas Akhir, termasuk Kata Pengantar, biasanya dimulai dari halaman pertama. Setelah halaman sampul dan judul, nomor halaman akan diatur secara berurutan mulai dari 1.",
+      "answer_length": 211,
+      "confidence": 0.914,
+      "metrics": {
+        "retrieval_time": 0.4319171905517578,
+        "generation_time": 3.776346445083618,
+        "total_time": 4.2093610763549805,
+        "documents_retrieved": 5,
+        "context_length": 5001,
+        "avg_relevance_score": 4.252814698219299,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0
+      },
+      "ragas": null,
+      "sources_count": 5,
+      "sources": [
+        {
+          "id": "doc_69fd85f23b6f2_1778222578_chunk_84",
+          "content": "cepat isi Laporan Kerja Praktek untuk memutuskan apakah\nperlu membaca lebih lanjut atau tidak. Dalam pedoman ini penulisan abstrak dibuat 2\njenisyangberbahasaIndonesiadanBahasaInggris.\n\n2.8DAFTAR ISI\n...",
+          "score": 5.1507556438446045,
+          "metadata": {
+            "chunk_size": 967,
+            "doc_id": "doc_335",
+            "chunk_index": 84,
+            "chunk_id": "doc_69fd85f23b6f2_1778222578_chunk_84",
+            "original_filename": "69fd85f23b6f2_1778222578.pdf",
+            "end_char": 65619,
+            "unified_index_timestamp": 1778222630.9088912,
+            "document_id": "doc_69fd85f23b6f2_1778222578",
+            "start_char": 64652,
+            "source": "69fd85f23b6f2_1778222578.pdf",
+            "acronym_boosted": true,
+            "matched_acronyms": [
+              "TA"
+            ]
+          }
+        },
+        {
+          "id": "doc_69fd85f22e22c_1778222578_chunk_42",
+          "content": "ditulis di sudut kanan atas halaman (right-\naligned) dengan huruf tegak tipe Times New Roman 12 poin.\nb. Judul lampiran diketik dalam satu baris menggunakan huruf kapital di awal\nkata (title case).\nc....",
+          "score": 4.424788475036621,
+          "metadata": {
+            "original_filename": "69fd85f22e22c_1778222578.pdf",
+            "doc_id": "doc_75",
+            "document_id": "doc_69fd85f22e22c_1778222578",
+            "chunk_id": "doc_69fd85f22e22c_1778222578_chunk_42",
+            "unified_index_timestamp": 1778222630.9086618,
+            "end_char": 33805,
+            "source": "69fd85f22e22c_1778222578.pdf",
+            "chunk_index": 42,
+            "start_char": 32806,
+            "chunk_size": 999
+          }
+        },
+        {
+          "id": "doc_69fd85f23b6f2_1778222578_chunk_87",
+          "content": "g konten lampiran yang tersedia dalam Laporan Kerja Praktek dan mempermudah\naksesuntuk merujukkeinformasitambahanyang relevan.\nMahasiswa KP diwajibkan menggunakan tools “Insert Caption” pada aplikasi\n...",
+          "score": 4.386641025543213,
+          "metadata": {
+            "source": "69fd85f23b6f2_1778222578.pdf",
+            "chunk_size": 981,
+            "start_char": 66934,
+            "end_char": 67915,
+            "document_id": "doc_69fd85f23b6f2_1778222578",
+            "unified_index_timestamp": 1778222630.908893,
+            "chunk_index": 87,
+            "doc_id": "doc_338",
+            "chunk_id": "doc_69fd85f23b6f2_1778222578_chunk_87",
+            "original_filename": "69fd85f23b6f2_1778222578.pdf"
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f23b6f2_1778222578_chunk_84",
+        "doc_69fd85f22e22c_1778222578_chunk_42",
+        "doc_69fd85f23b6f2_1778222578_chunk_87",
+        "doc_69fd85f23b6f2_1778222578_chunk_86",
+        "doc_69fd85f23b6f2_1778222578_chunk_85"
+      ]
+    },
+    {
+      "question_id": "Q054",
+      "pipeline": "baseline",
+      "run": 1,
+      "success": true,
+      "answer": "Prosedur mahasiswa untuk mengajukan bimbingan proposal atau tugas akhir melalui sistem ULT (Umumnya, singkatan ini tidak digunakan dalam konteks UMB, tetapi saya akan menjelaskan prosedurnya secara umum) adalah sebagai berikut:\n\n1. Mahasiswa harus mempersiapkan proposal tugas akhir yang lengkap dan sesuai dengan ketentuan Program Studi.\n2. Proposal tersebut kemudian diserahkan kepada dosen pembimbing yang ditetapkan oleh Ketua Program Studi.\n3. Dosen pembimbing akan memberikan surat tugas resmi yang dikeluarkan oleh Ketua Program Studi.\n4. Surat tugas tersebut harus diverifikasi kembali oleh Tata Usaha dan Program Studi sebelum diserahkan kepada mahasiswa.\n5. Mahasiswa dapat mengakses sistem ULT untuk melaporkan bimbingan proposal atau tugas akhir yang telah dilakukan.\n6. Dalam sistem, mahasiswa perlu mencatat tanggal, waktu, dan topik diskusi pada setiap sesi bimbingan.\n7. Setelah proses bimbingan selesai, mahasiswa dapat mengajukan seminar proposal tugas akhir melalui sistem yang sama.\n\nMohon dicatat bahwa detail spesifik tentang sistem ULT mungkin berbeda tergantung pada implementasi di Universitas Mercu Buana. Jika ada pertanyaan lebih lanjut atau informasi tambahan yang diperlukan, silakan sampaikan.",
+      "answer_length": 1224,
+      "confidence": 0.462,
+      "metrics": {
+        "retrieval_time": 0.12832903861999512,
+        "generation_time": 11.117696046829224,
+        "total_time": 11.24779462814331,
+        "documents_retrieved": 1,
+        "context_length": 942,
+        "avg_relevance_score": 0.3176204245545864,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0
+      },
+      "ragas": null,
+      "sources_count": 1,
+      "sources": [
+        {
+          "id": "doc_69fd85f24a7ad_1778222578_chunk_193",
+          "content": "2\nsesuai dengan ketentuan Program Studi yang tertuang\neksemplar.\ndalam buku Pedoman dan Bimbingan Penyusunan\nh. Surat tugas dosen pembimbing yang dikeluarkan\nTugas Akhir. oleh Ketua Program Studi.\n5. ...",
+          "score": 0.3176204245545864,
+          "metadata": {
+            "chunk_id": "doc_69fd85f24a7ad_1778222578_chunk_193",
+            "doc_id": "doc_1060",
+            "unified_index_timestamp": 1778222630.90941,
+            "chunk_index": 193,
+            "document_id": "doc_69fd85f24a7ad_1778222578",
+            "original_filename": "69fd85f24a7ad_1778222578.pdf",
+            "end_char": 151510,
+            "chunk_size": 921,
+            "source": "69fd85f24a7ad_1778222578.pdf",
+            "start_char": 150589
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f24a7ad_1778222578_chunk_193"
+      ]
+    },
+    {
+      "question_id": "Q054",
+      "pipeline": "hybrid",
+      "run": 1,
+      "success": true,
+      "answer": "Prosedur mahasiswa mengajukan bimbingan proposal atau tugas akhir melalui sistem ULT dapat dilakukan dengan langkah-langkah berikut:\n\n1. Mahasiswa harus mengisi KRS tugas akhir pada semester III/IV.\n2. Mahasiswa perlu menyiapkan beberapa dokumen pendukung, seperti:\n   - Bukti bimbingan lebih dari 8 kali bimbingan\n   - Kartu tanda peserta seminar proposal sebanyak 10 kali\n3. Mahasiswa juga harus memiliki catatan bimbingan yang dicatat pada buku \"Pedoman dan Bimbingan Penusunan Tugas Akhir\".\n4. Setelah memenuhi persyaratan di atas, mahasiswa dapat mengajukan permohonan melalui formulir pendaftaran yang tersedia di bagian Tata Usaha.\n5. Formulir tersebut harus disertai dengan bukti-bukti pendukung yang telah disebutkan.\n\nMohon pastikan semua persyaratan terpenuhi sebelum mengajukan permohonan untuk memperoleh bimbingan proposal atau tugas akhir.",
+      "answer_length": 854,
+      "confidence": 0.876,
+      "metrics": {
+        "retrieval_time": 0.4120645523071289,
+        "generation_time": 10.061455965042114,
+        "total_time": 10.47471284866333,
+        "documents_retrieved": 5,
+        "context_length": 5032,
+        "avg_relevance_score": 5.338113403320312,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0
+      },
+      "ragas": null,
+      "sources_count": 5,
+      "sources": [
+        {
+          "id": "doc_69fd85f258427_1778222578_chunk_188",
+          "content": "hir\nPenyusunan tugas akhir merupakan kegiatan yang wajib\ndilakukan oleh mahasiswa sebagai salah satu persyaratan\nuntuk menyelesaikan studi sesuai dengan konsentrasi\nkeilmuannya.\nPelaksanaan dan Waktu\n...",
+          "score": 5.582368850708008,
+          "metadata": {
+            "document_id": "doc_69fd85f258427_1778222578",
+            "unified_index_timestamp": 1778222630.9091032,
+            "end_char": 147188,
+            "chunk_id": "doc_69fd85f258427_1778222578_chunk_188",
+            "original_filename": "69fd85f258427_1778222578.pdf",
+            "chunk_index": 188,
+            "source": "69fd85f258427_1778222578.pdf",
+            "doc_id": "doc_588",
+            "chunk_size": 972,
+            "start_char": 146216
+          }
+        },
+        {
+          "id": "doc_69fd85f258427_1778222578_chunk_192",
+          "content": "ngajuan penyusunan tesis.\n110\n\n(Bimbingan Tugas Akhir 4. Menyerahkan formulir pendaftaran ke bagian Tata\nUsaha dengan beberapa pendukung diantaranya:\n■ Bimbingan penyusunan tugas akhir dengan Dosen a....",
+          "score": 5.361088752746582,
+          "metadata": {
+            "source": "69fd85f258427_1778222578.pdf",
+            "chunk_id": "doc_69fd85f258427_1778222578_chunk_192",
+            "original_filename": "69fd85f258427_1778222578.pdf",
+            "end_char": 150243,
+            "unified_index_timestamp": 1778222630.9091065,
+            "start_char": 149287,
+            "document_id": "doc_69fd85f258427_1778222578",
+            "chunk_size": 956,
+            "doc_id": "doc_592",
+            "chunk_index": 192
+          }
+        },
+        {
+          "id": "doc_69fd85f258427_1778222578_chunk_45",
+          "content": "diwajibkan mengisi KRS diawal semester, termasuk\ndibuktikan dengan sertifikat profesi\nmahasiswa yang melakukan perpanjangan\n(9) Telah mengisi formulir SKPI melalui laman SKP\npenyelesaian tugas akhir.\n...",
+          "score": 5.307168006896973,
+          "metadata": {
+            "chunk_index": 45,
+            "unified_index_timestamp": 1778222630.9089963,
+            "end_char": 35498,
+            "document_id": "doc_69fd85f258427_1778222578",
+            "chunk_id": "doc_69fd85f258427_1778222578_chunk_45",
+            "source": "69fd85f258427_1778222578.pdf",
+            "start_char": 34506,
+            "original_filename": "69fd85f258427_1778222578.pdf",
+            "chunk_size": 992,
+            "doc_id": "doc_445"
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f258427_1778222578_chunk_188",
+        "doc_69fd85f258427_1778222578_chunk_192",
+        "doc_69fd85f258427_1778222578_chunk_45",
+        "doc_69fd85f24a7ad_1778222578_chunk_45",
+        "doc_69fd85f24a7ad_1778222578_chunk_188"
+      ]
+    },
+    {
+      "question_id": "Q057",
+      "pipeline": "baseline",
+      "run": 1,
+      "success": true,
+      "answer": "Mahasiswa dapat mengetahui hasil sidang dan mengirimkan revisi melalui tampilan Detail Informasi Sidang. Setelah pendaftaran sidang disetujui oleh prodi, akan muncul informasi ruangan sidang yang telah ditentukan. Mahasiswa dapat memeriksa hasil sidang dan catatan dari dosen penguji dengan menekan tombol Detail di tampilan Informasi Sidang. Untuk mengirimkan revisi, mahasiswa perlu mengikuti petunjuk yang disertakan dalam catatan tersebut.",
+      "answer_length": 443,
+      "confidence": 0.489,
+      "metrics": {
+        "retrieval_time": 0.09270977973937988,
+        "generation_time": 4.361253499984741,
+        "total_time": 4.455187797546387,
+        "documents_retrieved": 1,
+        "context_length": 961,
+        "avg_relevance_score": 0.2382153184159398,
+        "mrr": 1.0,
+        "precision_at_k": 0.2,
+        "recall_at_k": 0.2
+      },
+      "ragas": null,
+      "sources_count": 1,
+      "sources": [
+        {
+          "id": "doc_69fd85f22400f_1778222578_chunk_6",
+          "content": "menyetujui pendaftaran sidang dari mahasiswa. Kolom status\npendaftaran akan berubah dari sebelumnya “TERKIRIM” menjadi “DISETUJUI”. Dan\nterdapat tombol detail untuk melihat detail pendaftaran sidang.\n...",
+          "score": 0.2382153184159398,
+          "metadata": {
+            "source": "69fd85f22400f_1778222578.pdf",
+            "start_char": 4651,
+            "end_char": 5590,
+            "chunk_index": 6,
+            "unified_index_timestamp": 1778222630.9085946,
+            "original_filename": "69fd85f22400f_1778222578.pdf",
+            "chunk_size": 939,
+            "chunk_id": "doc_69fd85f22400f_1778222578_chunk_6",
+            "document_id": "doc_69fd85f22400f_1778222578",
+            "doc_id": "doc_6"
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f22400f_1778222578_chunk_6"
+      ]
+    },
+    {
+      "question_id": "Q057",
+      "pipeline": "hybrid",
+      "run": 1,
+      "success": true,
+      "answer": "Hasil sidang dan jadwal pelaksanaannya akan diumumkan melalui website https://sisteminformasi.fasilkom.mercubuana.ac.id/ atau http://teknikinformatika.fasilkom.mercubuana.ac.id/. Mahasiswa dapat memeriksa informasi tersebut secara berkala untuk mengetahui jadwal sidang dan hasilnya.\n\nUntuk mengirimkan revisi, mahasiswa perlu masuk ke sistem ULT (Sistem Layanan Teknologi Informasi) melalui alamat yang sama. Setelah login, mahasiswa dapat mengunggah lembar pernyataan orisinalitas hasil karya dan surat pernyataan persetujuan publikasi Tugas Akhir dengan ditandatangani di atas materai sesuai ketentuan. Pastikan untuk memperhatikan batas waktu yang diberikan, yaitu paling lama 14 hari setelah masa ujian sidang.\n\nJika Anda memiliki pertanyaan lebih lanjut atau perlu bantuan tambahan, jangan ragu untuk menghubungi kami kembali.",
+      "answer_length": 832,
+      "confidence": 0.872,
+      "metrics": {
+        "retrieval_time": 0.41167616844177246,
+        "generation_time": 9.98325514793396,
+        "total_time": 10.395915508270264,
+        "documents_retrieved": 5,
+        "context_length": 5036,
+        "avg_relevance_score": 4.4260636329650875,
+        "mrr": 0.25,
+        "precision_at_k": 0.2,
+        "recall_at_k": 0.2
+      },
+      "ragas": null,
+      "sources_count": 5,
+      "sources": [
+        {
+          "id": "doc_69fd85f258427_1778222578_chunk_270",
+          "content": "n mahasiswa membuat akun di laman\nmengisi form-form yang sudah ditentukan dengan\npendaftaran UMB dan mengisi data diri dan\nmelampirkan bukti pendidikan formal, nonformal,\npersyaratan yang dibutuhkan,\n...",
+          "score": 4.8441619873046875,
+          "metadata": {
+            "document_id": "doc_69fd85f258427_1778222578",
+            "start_char": 209792,
+            "chunk_id": "doc_69fd85f258427_1778222578_chunk_270",
+            "doc_id": "doc_670",
+            "source": "69fd85f258427_1778222578.pdf",
+            "chunk_index": 270,
+            "chunk_size": 992,
+            "original_filename": "69fd85f258427_1778222578.pdf",
+            "end_char": 210784,
+            "unified_index_timestamp": 1778222630.9091575
+          }
+        },
+        {
+          "id": "doc_69fd85f258427_1778222578_chunk_272",
+          "content": "yatakan Tidak Lulus.\n2. Sistem Pengambilan Keputusan.\nPengumuman hasil seleksi penerimaan\nmahasiswa baru Universitas Mercu Buana\nmengikuti ketentuan sebagai berikut :\na. Dalam menentukan apakah calon\n...",
+          "score": 4.575227737426758,
+          "metadata": {
+            "unified_index_timestamp": 1778222630.909159,
+            "start_char": 211374,
+            "chunk_size": 947,
+            "chunk_index": 272,
+            "original_filename": "69fd85f258427_1778222578.pdf",
+            "document_id": "doc_69fd85f258427_1778222578",
+            "doc_id": "doc_672",
+            "end_char": 212321,
+            "chunk_id": "doc_69fd85f258427_1778222578_chunk_272",
+            "source": "69fd85f258427_1778222578.pdf"
+          }
+        },
+        {
+          "id": "doc_69fd85f24a7ad_1778222578_chunk_272",
+          "content": "na\nmengikuti ketentuan sebagai berikut :\na. Dalam menentukan apakah calon\nmahasiswa diterima atau ditolak\nmenjadi Mahasiswa Universitas Mercu\nBuana, Biro Penerimaan Mahasiswa\nakan mengambil keputusan\n...",
+          "score": 4.331125259399414,
+          "metadata": {
+            "original_filename": "69fd85f24a7ad_1778222578.pdf",
+            "chunk_size": 981,
+            "chunk_index": 272,
+            "chunk_id": "doc_69fd85f24a7ad_1778222578_chunk_272",
+            "source": "69fd85f24a7ad_1778222578.pdf",
+            "unified_index_timestamp": 1778222630.9094613,
+            "start_char": 211982,
+            "document_id": "doc_69fd85f24a7ad_1778222578",
+            "end_char": 212963,
+            "doc_id": "doc_1139"
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f258427_1778222578_chunk_270",
+        "doc_69fd85f258427_1778222578_chunk_272",
+        "doc_69fd85f24a7ad_1778222578_chunk_272",
+        "doc_69fd85f22e22c_1778222578_chunk_73",
+        "doc_69fd85f258427_1778222578_chunk_200"
+      ]
+    },
+    {
+      "question_id": "Q008",
+      "pipeline": "baseline",
+      "run": 2,
+      "success": true,
+      "answer": "Syarat jumlah SKS minimal yang harus dicapai sebelum mahasiswa dapat mengambil mata kuliah Tugas Akhir (TA) di program studi Teknik Informatika Universitas Mercu Buana adalah 90 SKS. Hal ini berdasarkan syarat-syarat pengambilan Mata Kuliah Kerja Praktek dan MBKM yang telah ditetapkan oleh program studi.",
+      "answer_length": 305,
+      "confidence": 0.512,
+      "metrics": {
+        "retrieval_time": 0.09800004959106445,
+        "generation_time": 3.2093687057495117,
+        "total_time": 3.3088696002960205,
+        "documents_retrieved": 1,
+        "context_length": 968,
+        "avg_relevance_score": 0.2382153184159398,
+        "mrr": 1.0,
+        "precision_at_k": 0.2,
+        "recall_at_k": 0.2
+      },
+      "ragas": null,
+      "sources_count": 1,
+      "sources": [
+        {
+          "id": "doc_69fd85f23b6f2_1778222578_chunk_17",
+          "content": "am Studi Teknik\nInformatikadalammenjalanipengalamanKerjaPraktekdanMBKM.\n1.4 Syarat pengambilan Mata Kuliah Kerja Praktek dan MBKM\nSyaratmengambilmatakuliahKerjaPraktek(KP) danMBKM programstudi Teknik\n...",
+          "score": 0.2382153184159398,
+          "metadata": {
+            "chunk_size": 946,
+            "chunk_id": "doc_69fd85f23b6f2_1778222578_chunk_17",
+            "unified_index_timestamp": 1778222630.9088435,
+            "source": "69fd85f23b6f2_1778222578.pdf",
+            "chunk_index": 17,
+            "end_char": 13948,
+            "original_filename": "69fd85f23b6f2_1778222578.pdf",
+            "start_char": 13002,
+            "doc_id": "doc_268",
+            "document_id": "doc_69fd85f23b6f2_1778222578"
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f23b6f2_1778222578_chunk_17"
+      ]
+    },
+    {
+      "question_id": "Q008",
+      "pipeline": "hybrid",
+      "run": 2,
+      "success": true,
+      "answer": "Syarat jumlah SKS minimal yang harus dicapai oleh mahasiswa sebelum dapat mengambil tugas akhir adalah 127 SKS untuk program sarjana. Jika program studi memiliki ketentuan spesifik lainnya, maka syarat tersebut harus dipenuhi pula.",
+      "answer_length": 231,
+      "confidence": 0.918,
+      "metrics": {
+        "retrieval_time": 0.4192054271697998,
+        "generation_time": 3.8354101181030273,
+        "total_time": 4.255670785903931,
+        "documents_retrieved": 5,
+        "context_length": 4996,
+        "avg_relevance_score": 5.495699310302735,
+        "mrr": 1.0,
+        "precision_at_k": 0.2,
+        "recall_at_k": 0.2
+      },
+      "ragas": null,
+      "sources_count": 5,
+      "sources": [
+        {
+          "id": "doc_69fd85f23b6f2_1778222578_chunk_17",
+          "content": "am Studi Teknik\nInformatikadalammenjalanipengalamanKerjaPraktekdanMBKM.\n1.4 Syarat pengambilan Mata Kuliah Kerja Praktek dan MBKM\nSyaratmengambilmatakuliahKerjaPraktek(KP) danMBKM programstudi Teknik\n...",
+          "score": 5.737207412719727,
+          "metadata": {
+            "end_char": 13948,
+            "source": "69fd85f23b6f2_1778222578.pdf",
+            "chunk_index": 17,
+            "start_char": 13002,
+            "unified_index_timestamp": 1778222630.9088435,
+            "original_filename": "69fd85f23b6f2_1778222578.pdf",
+            "document_id": "doc_69fd85f23b6f2_1778222578",
+            "chunk_size": 946,
+            "chunk_id": "doc_69fd85f23b6f2_1778222578_chunk_17",
+            "doc_id": "doc_268",
+            "acronym_boosted": true,
+            "matched_acronyms": [
+              "SKS"
+            ]
+          }
+        },
+        {
+          "id": "doc_69fd85f258427_1778222578_chunk_31",
+          "content": "uluh empat) sks dan sebanyak-\ndikarenakan sakit/izin/perjalanan dinas dari kantor banyaknya 30 (tiga puluh) sks;\ntetap dihitung sebagai ketidakhadiran.\nf. Batas pengambilan sks untuk program Sarjana,\n...",
+          "score": 5.480076313018799,
+          "metadata": {
+            "start_char": 23775,
+            "chunk_index": 31,
+            "source": "69fd85f258427_1778222578.pdf",
+            "chunk_id": "doc_69fd85f258427_1778222578_chunk_31",
+            "end_char": 24747,
+            "unified_index_timestamp": 1778222630.9089742,
+            "original_filename": "69fd85f258427_1778222578.pdf",
+            "chunk_size": 972,
+            "doc_id": "doc_431",
+            "document_id": "doc_69fd85f258427_1778222578",
+            "acronym_boosted": true,
+            "matched_acronyms": [
+              "SKS"
+            ]
+          }
+        },
+        {
+          "id": "doc_69fd85f24a7ad_1778222578_chunk_31",
+          "content": "uluh empat) sks dan sebanyak-\ndikarenakan sakit/izin/perjalanan dinas dari kantor banyaknya 30 (tiga puluh) sks;\ntetap dihitung sebagai ketidakhadiran.\nf. Batas pengambilan sks untuk program Sarjana,\n...",
+          "score": 5.480076313018799,
+          "metadata": {
+            "document_id": "doc_69fd85f24a7ad_1778222578",
+            "chunk_id": "doc_69fd85f24a7ad_1778222578_chunk_31",
+            "unified_index_timestamp": 1778222630.9093063,
+            "original_filename": "69fd85f24a7ad_1778222578.pdf",
+            "chunk_index": 31,
+            "start_char": 23891,
+            "doc_id": "doc_898",
+            "chunk_size": 972,
+            "source": "69fd85f24a7ad_1778222578.pdf",
+            "end_char": 24863,
+            "acronym_boosted": true,
+            "matched_acronyms": [
+              "SKS"
+            ]
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f23b6f2_1778222578_chunk_17",
+        "doc_69fd85f258427_1778222578_chunk_31",
+        "doc_69fd85f24a7ad_1778222578_chunk_31",
+        "doc_69fd85f263ab0_1778222578_chunk_43",
+        "doc_69fd85f263ab0_1778222578_chunk_44"
+      ]
+    },
+    {
+      "question_id": "Q024",
+      "pipeline": "baseline",
+      "run": 2,
+      "success": true,
+      "answer": "Maaf, informasi tentang jumlah minimal sertifikat yang harus dilengkapi mahasiswa untuk pengisian SKPI tidak tersedia dalam konteks referensi yang diberikan. Mohon periksa kembali panduan terbaru dari prodi Teknik Informatika UMB atau hubungi staf Tata Usaha FASILKOM UMB untuk informasi lebih lanjut.",
+      "answer_length": 301,
+      "confidence": 0.515,
+      "metrics": {
+        "retrieval_time": 0.09421849250793457,
+        "generation_time": 3.1033332347869873,
+        "total_time": 3.198772668838501,
+        "documents_retrieved": 1,
+        "context_length": 978,
+        "avg_relevance_score": 0.2382153184159398,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0
+      },
+      "ragas": null,
+      "sources_count": 1,
+      "sources": [
+        {
+          "id": "doc_69fd85f23b6f2_1778222578_chunk_18",
+          "content": "a usaha Fasilkom untuk surat keterangan akan magang untuk\ndidata. Jika, mahasiswa setelah memilih mata kuliah kerja praktek dan belum\nmendapat dalam kurun waktu 4 minggu perkuliahan maka prodi Teknik\n...",
+          "score": 0.2382153184159398,
+          "metadata": {
+            "chunk_size": 955,
+            "chunk_id": "doc_69fd85f23b6f2_1778222578_chunk_18",
+            "doc_id": "doc_269",
+            "original_filename": "69fd85f23b6f2_1778222578.pdf",
+            "source": "69fd85f23b6f2_1778222578.pdf",
+            "start_char": 13748,
+            "chunk_index": 18,
+            "end_char": 14703,
+            "document_id": "doc_69fd85f23b6f2_1778222578",
+            "unified_index_timestamp": 1778222630.9088445
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f23b6f2_1778222578_chunk_18"
+      ]
+    },
+    {
+      "question_id": "Q024",
+      "pipeline": "hybrid",
+      "run": 2,
+      "success": true,
+      "answer": "Mahasiswa harus melengkapi 10 sertifikat untuk di masukan ke SKPI (Surat Keterangan Pendamping Ijazah). Sertifikat tersebut terdiri dari minimal 7 sertifikat sesuai bidang ilmu, 1 sertifikat sertifikasi bidang profesi, dan maksimal 2 sertifikat dibidang minat dan bakat.",
+      "answer_length": 270,
+      "confidence": 0.901,
+      "metrics": {
+        "retrieval_time": 0.40675950050354004,
+        "generation_time": 4.777411699295044,
+        "total_time": 5.1853721141815186,
+        "documents_retrieved": 5,
+        "context_length": 4992,
+        "avg_relevance_score": 4.405905532836914,
+        "mrr": 1.0,
+        "precision_at_k": 0.6,
+        "recall_at_k": 0.6
+      },
+      "ragas": null,
+      "sources_count": 5,
+      "sources": [
+        {
+          "id": "doc_69fd85f258427_1778222578_chunk_44",
+          "content": "sif bagi program studi\nyang melaksanakan ujian komprehensif terpisah\nPendaftaran dan Bimbingan Tugas Akhir ( Laporan\ndari sidang tugas akhir dibuktikan dengan surat\nMagang/Skripsi/ Karya Ilmiah Lain)\n...",
+          "score": 4.913562536239624,
+          "metadata": {
+            "document_id": "doc_69fd85f258427_1778222578",
+            "doc_id": "doc_444",
+            "chunk_index": 44,
+            "end_char": 34706,
+            "source": "69fd85f258427_1778222578.pdf",
+            "chunk_size": 959,
+            "start_char": 33747,
+            "unified_index_timestamp": 1778222630.908996,
+            "original_filename": "69fd85f258427_1778222578.pdf",
+            "chunk_id": "doc_69fd85f258427_1778222578_chunk_44",
+            "acronym_boosted": true,
+            "matched_acronyms": [
+              "SKPI"
+            ]
+          }
+        },
+        {
+          "id": "doc_69fd85f24a7ad_1778222578_chunk_44",
+          "content": "sif bagi program studi\nyang melaksanakan ujian komprehensif terpisah\nPendaftaran dan Bimbingan Tugas Akhir ( Laporan\ndari sidang tugas akhir dibuktikan dengan surat\nMagang/Skripsi/ Karya Ilmiah Lain)\n...",
+          "score": 4.913562536239624,
+          "metadata": {
+            "chunk_index": 44,
+            "unified_index_timestamp": 1778222630.9093142,
+            "doc_id": "doc_911",
+            "document_id": "doc_69fd85f24a7ad_1778222578",
+            "chunk_id": "doc_69fd85f24a7ad_1778222578_chunk_44",
+            "start_char": 33905,
+            "end_char": 34864,
+            "original_filename": "69fd85f24a7ad_1778222578.pdf",
+            "chunk_size": 959,
+            "source": "69fd85f24a7ad_1778222578.pdf",
+            "acronym_boosted": true,
+            "matched_acronyms": [
+              "SKPI"
+            ]
+          }
+        },
+        {
+          "id": "doc_69fd85f232c75_1778222578_chunk_0",
+          "content": "PASCA SIDANG\nTUGAS AKHIR\nv1.4\nPROGRAM STUDI\nTEKNIK INFORMATIKA\nUNIVERSITAS MERCU BUANA\n0\nPanduan Pasca Sidang\n\nTAHAPAN\nPROSES\nSAMPAI\nWISUDA\n1\nPanduan Pasca Sidang\n\nA. PERSYARATAN ADMINISTRASI\n1. Telah...",
+          "score": 4.290963649749756,
+          "metadata": {
+            "end_char": 952,
+            "original_filename": "69fd85f232c75_1778222578.pdf",
+            "chunk_index": 0,
+            "unified_index_timestamp": 1778222630.90862,
+            "chunk_size": 952,
+            "document_id": "doc_69fd85f232c75_1778222578",
+            "chunk_id": "doc_69fd85f232c75_1778222578_chunk_0",
+            "doc_id": "doc_26",
+            "source": "69fd85f232c75_1778222578.pdf",
+            "start_char": 0,
+            "acronym_boosted": true,
+            "matched_acronyms": [
+              "SKPI"
+            ]
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f258427_1778222578_chunk_44",
+        "doc_69fd85f24a7ad_1778222578_chunk_44",
+        "doc_69fd85f232c75_1778222578_chunk_0",
+        "doc_69fd85f258427_1778222578_chunk_45",
+        "doc_69fd85f24a7ad_1778222578_chunk_45"
+      ]
+    },
+    {
+      "question_id": "Q025",
+      "pipeline": "baseline",
+      "run": 2,
+      "success": true,
+      "answer": "Maaf, informasi tentang proporsi kategori sertifikat yang diminta untuk SKPI tidak tersedia dalam dokumen referensi yang diberikan. Mohon cek kembali panduan penerimaan mahasiswa baru atau kontak bagian Tata Usaha FASILKOM UMB untuk mendapatkan informasi lebih lanjut.",
+      "answer_length": 268,
+      "confidence": 0.5,
+      "metrics": {
+        "retrieval_time": 0.03625011444091797,
+        "generation_time": 2.797473430633545,
+        "total_time": 2.835329532623291,
+        "documents_retrieved": 1,
+        "context_length": 995,
+        "avg_relevance_score": 0.0794051061386466,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0
+      },
+      "ragas": null,
+      "sources_count": 1,
+      "sources": [
+        {
+          "id": "doc_69fd85f263ab0_1778222578_chunk_183",
+          "content": "Pengisian data dimaksudkan untuk mencatat\ndengan latar belakang Biru & Laki- laki dan merekam informasi/biodata tentang calon\ndengan latar belakang Merah); mahasiswa baru yang mendaftarkan diri. Data\n...",
+          "score": 0.0794051061386466,
+          "metadata": {
+            "start_char": 142963,
+            "unified_index_timestamp": 1778222630.909283,
+            "end_char": 143936,
+            "chunk_size": 973,
+            "doc_id": "doc_859",
+            "original_filename": "69fd85f263ab0_1778222578.pdf",
+            "document_id": "doc_69fd85f263ab0_1778222578",
+            "source": "69fd85f263ab0_1778222578.pdf",
+            "chunk_id": "doc_69fd85f263ab0_1778222578_chunk_183",
+            "chunk_index": 183
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f263ab0_1778222578_chunk_183"
+      ]
+    },
+    {
+      "question_id": "Q025",
+      "pipeline": "hybrid",
+      "run": 2,
+      "success": true,
+      "answer": "Untuk mengisi SKPI, terdapat beberapa kategori sertifikat yang dapat dipilih, yaitu:\n\n- Prestasi/Penghargaan Akademik/Olahraga/Kesenian untuk serfitikat/piagam prestasi.\n- Sertifikat Profesi untuk sertifikat profesi yang sudah didapatkan dari pelatihan, contohnya: CCNA, Oracle, FGA DTS, BNSP dst.\n- Magang Industri/Pengalaman Kerja untuk sertifikat bagi yang pernah magang di industri.\n- Kegiatan Ilmiah Nasional/Internasional untuk sertifikat seminar/workshop/konferensi yang diadakan di kampus.\n- Pengalaman Organisasi untuk sertifikat keanggotaan organisasi seperti: BEM, HIMTI dst.\n\nProporsi kategori sertifikat yang diminta tidak disebutkan dalam dokumen-dokumen yang diberikan. Oleh karena itu, kami sarankan Anda mengisi SKPI sesuai dengan pengalaman dan prestasi yang dimiliki.",
+      "answer_length": 786,
+      "confidence": 0.853,
+      "metrics": {
+        "retrieval_time": 0.40538620948791504,
+        "generation_time": 9.65874433517456,
+        "total_time": 10.065367460250854,
+        "documents_retrieved": 5,
+        "context_length": 4996,
+        "avg_relevance_score": 3.0952708780765534,
+        "mrr": 1.0,
+        "precision_at_k": 0.2,
+        "recall_at_k": 0.2
+      },
+      "ragas": null,
+      "sources_count": 5,
+      "sources": [
+        {
+          "id": "doc_69fd85f23fd6e_1778222578_chunk_0",
+          "content": "P engisian\nb. Pada halaman Pengalaman Mahasiswa pada panel diatas bisa di\nklik “+ Tambah” untuk menambahkan Sertifikat yg diminta.\nSKPI\na. Pada kolom Aksi Cepat pilih “Pengalaman Mahasiswa (SKPI)”\n\nc....",
+          "score": 5.335341930389404,
+          "metadata": {
+            "source": "69fd85f23fd6e_1778222578.pdf",
+            "chunk_index": 0,
+            "chunk_id": "doc_69fd85f23fd6e_1778222578_chunk_0",
+            "end_char": 997,
+            "chunk_size": 997,
+            "start_char": 0,
+            "document_id": "doc_69fd85f23fd6e_1778222578",
+            "unified_index_timestamp": 1778222630.90872,
+            "original_filename": "69fd85f23fd6e_1778222578.pdf",
+            "doc_id": "doc_110",
+            "acronym_boosted": true,
+            "matched_acronyms": [
+              "SKPI"
+            ]
+          }
+        },
+        {
+          "id": "doc_69fd85f263ab0_1778222578_chunk_45",
+          "content": "esaikan dalam kurun\n(8) Telah mengikuti dan lulus test sertifikasi profesi\nwaktu satu semester\nsesuai dengan yang disyaratkan oleh program\nstudi dibuktikan dengan sertifikat profesi\nUjian Tugas Akhir\n...",
+          "score": 3.1180171966552734,
+          "metadata": {
+            "start_char": 34824,
+            "chunk_index": 45,
+            "doc_id": "doc_721",
+            "original_filename": "69fd85f263ab0_1778222578.pdf",
+            "chunk_size": 951,
+            "end_char": 35775,
+            "unified_index_timestamp": 1778222630.909192,
+            "document_id": "doc_69fd85f263ab0_1778222578",
+            "chunk_id": "doc_69fd85f263ab0_1778222578_chunk_45",
+            "source": "69fd85f263ab0_1778222578.pdf",
+            "acronym_boosted": true,
+            "matched_acronyms": [
+              "SKPI"
+            ]
+          }
+        },
+        {
+          "id": "doc_69fd85f258427_1778222578_chunk_44",
+          "content": "sif bagi program studi\nyang melaksanakan ujian komprehensif terpisah\nPendaftaran dan Bimbingan Tugas Akhir ( Laporan\ndari sidang tugas akhir dibuktikan dengan surat\nMagang/Skripsi/ Karya Ilmiah Lain)\n...",
+          "score": 2.6389490365982056,
+          "metadata": {
+            "document_id": "doc_69fd85f258427_1778222578",
+            "chunk_size": 959,
+            "original_filename": "69fd85f258427_1778222578.pdf",
+            "chunk_index": 44,
+            "unified_index_timestamp": 1778222630.908996,
+            "start_char": 33747,
+            "chunk_id": "doc_69fd85f258427_1778222578_chunk_44",
+            "source": "69fd85f258427_1778222578.pdf",
+            "end_char": 34706,
+            "doc_id": "doc_444",
+            "acronym_boosted": true,
+            "matched_acronyms": [
+              "SKPI"
+            ]
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f23fd6e_1778222578_chunk_0",
+        "doc_69fd85f263ab0_1778222578_chunk_45",
+        "doc_69fd85f258427_1778222578_chunk_44",
+        "doc_69fd85f24a7ad_1778222578_chunk_44",
+        "doc_69fd85f258427_1778222578_chunk_45"
+      ]
+    },
+    {
+      "question_id": "Q049",
+      "pipeline": "baseline",
+      "run": 2,
+      "success": true,
+      "answer": "Ukuran poin standar yang digunakan dalam isi laporan TA adalah 12 poin, dengan menggunakan tipe huruf Times New Roman.",
+      "answer_length": 118,
+      "confidence": 0.544,
+      "metrics": {
+        "retrieval_time": 0.039124250411987305,
+        "generation_time": 1.4658896923065186,
+        "total_time": 1.5068199634552002,
+        "documents_retrieved": 1,
+        "context_length": 964,
+        "avg_relevance_score": 0.0794051061386466,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0
+      },
+      "ragas": null,
+      "sources_count": 1,
+      "sources": [
+        {
+          "id": "doc_69fd85f22e22c_1778222578_chunk_41",
+          "content": "i dalamnya tidak boleh lebih kecil dari 10 poin (ukuran\nsebenarnya).\n3.6 Daftar Pustaka\nJenis media yang makin berkembang memungkinkan penulis untuk mencari\nsumber informasi dari berbagai jenis media....",
+          "score": 0.0794051061386466,
+          "metadata": {
+            "start_char": 32065,
+            "chunk_size": 941,
+            "chunk_id": "doc_69fd85f22e22c_1778222578_chunk_41",
+            "original_filename": "69fd85f22e22c_1778222578.pdf",
+            "chunk_index": 41,
+            "unified_index_timestamp": 1778222630.908661,
+            "doc_id": "doc_74",
+            "document_id": "doc_69fd85f22e22c_1778222578",
+            "end_char": 33006,
+            "source": "69fd85f22e22c_1778222578.pdf"
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f22e22c_1778222578_chunk_41"
+      ]
+    },
+    {
+      "question_id": "Q049",
+      "pipeline": "hybrid",
+      "run": 2,
+      "success": true,
+      "answer": "Ukuran font dan jenis huruf yang digunakan dalam isi Laporan Kerja Praktek (KP) dan Makalah Berbasis Kompetensi Manajemen (MBKM) di FASILKOM UMB harus sesuai dengan panduan penulisan. Menurut dokumen referensi, ukuran poin standar yang digunakan adalah 12 poin, dan jenis huruf yang disarankan adalah Times New Roman.",
+      "answer_length": 317,
+      "confidence": 0.909,
+      "metrics": {
+        "retrieval_time": 0.4156045913696289,
+        "generation_time": 4.509527921676636,
+        "total_time": 4.926309823989868,
+        "documents_retrieved": 5,
+        "context_length": 4924,
+        "avg_relevance_score": 5.771430921554566,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0
+      },
+      "ragas": null,
+      "sources_count": 5,
+      "sources": [
+        {
+          "id": "doc_69fd85f23b6f2_1778222578_chunk_84",
+          "content": "cepat isi Laporan Kerja Praktek untuk memutuskan apakah\nperlu membaca lebih lanjut atau tidak. Dalam pedoman ini penulisan abstrak dibuat 2\njenisyangberbahasaIndonesiadanBahasaInggris.\n\n2.8DAFTAR ISI\n...",
+          "score": 6.445774078369141,
+          "metadata": {
+            "source": "69fd85f23b6f2_1778222578.pdf",
+            "unified_index_timestamp": 1778222630.9088912,
+            "chunk_index": 84,
+            "original_filename": "69fd85f23b6f2_1778222578.pdf",
+            "end_char": 65619,
+            "document_id": "doc_69fd85f23b6f2_1778222578",
+            "chunk_id": "doc_69fd85f23b6f2_1778222578_chunk_84",
+            "start_char": 64652,
+            "doc_id": "doc_335",
+            "chunk_size": 967,
+            "acronym_boosted": true,
+            "matched_acronyms": [
+              "TA"
+            ]
+          }
+        },
+        {
+          "id": "doc_69fd85f23b6f2_1778222578_chunk_41",
+          "content": "tar Pustaka yang terdapat dalam\npanduan ini. Struktur ini membantu dalam menyusun penelitian dengan teratur dan\nlogis.\n2. Referensi dan Citasi: Mengutip sumber secara tepat dan mencantumkan referensi\n...",
+          "score": 5.751143455505371,
+          "metadata": {
+            "chunk_index": 41,
+            "unified_index_timestamp": 1778222630.9088614,
+            "doc_id": "doc_292",
+            "start_char": 31544,
+            "end_char": 32488,
+            "original_filename": "69fd85f23b6f2_1778222578.pdf",
+            "chunk_size": 944,
+            "source": "69fd85f23b6f2_1778222578.pdf",
+            "chunk_id": "doc_69fd85f23b6f2_1778222578_chunk_41",
+            "document_id": "doc_69fd85f23b6f2_1778222578"
+          }
+        },
+        {
+          "id": "doc_69fd85f22e22c_1778222578_chunk_41",
+          "content": "i dalamnya tidak boleh lebih kecil dari 10 poin (ukuran\nsebenarnya).\n3.6 Daftar Pustaka\nJenis media yang makin berkembang memungkinkan penulis untuk mencari\nsumber informasi dari berbagai jenis media....",
+          "score": 5.623129844665527,
+          "metadata": {
+            "source": "69fd85f22e22c_1778222578.pdf",
+            "unified_index_timestamp": 1778222630.908661,
+            "document_id": "doc_69fd85f22e22c_1778222578",
+            "chunk_index": 41,
+            "chunk_id": "doc_69fd85f22e22c_1778222578_chunk_41",
+            "chunk_size": 941,
+            "start_char": 32065,
+            "original_filename": "69fd85f22e22c_1778222578.pdf",
+            "doc_id": "doc_74",
+            "end_char": 33006
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f23b6f2_1778222578_chunk_84",
+        "doc_69fd85f23b6f2_1778222578_chunk_41",
+        "doc_69fd85f22e22c_1778222578_chunk_41",
+        "doc_69fd85f23b6f2_1778222578_chunk_42",
+        "doc_69fd85f237c35_1778222578_chunk_74"
+      ]
+    },
+    {
+      "question_id": "Q050",
+      "pipeline": "baseline",
+      "run": 2,
+      "success": true,
+      "answer": "Penomoran halaman untuk bagian awal laporan Tugas Akhir dimulai dari halaman yang berisi Kata Pengantar. Setiap bab, termasuk Kata Pengantar, dimulai pada halaman baru dan dilengkapi dengan judul sesuai ketentuan penulisan yang telah disebutkan.",
+      "answer_length": 245,
+      "confidence": 0.502,
+      "metrics": {
+        "retrieval_time": 0.03597283363342285,
+        "generation_time": 2.7279887199401855,
+        "total_time": 2.7652556896209717,
+        "documents_retrieved": 1,
+        "context_length": 1007,
+        "avg_relevance_score": 0.0794051061386466,
+        "mrr": 1.0,
+        "precision_at_k": 0.2,
+        "recall_at_k": 0.2
+      },
+      "ragas": null,
+      "sources_count": 1,
+      "sources": [
+        {
+          "id": "doc_69fd85f22e22c_1778222578_chunk_35",
+          "content": "uk halaman lampiran yang jumlahnya lebih dari 10\nlembar, di lampirkanpada CD Softcopy tugas akhir.\n3.4 Isi Tugas Akhir\nBagian tubuh/pokok memuat uraian/penjabaran/analisis yang dilakukan oleh\npenulis....",
+          "score": 0.0794051061386466,
+          "metadata": {
+            "source": "69fd85f22e22c_1778222578.pdf",
+            "original_filename": "69fd85f22e22c_1778222578.pdf",
+            "chunk_index": 35,
+            "start_char": 27331,
+            "document_id": "doc_69fd85f22e22c_1778222578",
+            "doc_id": "doc_68",
+            "end_char": 28316,
+            "unified_index_timestamp": 1778222630.9086556,
+            "chunk_id": "doc_69fd85f22e22c_1778222578_chunk_35",
+            "chunk_size": 985
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f22e22c_1778222578_chunk_35"
+      ]
+    },
+    {
+      "question_id": "Q050",
+      "pipeline": "hybrid",
+      "run": 2,
+      "success": true,
+      "answer": "Penomoran halaman untuk bagian awal Laporan Tugas Akhir, termasuk Kata Pengantar, biasanya dimulai dari halaman pertama. Setelah halaman sampul dan judul, nomor halaman akan diatur secara berurutan mulai dari 1.",
+      "answer_length": 211,
+      "confidence": 0.914,
+      "metrics": {
+        "retrieval_time": 0.4344806671142578,
+        "generation_time": 3.787928581237793,
+        "total_time": 4.223509788513184,
+        "documents_retrieved": 5,
+        "context_length": 5001,
+        "avg_relevance_score": 4.252814698219299,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0
+      },
+      "ragas": null,
+      "sources_count": 5,
+      "sources": [
+        {
+          "id": "doc_69fd85f23b6f2_1778222578_chunk_84",
+          "content": "cepat isi Laporan Kerja Praktek untuk memutuskan apakah\nperlu membaca lebih lanjut atau tidak. Dalam pedoman ini penulisan abstrak dibuat 2\njenisyangberbahasaIndonesiadanBahasaInggris.\n\n2.8DAFTAR ISI\n...",
+          "score": 5.1507556438446045,
+          "metadata": {
+            "chunk_size": 967,
+            "unified_index_timestamp": 1778222630.9088912,
+            "chunk_id": "doc_69fd85f23b6f2_1778222578_chunk_84",
+            "start_char": 64652,
+            "chunk_index": 84,
+            "end_char": 65619,
+            "original_filename": "69fd85f23b6f2_1778222578.pdf",
+            "source": "69fd85f23b6f2_1778222578.pdf",
+            "document_id": "doc_69fd85f23b6f2_1778222578",
+            "doc_id": "doc_335",
+            "acronym_boosted": true,
+            "matched_acronyms": [
+              "TA"
+            ]
+          }
+        },
+        {
+          "id": "doc_69fd85f22e22c_1778222578_chunk_42",
+          "content": "ditulis di sudut kanan atas halaman (right-\naligned) dengan huruf tegak tipe Times New Roman 12 poin.\nb. Judul lampiran diketik dalam satu baris menggunakan huruf kapital di awal\nkata (title case).\nc....",
+          "score": 4.424788475036621,
+          "metadata": {
+            "chunk_index": 42,
+            "unified_index_timestamp": 1778222630.9086618,
+            "chunk_size": 999,
+            "end_char": 33805,
+            "document_id": "doc_69fd85f22e22c_1778222578",
+            "original_filename": "69fd85f22e22c_1778222578.pdf",
+            "chunk_id": "doc_69fd85f22e22c_1778222578_chunk_42",
+            "doc_id": "doc_75",
+            "source": "69fd85f22e22c_1778222578.pdf",
+            "start_char": 32806
+          }
+        },
+        {
+          "id": "doc_69fd85f23b6f2_1778222578_chunk_87",
+          "content": "g konten lampiran yang tersedia dalam Laporan Kerja Praktek dan mempermudah\naksesuntuk merujukkeinformasitambahanyang relevan.\nMahasiswa KP diwajibkan menggunakan tools “Insert Caption” pada aplikasi\n...",
+          "score": 4.386641025543213,
+          "metadata": {
+            "start_char": 66934,
+            "chunk_index": 87,
+            "document_id": "doc_69fd85f23b6f2_1778222578",
+            "end_char": 67915,
+            "chunk_size": 981,
+            "original_filename": "69fd85f23b6f2_1778222578.pdf",
+            "doc_id": "doc_338",
+            "chunk_id": "doc_69fd85f23b6f2_1778222578_chunk_87",
+            "source": "69fd85f23b6f2_1778222578.pdf",
+            "unified_index_timestamp": 1778222630.908893
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f23b6f2_1778222578_chunk_84",
+        "doc_69fd85f22e22c_1778222578_chunk_42",
+        "doc_69fd85f23b6f2_1778222578_chunk_87",
+        "doc_69fd85f23b6f2_1778222578_chunk_86",
+        "doc_69fd85f23b6f2_1778222578_chunk_85"
+      ]
+    },
+    {
+      "question_id": "Q054",
+      "pipeline": "baseline",
+      "run": 2,
+      "success": true,
+      "answer": "Prosedur mahasiswa untuk mengajukan bimbingan proposal atau tugas akhir melalui sistem ULT (Umumnya, singkatan ini tidak digunakan dalam konteks UMB, tetapi saya akan menjelaskan prosedurnya secara umum) adalah sebagai berikut:\n\n1. Mahasiswa harus mempersiapkan proposal tugas akhir yang lengkap dan sesuai dengan ketentuan Program Studi.\n2. Proposal tersebut kemudian diserahkan kepada dosen pembimbing yang ditetapkan oleh Ketua Program Studi.\n3. Dosen pembimbing akan memberikan surat tugas resmi yang dikeluarkan oleh Ketua Program Studi.\n4. Surat tugas tersebut harus diverifikasi kembali oleh Tata Usaha dan Program Studi sebelum diserahkan kepada mahasiswa.\n5. Mahasiswa dapat mengakses sistem ULT untuk melaporkan bimbingan proposal atau tugas akhir yang telah dilakukan.\n6. Dalam sistem, mahasiswa perlu mencatat tanggal, waktu, dan topik diskusi pada setiap sesi bimbingan.\n7. Setelah proses bimbingan selesai, mahasiswa dapat mengajukan seminar proposal tugas akhir melalui sistem yang sama.\n\nMohon dicatat bahwa detail spesifik tentang sistem ULT mungkin berbeda tergantung pada implementasi di Universitas Mercu Buana. Jika ada pertanyaan lebih lanjut atau informasi tambahan yang diperlukan, silakan sampaikan.",
+      "answer_length": 1224,
+      "confidence": 0.462,
+      "metrics": {
+        "retrieval_time": 0.1235203742980957,
+        "generation_time": 11.143988609313965,
+        "total_time": 11.26896047592163,
+        "documents_retrieved": 1,
+        "context_length": 942,
+        "avg_relevance_score": 0.3176204245545864,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0
+      },
+      "ragas": null,
+      "sources_count": 1,
+      "sources": [
+        {
+          "id": "doc_69fd85f24a7ad_1778222578_chunk_193",
+          "content": "2\nsesuai dengan ketentuan Program Studi yang tertuang\neksemplar.\ndalam buku Pedoman dan Bimbingan Penyusunan\nh. Surat tugas dosen pembimbing yang dikeluarkan\nTugas Akhir. oleh Ketua Program Studi.\n5. ...",
+          "score": 0.3176204245545864,
+          "metadata": {
+            "chunk_index": 193,
+            "original_filename": "69fd85f24a7ad_1778222578.pdf",
+            "start_char": 150589,
+            "chunk_size": 921,
+            "source": "69fd85f24a7ad_1778222578.pdf",
+            "chunk_id": "doc_69fd85f24a7ad_1778222578_chunk_193",
+            "document_id": "doc_69fd85f24a7ad_1778222578",
+            "unified_index_timestamp": 1778222630.90941,
+            "doc_id": "doc_1060",
+            "end_char": 151510
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f24a7ad_1778222578_chunk_193"
+      ]
+    },
+    {
+      "question_id": "Q054",
+      "pipeline": "hybrid",
+      "run": 2,
+      "success": true,
+      "answer": "Prosedur mahasiswa mengajukan bimbingan proposal atau tugas akhir melalui sistem ULT dapat dilakukan dengan langkah-langkah berikut:\n\n1. Mahasiswa harus mengisi KRS tugas akhir pada semester III/IV.\n2. Mahasiswa perlu menyiapkan beberapa dokumen pendukung, seperti:\n   - Bukti bimbingan lebih dari 8 kali bimbingan\n   - Kartu tanda peserta seminar proposal sebanyak 10 kali\n3. Mahasiswa juga harus memiliki catatan bimbingan yang dicatat pada buku \"Pedoman dan Bimbingan Penusunan Tugas Akhir\".\n4. Setelah memenuhi persyaratan di atas, mahasiswa dapat mengajukan permohonan melalui formulir pendaftaran yang tersedia di bagian Tata Usaha.\n5. Formulir tersebut harus disertai dengan bukti-bukti pendukung yang telah disebutkan.\n\nMohon pastikan semua persyaratan terpenuhi sebelum mengajukan permohonan untuk memperoleh bimbingan proposal atau tugas akhir.",
+      "answer_length": 854,
+      "confidence": 0.875,
+      "metrics": {
+        "retrieval_time": 0.4186549186706543,
+        "generation_time": 10.08006739616394,
+        "total_time": 10.499855279922485,
+        "documents_retrieved": 5,
+        "context_length": 5032,
+        "avg_relevance_score": 5.338113403320312,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0
+      },
+      "ragas": null,
+      "sources_count": 5,
+      "sources": [
+        {
+          "id": "doc_69fd85f258427_1778222578_chunk_188",
+          "content": "hir\nPenyusunan tugas akhir merupakan kegiatan yang wajib\ndilakukan oleh mahasiswa sebagai salah satu persyaratan\nuntuk menyelesaikan studi sesuai dengan konsentrasi\nkeilmuannya.\nPelaksanaan dan Waktu\n...",
+          "score": 5.582368850708008,
+          "metadata": {
+            "doc_id": "doc_588",
+            "end_char": 147188,
+            "document_id": "doc_69fd85f258427_1778222578",
+            "start_char": 146216,
+            "source": "69fd85f258427_1778222578.pdf",
+            "original_filename": "69fd85f258427_1778222578.pdf",
+            "chunk_size": 972,
+            "chunk_id": "doc_69fd85f258427_1778222578_chunk_188",
+            "unified_index_timestamp": 1778222630.9091032,
+            "chunk_index": 188
+          }
+        },
+        {
+          "id": "doc_69fd85f258427_1778222578_chunk_192",
+          "content": "ngajuan penyusunan tesis.\n110\n\n(Bimbingan Tugas Akhir 4. Menyerahkan formulir pendaftaran ke bagian Tata\nUsaha dengan beberapa pendukung diantaranya:\n■ Bimbingan penyusunan tugas akhir dengan Dosen a....",
+          "score": 5.361088752746582,
+          "metadata": {
+            "chunk_index": 192,
+            "end_char": 150243,
+            "document_id": "doc_69fd85f258427_1778222578",
+            "chunk_size": 956,
+            "unified_index_timestamp": 1778222630.9091065,
+            "start_char": 149287,
+            "doc_id": "doc_592",
+            "original_filename": "69fd85f258427_1778222578.pdf",
+            "source": "69fd85f258427_1778222578.pdf",
+            "chunk_id": "doc_69fd85f258427_1778222578_chunk_192"
+          }
+        },
+        {
+          "id": "doc_69fd85f258427_1778222578_chunk_45",
+          "content": "diwajibkan mengisi KRS diawal semester, termasuk\ndibuktikan dengan sertifikat profesi\nmahasiswa yang melakukan perpanjangan\n(9) Telah mengisi formulir SKPI melalui laman SKP\npenyelesaian tugas akhir.\n...",
+          "score": 5.307168006896973,
+          "metadata": {
+            "end_char": 35498,
+            "original_filename": "69fd85f258427_1778222578.pdf",
+            "chunk_size": 992,
+            "start_char": 34506,
+            "doc_id": "doc_445",
+            "source": "69fd85f258427_1778222578.pdf",
+            "chunk_id": "doc_69fd85f258427_1778222578_chunk_45",
+            "unified_index_timestamp": 1778222630.9089963,
+            "document_id": "doc_69fd85f258427_1778222578",
+            "chunk_index": 45
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f258427_1778222578_chunk_188",
+        "doc_69fd85f258427_1778222578_chunk_192",
+        "doc_69fd85f258427_1778222578_chunk_45",
+        "doc_69fd85f24a7ad_1778222578_chunk_45",
+        "doc_69fd85f24a7ad_1778222578_chunk_188"
+      ]
+    },
+    {
+      "question_id": "Q057",
+      "pipeline": "baseline",
+      "run": 2,
+      "success": true,
+      "answer": "Mahasiswa dapat mengetahui hasil sidang dan mengirimkan revisi melalui tampilan Detail Informasi Sidang. Setelah pendaftaran sidang disetujui oleh prodi, akan muncul informasi ruangan sidang yang telah ditentukan. Mahasiswa dapat memeriksa hasil sidang dan catatan dari dosen penguji dengan menekan tombol Detail di tampilan Informasi Sidang. Untuk mengirimkan revisi, mahasiswa perlu mengikuti petunjuk yang disertakan dalam catatan tersebut.",
+      "answer_length": 443,
+      "confidence": 0.488,
+      "metrics": {
+        "retrieval_time": 0.11034536361694336,
+        "generation_time": 4.370595932006836,
+        "total_time": 4.482559442520142,
+        "documents_retrieved": 1,
+        "context_length": 961,
+        "avg_relevance_score": 0.2382153184159398,
+        "mrr": 1.0,
+        "precision_at_k": 0.2,
+        "recall_at_k": 0.2
+      },
+      "ragas": null,
+      "sources_count": 1,
+      "sources": [
+        {
+          "id": "doc_69fd85f22400f_1778222578_chunk_6",
+          "content": "menyetujui pendaftaran sidang dari mahasiswa. Kolom status\npendaftaran akan berubah dari sebelumnya “TERKIRIM” menjadi “DISETUJUI”. Dan\nterdapat tombol detail untuk melihat detail pendaftaran sidang.\n...",
+          "score": 0.2382153184159398,
+          "metadata": {
+            "start_char": 4651,
+            "source": "69fd85f22400f_1778222578.pdf",
+            "chunk_id": "doc_69fd85f22400f_1778222578_chunk_6",
+            "document_id": "doc_69fd85f22400f_1778222578",
+            "unified_index_timestamp": 1778222630.9085946,
+            "doc_id": "doc_6",
+            "end_char": 5590,
+            "original_filename": "69fd85f22400f_1778222578.pdf",
+            "chunk_size": 939,
+            "chunk_index": 6
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f22400f_1778222578_chunk_6"
+      ]
+    },
+    {
+      "question_id": "Q057",
+      "pipeline": "hybrid",
+      "run": 2,
+      "success": true,
+      "answer": "Hasil sidang dan jadwal pelaksanaannya akan diumumkan melalui website https://sisteminformasi.fasilkom.mercubuana.ac.id/ atau http://teknikinformatika.fasilkom.mercubuana.ac.id/. Mahasiswa dapat memeriksa informasi tersebut secara berkala untuk mengetahui jadwal sidang dan hasilnya.\n\nUntuk mengirimkan revisi, mahasiswa perlu masuk ke sistem ULT (Sistem Layanan Teknologi Informasi) melalui alamat yang sama. Setelah login, mahasiswa dapat mengunggah lembar pernyataan orisinalitas hasil karya dan surat pernyataan persetujuan publikasi Tugas Akhir dengan ditandatangani di atas materai sesuai ketentuan. Pastikan untuk memperhatikan batas waktu yang diberikan, yaitu paling lama 14 hari setelah masa ujian sidang.\n\nJika Anda memiliki pertanyaan lebih lanjut atau perlu bantuan tambahan, jangan ragu untuk menghubungi kami kembali.",
+      "answer_length": 832,
+      "confidence": 0.872,
+      "metrics": {
+        "retrieval_time": 0.4261345863342285,
+        "generation_time": 10.010046482086182,
+        "total_time": 10.437293767929077,
+        "documents_retrieved": 5,
+        "context_length": 5036,
+        "avg_relevance_score": 4.4260636329650875,
+        "mrr": 0.25,
+        "precision_at_k": 0.2,
+        "recall_at_k": 0.2
+      },
+      "ragas": null,
+      "sources_count": 5,
+      "sources": [
+        {
+          "id": "doc_69fd85f258427_1778222578_chunk_270",
+          "content": "n mahasiswa membuat akun di laman\nmengisi form-form yang sudah ditentukan dengan\npendaftaran UMB dan mengisi data diri dan\nmelampirkan bukti pendidikan formal, nonformal,\npersyaratan yang dibutuhkan,\n...",
+          "score": 4.8441619873046875,
+          "metadata": {
+            "unified_index_timestamp": 1778222630.9091575,
+            "end_char": 210784,
+            "start_char": 209792,
+            "chunk_size": 992,
+            "chunk_index": 270,
+            "chunk_id": "doc_69fd85f258427_1778222578_chunk_270",
+            "doc_id": "doc_670",
+            "source": "69fd85f258427_1778222578.pdf",
+            "original_filename": "69fd85f258427_1778222578.pdf",
+            "document_id": "doc_69fd85f258427_1778222578"
+          }
+        },
+        {
+          "id": "doc_69fd85f258427_1778222578_chunk_272",
+          "content": "yatakan Tidak Lulus.\n2. Sistem Pengambilan Keputusan.\nPengumuman hasil seleksi penerimaan\nmahasiswa baru Universitas Mercu Buana\nmengikuti ketentuan sebagai berikut :\na. Dalam menentukan apakah calon\n...",
+          "score": 4.575227737426758,
+          "metadata": {
+            "unified_index_timestamp": 1778222630.909159,
+            "end_char": 212321,
+            "document_id": "doc_69fd85f258427_1778222578",
+            "chunk_id": "doc_69fd85f258427_1778222578_chunk_272",
+            "chunk_size": 947,
+            "source": "69fd85f258427_1778222578.pdf",
+            "doc_id": "doc_672",
+            "original_filename": "69fd85f258427_1778222578.pdf",
+            "start_char": 211374,
+            "chunk_index": 272
+          }
+        },
+        {
+          "id": "doc_69fd85f24a7ad_1778222578_chunk_272",
+          "content": "na\nmengikuti ketentuan sebagai berikut :\na. Dalam menentukan apakah calon\nmahasiswa diterima atau ditolak\nmenjadi Mahasiswa Universitas Mercu\nBuana, Biro Penerimaan Mahasiswa\nakan mengambil keputusan\n...",
+          "score": 4.331125259399414,
+          "metadata": {
+            "chunk_id": "doc_69fd85f24a7ad_1778222578_chunk_272",
+            "source": "69fd85f24a7ad_1778222578.pdf",
+            "document_id": "doc_69fd85f24a7ad_1778222578",
+            "chunk_index": 272,
+            "doc_id": "doc_1139",
+            "original_filename": "69fd85f24a7ad_1778222578.pdf",
+            "unified_index_timestamp": 1778222630.9094613,
+            "end_char": 212963,
+            "chunk_size": 981,
+            "start_char": 211982
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f258427_1778222578_chunk_270",
+        "doc_69fd85f258427_1778222578_chunk_272",
+        "doc_69fd85f24a7ad_1778222578_chunk_272",
+        "doc_69fd85f22e22c_1778222578_chunk_73",
+        "doc_69fd85f258427_1778222578_chunk_200"
+      ]
+    },
+    {
+      "question_id": "Q008",
+      "pipeline": "baseline",
+      "run": 3,
+      "success": true,
+      "answer": "Syarat jumlah SKS minimal yang harus dicapai sebelum mahasiswa dapat mengambil mata kuliah Tugas Akhir (TA) di program studi Teknik Informatika Universitas Mercu Buana adalah 90 SKS. Hal ini berdasarkan syarat-syarat pengambilan Mata Kuliah Kerja Praktek dan MBKM yang telah ditetapkan oleh program studi.",
+      "answer_length": 305,
+      "confidence": 0.512,
+      "metrics": {
+        "retrieval_time": 0.1047666072845459,
+        "generation_time": 3.2008752822875977,
+        "total_time": 3.3071374893188477,
+        "documents_retrieved": 1,
+        "context_length": 968,
+        "avg_relevance_score": 0.2382153184159398,
+        "mrr": 1.0,
+        "precision_at_k": 0.2,
+        "recall_at_k": 0.2
+      },
+      "ragas": null,
+      "sources_count": 1,
+      "sources": [
+        {
+          "id": "doc_69fd85f23b6f2_1778222578_chunk_17",
+          "content": "am Studi Teknik\nInformatikadalammenjalanipengalamanKerjaPraktekdanMBKM.\n1.4 Syarat pengambilan Mata Kuliah Kerja Praktek dan MBKM\nSyaratmengambilmatakuliahKerjaPraktek(KP) danMBKM programstudi Teknik\n...",
+          "score": 0.2382153184159398,
+          "metadata": {
+            "document_id": "doc_69fd85f23b6f2_1778222578",
+            "unified_index_timestamp": 1778222630.9088435,
+            "chunk_size": 946,
+            "start_char": 13002,
+            "chunk_id": "doc_69fd85f23b6f2_1778222578_chunk_17",
+            "end_char": 13948,
+            "doc_id": "doc_268",
+            "chunk_index": 17,
+            "original_filename": "69fd85f23b6f2_1778222578.pdf",
+            "source": "69fd85f23b6f2_1778222578.pdf"
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f23b6f2_1778222578_chunk_17"
+      ]
+    },
+    {
+      "question_id": "Q008",
+      "pipeline": "hybrid",
+      "run": 3,
+      "success": true,
+      "answer": "Syarat jumlah SKS minimal yang harus dicapai oleh mahasiswa sebelum dapat mengambil tugas akhir adalah 127 SKS untuk program sarjana. Jika program studi memiliki ketentuan spesifik lainnya, maka syarat tersebut harus dipenuhi pula.",
+      "answer_length": 231,
+      "confidence": 0.918,
+      "metrics": {
+        "retrieval_time": 0.39662671089172363,
+        "generation_time": 3.841376781463623,
+        "total_time": 4.2391135692596436,
+        "documents_retrieved": 5,
+        "context_length": 4996,
+        "avg_relevance_score": 5.495699310302735,
+        "mrr": 1.0,
+        "precision_at_k": 0.2,
+        "recall_at_k": 0.2
+      },
+      "ragas": null,
+      "sources_count": 5,
+      "sources": [
+        {
+          "id": "doc_69fd85f23b6f2_1778222578_chunk_17",
+          "content": "am Studi Teknik\nInformatikadalammenjalanipengalamanKerjaPraktekdanMBKM.\n1.4 Syarat pengambilan Mata Kuliah Kerja Praktek dan MBKM\nSyaratmengambilmatakuliahKerjaPraktek(KP) danMBKM programstudi Teknik\n...",
+          "score": 5.737207412719727,
+          "metadata": {
+            "original_filename": "69fd85f23b6f2_1778222578.pdf",
+            "chunk_id": "doc_69fd85f23b6f2_1778222578_chunk_17",
+            "end_char": 13948,
+            "unified_index_timestamp": 1778222630.9088435,
+            "document_id": "doc_69fd85f23b6f2_1778222578",
+            "start_char": 13002,
+            "chunk_index": 17,
+            "doc_id": "doc_268",
+            "source": "69fd85f23b6f2_1778222578.pdf",
+            "chunk_size": 946,
+            "acronym_boosted": true,
+            "matched_acronyms": [
+              "SKS"
+            ]
+          }
+        },
+        {
+          "id": "doc_69fd85f258427_1778222578_chunk_31",
+          "content": "uluh empat) sks dan sebanyak-\ndikarenakan sakit/izin/perjalanan dinas dari kantor banyaknya 30 (tiga puluh) sks;\ntetap dihitung sebagai ketidakhadiran.\nf. Batas pengambilan sks untuk program Sarjana,\n...",
+          "score": 5.480076313018799,
+          "metadata": {
+            "chunk_id": "doc_69fd85f258427_1778222578_chunk_31",
+            "original_filename": "69fd85f258427_1778222578.pdf",
+            "doc_id": "doc_431",
+            "chunk_index": 31,
+            "chunk_size": 972,
+            "document_id": "doc_69fd85f258427_1778222578",
+            "source": "69fd85f258427_1778222578.pdf",
+            "start_char": 23775,
+            "end_char": 24747,
+            "unified_index_timestamp": 1778222630.9089742,
+            "acronym_boosted": true,
+            "matched_acronyms": [
+              "SKS"
+            ]
+          }
+        },
+        {
+          "id": "doc_69fd85f24a7ad_1778222578_chunk_31",
+          "content": "uluh empat) sks dan sebanyak-\ndikarenakan sakit/izin/perjalanan dinas dari kantor banyaknya 30 (tiga puluh) sks;\ntetap dihitung sebagai ketidakhadiran.\nf. Batas pengambilan sks untuk program Sarjana,\n...",
+          "score": 5.480076313018799,
+          "metadata": {
+            "doc_id": "doc_898",
+            "original_filename": "69fd85f24a7ad_1778222578.pdf",
+            "chunk_index": 31,
+            "document_id": "doc_69fd85f24a7ad_1778222578",
+            "start_char": 23891,
+            "end_char": 24863,
+            "chunk_id": "doc_69fd85f24a7ad_1778222578_chunk_31",
+            "unified_index_timestamp": 1778222630.9093063,
+            "chunk_size": 972,
+            "source": "69fd85f24a7ad_1778222578.pdf",
+            "acronym_boosted": true,
+            "matched_acronyms": [
+              "SKS"
+            ]
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f23b6f2_1778222578_chunk_17",
+        "doc_69fd85f258427_1778222578_chunk_31",
+        "doc_69fd85f24a7ad_1778222578_chunk_31",
+        "doc_69fd85f263ab0_1778222578_chunk_43",
+        "doc_69fd85f263ab0_1778222578_chunk_44"
+      ]
+    },
+    {
+      "question_id": "Q024",
+      "pipeline": "baseline",
+      "run": 3,
+      "success": true,
+      "answer": "Maaf, informasi tentang jumlah minimal sertifikat yang harus dilengkapi mahasiswa untuk pengisian SKPI tidak tersedia dalam konteks referensi yang diberikan. Mohon periksa kembali panduan terbaru dari prodi Teknik Informatika UMB atau hubungi staf Tata Usaha FASILKOM UMB untuk informasi lebih lanjut.",
+      "answer_length": 301,
+      "confidence": 0.515,
+      "metrics": {
+        "retrieval_time": 0.10640287399291992,
+        "generation_time": 3.1076252460479736,
+        "total_time": 3.2155497074127197,
+        "documents_retrieved": 1,
+        "context_length": 978,
+        "avg_relevance_score": 0.2382153184159398,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0
+      },
+      "ragas": null,
+      "sources_count": 1,
+      "sources": [
+        {
+          "id": "doc_69fd85f23b6f2_1778222578_chunk_18",
+          "content": "a usaha Fasilkom untuk surat keterangan akan magang untuk\ndidata. Jika, mahasiswa setelah memilih mata kuliah kerja praktek dan belum\nmendapat dalam kurun waktu 4 minggu perkuliahan maka prodi Teknik\n...",
+          "score": 0.2382153184159398,
+          "metadata": {
+            "original_filename": "69fd85f23b6f2_1778222578.pdf",
+            "chunk_size": 955,
+            "unified_index_timestamp": 1778222630.9088445,
+            "source": "69fd85f23b6f2_1778222578.pdf",
+            "end_char": 14703,
+            "document_id": "doc_69fd85f23b6f2_1778222578",
+            "chunk_index": 18,
+            "chunk_id": "doc_69fd85f23b6f2_1778222578_chunk_18",
+            "start_char": 13748,
+            "doc_id": "doc_269"
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f23b6f2_1778222578_chunk_18"
+      ]
+    },
+    {
+      "question_id": "Q024",
+      "pipeline": "hybrid",
+      "run": 3,
+      "success": true,
+      "answer": "Mahasiswa harus melengkapi 10 sertifikat untuk di masukan ke SKPI (Surat Keterangan Pendamping Ijazah). Sertifikat tersebut terdiri dari minimal 7 sertifikat sesuai bidang ilmu, 1 sertifikat sertifikasi bidang profesi, dan maksimal 2 sertifikat dibidang minat dan bakat.",
+      "answer_length": 270,
+      "confidence": 0.901,
+      "metrics": {
+        "retrieval_time": 0.42058396339416504,
+        "generation_time": 4.792745590209961,
+        "total_time": 5.214430332183838,
+        "documents_retrieved": 5,
+        "context_length": 4992,
+        "avg_relevance_score": 4.405905532836914,
+        "mrr": 1.0,
+        "precision_at_k": 0.6,
+        "recall_at_k": 0.6
+      },
+      "ragas": null,
+      "sources_count": 5,
+      "sources": [
+        {
+          "id": "doc_69fd85f258427_1778222578_chunk_44",
+          "content": "sif bagi program studi\nyang melaksanakan ujian komprehensif terpisah\nPendaftaran dan Bimbingan Tugas Akhir ( Laporan\ndari sidang tugas akhir dibuktikan dengan surat\nMagang/Skripsi/ Karya Ilmiah Lain)\n...",
+          "score": 4.913562536239624,
+          "metadata": {
+            "chunk_size": 959,
+            "document_id": "doc_69fd85f258427_1778222578",
+            "end_char": 34706,
+            "doc_id": "doc_444",
+            "chunk_index": 44,
+            "start_char": 33747,
+            "unified_index_timestamp": 1778222630.908996,
+            "chunk_id": "doc_69fd85f258427_1778222578_chunk_44",
+            "source": "69fd85f258427_1778222578.pdf",
+            "original_filename": "69fd85f258427_1778222578.pdf",
+            "acronym_boosted": true,
+            "matched_acronyms": [
+              "SKPI"
+            ]
+          }
+        },
+        {
+          "id": "doc_69fd85f24a7ad_1778222578_chunk_44",
+          "content": "sif bagi program studi\nyang melaksanakan ujian komprehensif terpisah\nPendaftaran dan Bimbingan Tugas Akhir ( Laporan\ndari sidang tugas akhir dibuktikan dengan surat\nMagang/Skripsi/ Karya Ilmiah Lain)\n...",
+          "score": 4.913562536239624,
+          "metadata": {
+            "source": "69fd85f24a7ad_1778222578.pdf",
+            "chunk_index": 44,
+            "chunk_id": "doc_69fd85f24a7ad_1778222578_chunk_44",
+            "doc_id": "doc_911",
+            "chunk_size": 959,
+            "start_char": 33905,
+            "document_id": "doc_69fd85f24a7ad_1778222578",
+            "unified_index_timestamp": 1778222630.9093142,
+            "original_filename": "69fd85f24a7ad_1778222578.pdf",
+            "end_char": 34864,
+            "acronym_boosted": true,
+            "matched_acronyms": [
+              "SKPI"
+            ]
+          }
+        },
+        {
+          "id": "doc_69fd85f232c75_1778222578_chunk_0",
+          "content": "PASCA SIDANG\nTUGAS AKHIR\nv1.4\nPROGRAM STUDI\nTEKNIK INFORMATIKA\nUNIVERSITAS MERCU BUANA\n0\nPanduan Pasca Sidang\n\nTAHAPAN\nPROSES\nSAMPAI\nWISUDA\n1\nPanduan Pasca Sidang\n\nA. PERSYARATAN ADMINISTRASI\n1. Telah...",
+          "score": 4.290963649749756,
+          "metadata": {
+            "original_filename": "69fd85f232c75_1778222578.pdf",
+            "chunk_id": "doc_69fd85f232c75_1778222578_chunk_0",
+            "start_char": 0,
+            "chunk_size": 952,
+            "doc_id": "doc_26",
+            "source": "69fd85f232c75_1778222578.pdf",
+            "document_id": "doc_69fd85f232c75_1778222578",
+            "chunk_index": 0,
+            "unified_index_timestamp": 1778222630.90862,
+            "end_char": 952,
+            "acronym_boosted": true,
+            "matched_acronyms": [
+              "SKPI"
+            ]
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f258427_1778222578_chunk_44",
+        "doc_69fd85f24a7ad_1778222578_chunk_44",
+        "doc_69fd85f232c75_1778222578_chunk_0",
+        "doc_69fd85f258427_1778222578_chunk_45",
+        "doc_69fd85f24a7ad_1778222578_chunk_45"
+      ]
+    },
+    {
+      "question_id": "Q025",
+      "pipeline": "baseline",
+      "run": 3,
+      "success": true,
+      "answer": "Maaf, informasi tentang proporsi kategori sertifikat yang diminta untuk SKPI tidak tersedia dalam dokumen referensi yang diberikan. Mohon cek kembali panduan penerimaan mahasiswa baru atau kontak bagian Tata Usaha FASILKOM UMB untuk mendapatkan informasi lebih lanjut.",
+      "answer_length": 268,
+      "confidence": 0.5,
+      "metrics": {
+        "retrieval_time": 0.03367471694946289,
+        "generation_time": 2.7953977584838867,
+        "total_time": 2.8310277462005615,
+        "documents_retrieved": 1,
+        "context_length": 995,
+        "avg_relevance_score": 0.0794051061386466,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0
+      },
+      "ragas": null,
+      "sources_count": 1,
+      "sources": [
+        {
+          "id": "doc_69fd85f263ab0_1778222578_chunk_183",
+          "content": "Pengisian data dimaksudkan untuk mencatat\ndengan latar belakang Biru & Laki- laki dan merekam informasi/biodata tentang calon\ndengan latar belakang Merah); mahasiswa baru yang mendaftarkan diri. Data\n...",
+          "score": 0.0794051061386466,
+          "metadata": {
+            "doc_id": "doc_859",
+            "chunk_index": 183,
+            "unified_index_timestamp": 1778222630.909283,
+            "source": "69fd85f263ab0_1778222578.pdf",
+            "end_char": 143936,
+            "chunk_id": "doc_69fd85f263ab0_1778222578_chunk_183",
+            "document_id": "doc_69fd85f263ab0_1778222578",
+            "original_filename": "69fd85f263ab0_1778222578.pdf",
+            "start_char": 142963,
+            "chunk_size": 973
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f263ab0_1778222578_chunk_183"
+      ]
+    },
+    {
+      "question_id": "Q025",
+      "pipeline": "hybrid",
+      "run": 3,
+      "success": true,
+      "answer": "Untuk mengisi SKPI, terdapat beberapa kategori sertifikat yang dapat dipilih, yaitu:\n\n- Prestasi/Penghargaan Akademik/Olahraga/Kesenian untuk serfitikat/piagam prestasi.\n- Sertifikat Profesi untuk sertifikat profesi yang sudah didapatkan dari pelatihan, contohnya: CCNA, Oracle, FGA DTS, BNSP dst.\n- Magang Industri/Pengalaman Kerja untuk sertifikat bagi yang pernah magang di industri.\n- Kegiatan Ilmiah Nasional/Internasional untuk sertifikat seminar/workshop/konferensi yang diadakan di kampus.\n- Pengalaman Organisasi untuk sertifikat keanggotaan organisasi seperti: BEM, HIMTI dst.\n\nProporsi kategori sertifikat yang diminta tidak disebutkan dalam dokumen-dokumen yang diberikan. Oleh karena itu, kami sarankan Anda mengisi SKPI sesuai dengan pengalaman dan prestasi yang dimiliki.",
+      "answer_length": 786,
+      "confidence": 0.853,
+      "metrics": {
+        "retrieval_time": 0.4636263847351074,
+        "generation_time": 9.67365026473999,
+        "total_time": 10.138358354568481,
+        "documents_retrieved": 5,
+        "context_length": 4996,
+        "avg_relevance_score": 3.0952708780765534,
+        "mrr": 1.0,
+        "precision_at_k": 0.2,
+        "recall_at_k": 0.2
+      },
+      "ragas": null,
+      "sources_count": 5,
+      "sources": [
+        {
+          "id": "doc_69fd85f23fd6e_1778222578_chunk_0",
+          "content": "P engisian\nb. Pada halaman Pengalaman Mahasiswa pada panel diatas bisa di\nklik “+ Tambah” untuk menambahkan Sertifikat yg diminta.\nSKPI\na. Pada kolom Aksi Cepat pilih “Pengalaman Mahasiswa (SKPI)”\n\nc....",
+          "score": 5.335341930389404,
+          "metadata": {
+            "chunk_id": "doc_69fd85f23fd6e_1778222578_chunk_0",
+            "doc_id": "doc_110",
+            "end_char": 997,
+            "source": "69fd85f23fd6e_1778222578.pdf",
+            "original_filename": "69fd85f23fd6e_1778222578.pdf",
+            "start_char": 0,
+            "unified_index_timestamp": 1778222630.90872,
+            "chunk_size": 997,
+            "document_id": "doc_69fd85f23fd6e_1778222578",
+            "chunk_index": 0,
+            "acronym_boosted": true,
+            "matched_acronyms": [
+              "SKPI"
+            ]
+          }
+        },
+        {
+          "id": "doc_69fd85f263ab0_1778222578_chunk_45",
+          "content": "esaikan dalam kurun\n(8) Telah mengikuti dan lulus test sertifikasi profesi\nwaktu satu semester\nsesuai dengan yang disyaratkan oleh program\nstudi dibuktikan dengan sertifikat profesi\nUjian Tugas Akhir\n...",
+          "score": 3.1180171966552734,
+          "metadata": {
+            "unified_index_timestamp": 1778222630.909192,
+            "document_id": "doc_69fd85f263ab0_1778222578",
+            "chunk_id": "doc_69fd85f263ab0_1778222578_chunk_45",
+            "start_char": 34824,
+            "source": "69fd85f263ab0_1778222578.pdf",
+            "original_filename": "69fd85f263ab0_1778222578.pdf",
+            "end_char": 35775,
+            "chunk_index": 45,
+            "doc_id": "doc_721",
+            "chunk_size": 951,
+            "acronym_boosted": true,
+            "matched_acronyms": [
+              "SKPI"
+            ]
+          }
+        },
+        {
+          "id": "doc_69fd85f258427_1778222578_chunk_44",
+          "content": "sif bagi program studi\nyang melaksanakan ujian komprehensif terpisah\nPendaftaran dan Bimbingan Tugas Akhir ( Laporan\ndari sidang tugas akhir dibuktikan dengan surat\nMagang/Skripsi/ Karya Ilmiah Lain)\n...",
+          "score": 2.6389490365982056,
+          "metadata": {
+            "start_char": 33747,
+            "document_id": "doc_69fd85f258427_1778222578",
+            "chunk_id": "doc_69fd85f258427_1778222578_chunk_44",
+            "end_char": 34706,
+            "doc_id": "doc_444",
+            "source": "69fd85f258427_1778222578.pdf",
+            "chunk_size": 959,
+            "original_filename": "69fd85f258427_1778222578.pdf",
+            "unified_index_timestamp": 1778222630.908996,
+            "chunk_index": 44,
+            "acronym_boosted": true,
+            "matched_acronyms": [
+              "SKPI"
+            ]
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f23fd6e_1778222578_chunk_0",
+        "doc_69fd85f263ab0_1778222578_chunk_45",
+        "doc_69fd85f258427_1778222578_chunk_44",
+        "doc_69fd85f24a7ad_1778222578_chunk_44",
+        "doc_69fd85f258427_1778222578_chunk_45"
+      ]
+    },
+    {
+      "question_id": "Q049",
+      "pipeline": "baseline",
+      "run": 3,
+      "success": true,
+      "answer": "Ukuran poin standar yang digunakan dalam isi laporan TA adalah 12 poin, dengan menggunakan tipe huruf Times New Roman.",
+      "answer_length": 118,
+      "confidence": 0.544,
+      "metrics": {
+        "retrieval_time": 0.0418398380279541,
+        "generation_time": 1.4543757438659668,
+        "total_time": 1.4973082542419434,
+        "documents_retrieved": 1,
+        "context_length": 964,
+        "avg_relevance_score": 0.0794051061386466,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0
+      },
+      "ragas": null,
+      "sources_count": 1,
+      "sources": [
+        {
+          "id": "doc_69fd85f22e22c_1778222578_chunk_41",
+          "content": "i dalamnya tidak boleh lebih kecil dari 10 poin (ukuran\nsebenarnya).\n3.6 Daftar Pustaka\nJenis media yang makin berkembang memungkinkan penulis untuk mencari\nsumber informasi dari berbagai jenis media....",
+          "score": 0.0794051061386466,
+          "metadata": {
+            "start_char": 32065,
+            "unified_index_timestamp": 1778222630.908661,
+            "chunk_id": "doc_69fd85f22e22c_1778222578_chunk_41",
+            "chunk_index": 41,
+            "end_char": 33006,
+            "doc_id": "doc_74",
+            "original_filename": "69fd85f22e22c_1778222578.pdf",
+            "document_id": "doc_69fd85f22e22c_1778222578",
+            "chunk_size": 941,
+            "source": "69fd85f22e22c_1778222578.pdf"
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f22e22c_1778222578_chunk_41"
+      ]
+    },
+    {
+      "question_id": "Q049",
+      "pipeline": "hybrid",
+      "run": 3,
+      "success": true,
+      "answer": "Ukuran font dan jenis huruf yang digunakan dalam isi Laporan Kerja Praktek (KP) dan Makalah Berbasis Kompetensi Manajemen (MBKM) di FASILKOM UMB harus sesuai dengan panduan penulisan. Menurut dokumen referensi, ukuran poin standar yang digunakan adalah 12 poin, dan jenis huruf yang disarankan adalah Times New Roman.",
+      "answer_length": 317,
+      "confidence": 0.909,
+      "metrics": {
+        "retrieval_time": 0.40819454193115234,
+        "generation_time": 4.530416488647461,
+        "total_time": 4.939790964126587,
+        "documents_retrieved": 5,
+        "context_length": 4924,
+        "avg_relevance_score": 5.771430921554566,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0
+      },
+      "ragas": null,
+      "sources_count": 5,
+      "sources": [
+        {
+          "id": "doc_69fd85f23b6f2_1778222578_chunk_84",
+          "content": "cepat isi Laporan Kerja Praktek untuk memutuskan apakah\nperlu membaca lebih lanjut atau tidak. Dalam pedoman ini penulisan abstrak dibuat 2\njenisyangberbahasaIndonesiadanBahasaInggris.\n\n2.8DAFTAR ISI\n...",
+          "score": 6.445774078369141,
+          "metadata": {
+            "chunk_index": 84,
+            "original_filename": "69fd85f23b6f2_1778222578.pdf",
+            "end_char": 65619,
+            "document_id": "doc_69fd85f23b6f2_1778222578",
+            "chunk_size": 967,
+            "start_char": 64652,
+            "doc_id": "doc_335",
+            "unified_index_timestamp": 1778222630.9088912,
+            "source": "69fd85f23b6f2_1778222578.pdf",
+            "chunk_id": "doc_69fd85f23b6f2_1778222578_chunk_84",
+            "acronym_boosted": true,
+            "matched_acronyms": [
+              "TA"
+            ]
+          }
+        },
+        {
+          "id": "doc_69fd85f23b6f2_1778222578_chunk_41",
+          "content": "tar Pustaka yang terdapat dalam\npanduan ini. Struktur ini membantu dalam menyusun penelitian dengan teratur dan\nlogis.\n2. Referensi dan Citasi: Mengutip sumber secara tepat dan mencantumkan referensi\n...",
+          "score": 5.751143455505371,
+          "metadata": {
+            "source": "69fd85f23b6f2_1778222578.pdf",
+            "chunk_size": 944,
+            "doc_id": "doc_292",
+            "document_id": "doc_69fd85f23b6f2_1778222578",
+            "chunk_id": "doc_69fd85f23b6f2_1778222578_chunk_41",
+            "original_filename": "69fd85f23b6f2_1778222578.pdf",
+            "chunk_index": 41,
+            "start_char": 31544,
+            "end_char": 32488,
+            "unified_index_timestamp": 1778222630.9088614
+          }
+        },
+        {
+          "id": "doc_69fd85f22e22c_1778222578_chunk_41",
+          "content": "i dalamnya tidak boleh lebih kecil dari 10 poin (ukuran\nsebenarnya).\n3.6 Daftar Pustaka\nJenis media yang makin berkembang memungkinkan penulis untuk mencari\nsumber informasi dari berbagai jenis media....",
+          "score": 5.623129844665527,
+          "metadata": {
+            "chunk_index": 41,
+            "document_id": "doc_69fd85f22e22c_1778222578",
+            "end_char": 33006,
+            "start_char": 32065,
+            "source": "69fd85f22e22c_1778222578.pdf",
+            "doc_id": "doc_74",
+            "unified_index_timestamp": 1778222630.908661,
+            "chunk_id": "doc_69fd85f22e22c_1778222578_chunk_41",
+            "original_filename": "69fd85f22e22c_1778222578.pdf",
+            "chunk_size": 941
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f23b6f2_1778222578_chunk_84",
+        "doc_69fd85f23b6f2_1778222578_chunk_41",
+        "doc_69fd85f22e22c_1778222578_chunk_41",
+        "doc_69fd85f23b6f2_1778222578_chunk_42",
+        "doc_69fd85f237c35_1778222578_chunk_74"
+      ]
+    },
+    {
+      "question_id": "Q050",
+      "pipeline": "baseline",
+      "run": 3,
+      "success": true,
+      "answer": "Penomoran halaman untuk bagian awal laporan Tugas Akhir dimulai dari halaman yang berisi Kata Pengantar. Setiap bab, termasuk Kata Pengantar, dimulai pada halaman baru dan dilengkapi dengan judul sesuai ketentuan penulisan yang telah disebutkan.",
+      "answer_length": 245,
+      "confidence": 0.502,
+      "metrics": {
+        "retrieval_time": 0.03647971153259277,
+        "generation_time": 2.7302820682525635,
+        "total_time": 2.767916202545166,
+        "documents_retrieved": 1,
+        "context_length": 1007,
+        "avg_relevance_score": 0.0794051061386466,
+        "mrr": 1.0,
+        "precision_at_k": 0.2,
+        "recall_at_k": 0.2
+      },
+      "ragas": null,
+      "sources_count": 1,
+      "sources": [
+        {
+          "id": "doc_69fd85f22e22c_1778222578_chunk_35",
+          "content": "uk halaman lampiran yang jumlahnya lebih dari 10\nlembar, di lampirkanpada CD Softcopy tugas akhir.\n3.4 Isi Tugas Akhir\nBagian tubuh/pokok memuat uraian/penjabaran/analisis yang dilakukan oleh\npenulis....",
+          "score": 0.0794051061386466,
+          "metadata": {
+            "unified_index_timestamp": 1778222630.9086556,
+            "chunk_id": "doc_69fd85f22e22c_1778222578_chunk_35",
+            "start_char": 27331,
+            "doc_id": "doc_68",
+            "source": "69fd85f22e22c_1778222578.pdf",
+            "original_filename": "69fd85f22e22c_1778222578.pdf",
+            "end_char": 28316,
+            "chunk_index": 35,
+            "document_id": "doc_69fd85f22e22c_1778222578",
+            "chunk_size": 985
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f22e22c_1778222578_chunk_35"
+      ]
+    },
+    {
+      "question_id": "Q050",
+      "pipeline": "hybrid",
+      "run": 3,
+      "success": true,
+      "answer": "Penomoran halaman untuk bagian awal Laporan Tugas Akhir, termasuk Kata Pengantar, biasanya dimulai dari halaman pertama. Setelah halaman sampul dan judul, nomor halaman akan diatur secara berurutan mulai dari 1.",
+      "answer_length": 211,
+      "confidence": 0.914,
+      "metrics": {
+        "retrieval_time": 0.423724889755249,
+        "generation_time": 3.7906606197357178,
+        "total_time": 4.215511083602905,
+        "documents_retrieved": 5,
+        "context_length": 5001,
+        "avg_relevance_score": 4.252814698219299,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0
+      },
+      "ragas": null,
+      "sources_count": 5,
+      "sources": [
+        {
+          "id": "doc_69fd85f23b6f2_1778222578_chunk_84",
+          "content": "cepat isi Laporan Kerja Praktek untuk memutuskan apakah\nperlu membaca lebih lanjut atau tidak. Dalam pedoman ini penulisan abstrak dibuat 2\njenisyangberbahasaIndonesiadanBahasaInggris.\n\n2.8DAFTAR ISI\n...",
+          "score": 5.1507556438446045,
+          "metadata": {
+            "start_char": 64652,
+            "chunk_id": "doc_69fd85f23b6f2_1778222578_chunk_84",
+            "source": "69fd85f23b6f2_1778222578.pdf",
+            "chunk_index": 84,
+            "unified_index_timestamp": 1778222630.9088912,
+            "document_id": "doc_69fd85f23b6f2_1778222578",
+            "chunk_size": 967,
+            "end_char": 65619,
+            "original_filename": "69fd85f23b6f2_1778222578.pdf",
+            "doc_id": "doc_335",
+            "acronym_boosted": true,
+            "matched_acronyms": [
+              "TA"
+            ]
+          }
+        },
+        {
+          "id": "doc_69fd85f22e22c_1778222578_chunk_42",
+          "content": "ditulis di sudut kanan atas halaman (right-\naligned) dengan huruf tegak tipe Times New Roman 12 poin.\nb. Judul lampiran diketik dalam satu baris menggunakan huruf kapital di awal\nkata (title case).\nc....",
+          "score": 4.424788475036621,
+          "metadata": {
+            "chunk_index": 42,
+            "end_char": 33805,
+            "chunk_id": "doc_69fd85f22e22c_1778222578_chunk_42",
+            "source": "69fd85f22e22c_1778222578.pdf",
+            "original_filename": "69fd85f22e22c_1778222578.pdf",
+            "chunk_size": 999,
+            "document_id": "doc_69fd85f22e22c_1778222578",
+            "unified_index_timestamp": 1778222630.9086618,
+            "start_char": 32806,
+            "doc_id": "doc_75"
+          }
+        },
+        {
+          "id": "doc_69fd85f23b6f2_1778222578_chunk_87",
+          "content": "g konten lampiran yang tersedia dalam Laporan Kerja Praktek dan mempermudah\naksesuntuk merujukkeinformasitambahanyang relevan.\nMahasiswa KP diwajibkan menggunakan tools “Insert Caption” pada aplikasi\n...",
+          "score": 4.386641025543213,
+          "metadata": {
+            "end_char": 67915,
+            "start_char": 66934,
+            "chunk_index": 87,
+            "unified_index_timestamp": 1778222630.908893,
+            "chunk_id": "doc_69fd85f23b6f2_1778222578_chunk_87",
+            "original_filename": "69fd85f23b6f2_1778222578.pdf",
+            "chunk_size": 981,
+            "source": "69fd85f23b6f2_1778222578.pdf",
+            "doc_id": "doc_338",
+            "document_id": "doc_69fd85f23b6f2_1778222578"
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f23b6f2_1778222578_chunk_84",
+        "doc_69fd85f22e22c_1778222578_chunk_42",
+        "doc_69fd85f23b6f2_1778222578_chunk_87",
+        "doc_69fd85f23b6f2_1778222578_chunk_86",
+        "doc_69fd85f23b6f2_1778222578_chunk_85"
+      ]
+    },
+    {
+      "question_id": "Q054",
+      "pipeline": "baseline",
+      "run": 3,
+      "success": true,
+      "answer": "Prosedur mahasiswa untuk mengajukan bimbingan proposal atau tugas akhir melalui sistem ULT (Umumnya, singkatan ini tidak digunakan dalam konteks UMB, tetapi saya akan menjelaskan prosedurnya secara umum) adalah sebagai berikut:\n\n1. Mahasiswa harus mempersiapkan proposal tugas akhir yang lengkap dan sesuai dengan ketentuan Program Studi.\n2. Proposal tersebut kemudian diserahkan kepada dosen pembimbing yang ditetapkan oleh Ketua Program Studi.\n3. Dosen pembimbing akan memberikan surat tugas resmi yang dikeluarkan oleh Ketua Program Studi.\n4. Surat tugas tersebut harus diverifikasi kembali oleh Tata Usaha dan Program Studi sebelum diserahkan kepada mahasiswa.\n5. Mahasiswa dapat mengakses sistem ULT untuk melaporkan bimbingan proposal atau tugas akhir yang telah dilakukan.\n6. Dalam sistem, mahasiswa perlu mencatat tanggal, waktu, dan topik diskusi pada setiap sesi bimbingan.\n7. Setelah proses bimbingan selesai, mahasiswa dapat mengajukan seminar proposal tugas akhir melalui sistem yang sama.\n\nMohon dicatat bahwa detail spesifik tentang sistem ULT mungkin berbeda tergantung pada implementasi di Universitas Mercu Buana. Jika ada pertanyaan lebih lanjut atau informasi tambahan yang diperlukan, silakan sampaikan.",
+      "answer_length": 1224,
+      "confidence": 0.462,
+      "metrics": {
+        "retrieval_time": 0.14832544326782227,
+        "generation_time": 11.122104167938232,
+        "total_time": 11.272068977355957,
+        "documents_retrieved": 1,
+        "context_length": 942,
+        "avg_relevance_score": 0.3176204245545864,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0
+      },
+      "ragas": null,
+      "sources_count": 1,
+      "sources": [
+        {
+          "id": "doc_69fd85f24a7ad_1778222578_chunk_193",
+          "content": "2\nsesuai dengan ketentuan Program Studi yang tertuang\neksemplar.\ndalam buku Pedoman dan Bimbingan Penyusunan\nh. Surat tugas dosen pembimbing yang dikeluarkan\nTugas Akhir. oleh Ketua Program Studi.\n5. ...",
+          "score": 0.3176204245545864,
+          "metadata": {
+            "source": "69fd85f24a7ad_1778222578.pdf",
+            "chunk_id": "doc_69fd85f24a7ad_1778222578_chunk_193",
+            "chunk_size": 921,
+            "unified_index_timestamp": 1778222630.90941,
+            "original_filename": "69fd85f24a7ad_1778222578.pdf",
+            "document_id": "doc_69fd85f24a7ad_1778222578",
+            "chunk_index": 193,
+            "doc_id": "doc_1060",
+            "start_char": 150589,
+            "end_char": 151510
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f24a7ad_1778222578_chunk_193"
+      ]
+    },
+    {
+      "question_id": "Q054",
+      "pipeline": "hybrid",
+      "run": 3,
+      "success": true,
+      "answer": "Prosedur mahasiswa mengajukan bimbingan proposal atau tugas akhir melalui sistem ULT dapat dilakukan dengan langkah-langkah berikut:\n\n1. Mahasiswa harus mengisi KRS tugas akhir pada semester III/IV.\n2. Mahasiswa perlu menyiapkan beberapa dokumen pendukung, seperti:\n   - Bukti bimbingan lebih dari 8 kali bimbingan\n   - Kartu tanda peserta seminar proposal sebanyak 10 kali\n3. Mahasiswa juga harus memiliki catatan bimbingan yang dicatat pada buku \"Pedoman dan Bimbingan Penusunan Tugas Akhir\".\n4. Setelah memenuhi persyaratan di atas, mahasiswa dapat mengajukan permohonan melalui formulir pendaftaran yang tersedia di bagian Tata Usaha.\n5. Formulir tersebut harus disertai dengan bukti-bukti pendukung yang telah disebutkan.\n\nMohon pastikan semua persyaratan terpenuhi sebelum mengajukan permohonan untuk memperoleh bimbingan proposal atau tugas akhir.",
+      "answer_length": 854,
+      "confidence": 0.875,
+      "metrics": {
+        "retrieval_time": 0.475067138671875,
+        "generation_time": 10.0904061794281,
+        "total_time": 10.56659722328186,
+        "documents_retrieved": 5,
+        "context_length": 5032,
+        "avg_relevance_score": 5.338113403320312,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0
+      },
+      "ragas": null,
+      "sources_count": 5,
+      "sources": [
+        {
+          "id": "doc_69fd85f258427_1778222578_chunk_188",
+          "content": "hir\nPenyusunan tugas akhir merupakan kegiatan yang wajib\ndilakukan oleh mahasiswa sebagai salah satu persyaratan\nuntuk menyelesaikan studi sesuai dengan konsentrasi\nkeilmuannya.\nPelaksanaan dan Waktu\n...",
+          "score": 5.582368850708008,
+          "metadata": {
+            "end_char": 147188,
+            "chunk_index": 188,
+            "start_char": 146216,
+            "doc_id": "doc_588",
+            "source": "69fd85f258427_1778222578.pdf",
+            "chunk_id": "doc_69fd85f258427_1778222578_chunk_188",
+            "chunk_size": 972,
+            "unified_index_timestamp": 1778222630.9091032,
+            "document_id": "doc_69fd85f258427_1778222578",
+            "original_filename": "69fd85f258427_1778222578.pdf"
+          }
+        },
+        {
+          "id": "doc_69fd85f258427_1778222578_chunk_192",
+          "content": "ngajuan penyusunan tesis.\n110\n\n(Bimbingan Tugas Akhir 4. Menyerahkan formulir pendaftaran ke bagian Tata\nUsaha dengan beberapa pendukung diantaranya:\n■ Bimbingan penyusunan tugas akhir dengan Dosen a....",
+          "score": 5.361088752746582,
+          "metadata": {
+            "source": "69fd85f258427_1778222578.pdf",
+            "start_char": 149287,
+            "chunk_size": 956,
+            "doc_id": "doc_592",
+            "document_id": "doc_69fd85f258427_1778222578",
+            "original_filename": "69fd85f258427_1778222578.pdf",
+            "end_char": 150243,
+            "unified_index_timestamp": 1778222630.9091065,
+            "chunk_index": 192,
+            "chunk_id": "doc_69fd85f258427_1778222578_chunk_192"
+          }
+        },
+        {
+          "id": "doc_69fd85f258427_1778222578_chunk_45",
+          "content": "diwajibkan mengisi KRS diawal semester, termasuk\ndibuktikan dengan sertifikat profesi\nmahasiswa yang melakukan perpanjangan\n(9) Telah mengisi formulir SKPI melalui laman SKP\npenyelesaian tugas akhir.\n...",
+          "score": 5.307168006896973,
+          "metadata": {
+            "end_char": 35498,
+            "chunk_size": 992,
+            "chunk_id": "doc_69fd85f258427_1778222578_chunk_45",
+            "doc_id": "doc_445",
+            "original_filename": "69fd85f258427_1778222578.pdf",
+            "source": "69fd85f258427_1778222578.pdf",
+            "unified_index_timestamp": 1778222630.9089963,
+            "chunk_index": 45,
+            "start_char": 34506,
+            "document_id": "doc_69fd85f258427_1778222578"
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f258427_1778222578_chunk_188",
+        "doc_69fd85f258427_1778222578_chunk_192",
+        "doc_69fd85f258427_1778222578_chunk_45",
+        "doc_69fd85f24a7ad_1778222578_chunk_45",
+        "doc_69fd85f24a7ad_1778222578_chunk_188"
+      ]
+    },
+    {
+      "question_id": "Q057",
+      "pipeline": "baseline",
+      "run": 3,
+      "success": true,
+      "answer": "Mahasiswa dapat mengetahui hasil sidang dan mengirimkan revisi melalui tampilan Detail Informasi Sidang. Setelah pendaftaran sidang disetujui oleh prodi, akan muncul informasi ruangan sidang yang telah ditentukan. Mahasiswa dapat memeriksa hasil sidang dan catatan dari dosen penguji dengan menekan tombol Detail di tampilan Informasi Sidang. Untuk mengirimkan revisi, mahasiswa perlu mengikuti petunjuk yang disertakan dalam catatan tersebut.",
+      "answer_length": 443,
+      "confidence": 0.488,
+      "metrics": {
+        "retrieval_time": 0.10358333587646484,
+        "generation_time": 4.378413438796997,
+        "total_time": 4.483539342880249,
+        "documents_retrieved": 1,
+        "context_length": 961,
+        "avg_relevance_score": 0.2382153184159398,
+        "mrr": 1.0,
+        "precision_at_k": 0.2,
+        "recall_at_k": 0.2
+      },
+      "ragas": null,
+      "sources_count": 1,
+      "sources": [
+        {
+          "id": "doc_69fd85f22400f_1778222578_chunk_6",
+          "content": "menyetujui pendaftaran sidang dari mahasiswa. Kolom status\npendaftaran akan berubah dari sebelumnya “TERKIRIM” menjadi “DISETUJUI”. Dan\nterdapat tombol detail untuk melihat detail pendaftaran sidang.\n...",
+          "score": 0.2382153184159398,
+          "metadata": {
+            "original_filename": "69fd85f22400f_1778222578.pdf",
+            "start_char": 4651,
+            "end_char": 5590,
+            "document_id": "doc_69fd85f22400f_1778222578",
+            "source": "69fd85f22400f_1778222578.pdf",
+            "chunk_index": 6,
+            "chunk_id": "doc_69fd85f22400f_1778222578_chunk_6",
+            "chunk_size": 939,
+            "unified_index_timestamp": 1778222630.9085946,
+            "doc_id": "doc_6"
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f22400f_1778222578_chunk_6"
+      ]
+    },
+    {
+      "question_id": "Q057",
+      "pipeline": "hybrid",
+      "run": 3,
+      "success": true,
+      "answer": "Hasil sidang dan jadwal pelaksanaannya akan diumumkan melalui website https://sisteminformasi.fasilkom.mercubuana.ac.id/ atau http://teknikinformatika.fasilkom.mercubuana.ac.id/. Mahasiswa dapat memeriksa informasi tersebut secara berkala untuk mengetahui jadwal sidang dan hasilnya.\n\nUntuk mengirimkan revisi, mahasiswa perlu masuk ke sistem ULT (Sistem Layanan Teknologi Informasi) melalui alamat yang sama. Setelah login, mahasiswa dapat mengunggah lembar pernyataan orisinalitas hasil karya dan surat pernyataan persetujuan publikasi Tugas Akhir dengan ditandatangani di atas materai sesuai ketentuan. Pastikan untuk memperhatikan batas waktu yang diberikan, yaitu paling lama 14 hari setelah masa ujian sidang.\n\nJika Anda memiliki pertanyaan lebih lanjut atau perlu bantuan tambahan, jangan ragu untuk menghubungi kami kembali.",
+      "answer_length": 832,
+      "confidence": 0.872,
+      "metrics": {
+        "retrieval_time": 0.42571353912353516,
+        "generation_time": 10.007439851760864,
+        "total_time": 10.434183835983276,
+        "documents_retrieved": 5,
+        "context_length": 5036,
+        "avg_relevance_score": 4.4260636329650875,
+        "mrr": 0.25,
+        "precision_at_k": 0.2,
+        "recall_at_k": 0.2
+      },
+      "ragas": null,
+      "sources_count": 5,
+      "sources": [
+        {
+          "id": "doc_69fd85f258427_1778222578_chunk_270",
+          "content": "n mahasiswa membuat akun di laman\nmengisi form-form yang sudah ditentukan dengan\npendaftaran UMB dan mengisi data diri dan\nmelampirkan bukti pendidikan formal, nonformal,\npersyaratan yang dibutuhkan,\n...",
+          "score": 4.8441619873046875,
+          "metadata": {
+            "unified_index_timestamp": 1778222630.9091575,
+            "end_char": 210784,
+            "start_char": 209792,
+            "document_id": "doc_69fd85f258427_1778222578",
+            "chunk_id": "doc_69fd85f258427_1778222578_chunk_270",
+            "chunk_size": 992,
+            "source": "69fd85f258427_1778222578.pdf",
+            "original_filename": "69fd85f258427_1778222578.pdf",
+            "doc_id": "doc_670",
+            "chunk_index": 270
+          }
+        },
+        {
+          "id": "doc_69fd85f258427_1778222578_chunk_272",
+          "content": "yatakan Tidak Lulus.\n2. Sistem Pengambilan Keputusan.\nPengumuman hasil seleksi penerimaan\nmahasiswa baru Universitas Mercu Buana\nmengikuti ketentuan sebagai berikut :\na. Dalam menentukan apakah calon\n...",
+          "score": 4.575227737426758,
+          "metadata": {
+            "start_char": 211374,
+            "end_char": 212321,
+            "chunk_index": 272,
+            "doc_id": "doc_672",
+            "original_filename": "69fd85f258427_1778222578.pdf",
+            "chunk_id": "doc_69fd85f258427_1778222578_chunk_272",
+            "unified_index_timestamp": 1778222630.909159,
+            "document_id": "doc_69fd85f258427_1778222578",
+            "chunk_size": 947,
+            "source": "69fd85f258427_1778222578.pdf"
+          }
+        },
+        {
+          "id": "doc_69fd85f24a7ad_1778222578_chunk_272",
+          "content": "na\nmengikuti ketentuan sebagai berikut :\na. Dalam menentukan apakah calon\nmahasiswa diterima atau ditolak\nmenjadi Mahasiswa Universitas Mercu\nBuana, Biro Penerimaan Mahasiswa\nakan mengambil keputusan\n...",
+          "score": 4.331125259399414,
+          "metadata": {
+            "unified_index_timestamp": 1778222630.9094613,
+            "chunk_index": 272,
+            "document_id": "doc_69fd85f24a7ad_1778222578",
+            "doc_id": "doc_1139",
+            "source": "69fd85f24a7ad_1778222578.pdf",
+            "original_filename": "69fd85f24a7ad_1778222578.pdf",
+            "chunk_size": 981,
+            "end_char": 212963,
+            "chunk_id": "doc_69fd85f24a7ad_1778222578_chunk_272",
+            "start_char": 211982
+          }
+        }
+      ],
+      "retrieved_chunk_ids": [
+        "doc_69fd85f258427_1778222578_chunk_270",
+        "doc_69fd85f258427_1778222578_chunk_272",
+        "doc_69fd85f24a7ad_1778222578_chunk_272",
+        "doc_69fd85f22e22c_1778222578_chunk_73",
+        "doc_69fd85f258427_1778222578_chunk_200"
+      ]
+    }
+  ],
+  "summary": {
+    "baseline": {
+      "total_questions": 21,
+      "successful": 21,
+      "success_rate": 1.0,
+      "avg_retrieval_time": 0.1808,
+      "avg_generation_time": 4.539,
+      "avg_total_time": 4.7254,
+      "avg_documents_retrieved": 1.0,
+      "avg_context_length": 973.5714,
+      "avg_relevance_score": 0.1815,
+      "avg_confidence": 0.5,
+      "avg_answer_length": 428.8095,
+      "avg_mrr": 0.4286,
+      "avg_precision_at_k": 0.0857,
+      "avg_recall_at_k": 0.0857
+    },
+    "hybrid": {
+      "total_questions": 21,
+      "successful": 21,
+      "success_rate": 1.0,
+      "avg_retrieval_time": 0.5411,
+      "avg_generation_time": 6.6641,
+      "avg_total_time": 7.3819,
+      "avg_documents_retrieved": 5.0,
+      "avg_context_length": 4996.7143,
+      "avg_relevance_score": 4.6836,
+      "avg_confidence": 0.8897,
+      "avg_answer_length": 500.1429,
+      "avg_mrr": 0.4643,
+      "avg_precision_at_k": 0.1714,
+      "avg_recall_at_k": 0.1714
+    }
+  },
+  "statistical_tests": [
+    {
+      "metric": "mrr",
+      "n_samples": 7,
+      "descriptive": {
+        "baseline": {
+          "mean": 0.4286,
+          "std": 0.5345,
+          "min": 0.0,
+          "max": 1.0
+        },
+        "advanced": {
+          "mean": 0.4643,
+          "std": 0.5089,
+          "min": 0.0,
+          "max": 1.0
+        }
+      },
+      "normality": {
+        "test": "Shapiro-Wilk",
+        "alpha": 0.05,
+        "baseline": {
+          "statistic": 0.6644,
+          "p_value": 0.0015,
+          "is_normal": "False"
+        },
+        "advanced": {
+          "statistic": 0.7332,
+          "p_value": 0.0084,
+          "is_normal": "False"
+        },
+        "both_normal": "False"
+      },
+      "hypothesis_test": {
+        "test": "Wilcoxon Signed-Rank Test",
+        "reason": "Data tidak berdistribusi normal",
+        "statistic": 4.0,
+        "p_value": 1.0,
+        "alpha": 0.05,
+        "significant": false,
+        "conclusion": "H0 DITERIMA (p=1.000000 >= α=0.05): Tidak terdapat perbedaan signifikan."
+      }
+    },
+    {
+      "metric": "precision_at_k",
+      "n_samples": 7,
+      "descriptive": {
+        "baseline": {
+          "mean": 0.0857,
+          "std": 0.1069,
+          "min": 0.0,
+          "max": 0.2
+        },
+        "advanced": {
+          "mean": 0.1714,
+          "std": 0.2138,
+          "min": 0.0,
+          "max": 0.6
+        }
+      },
+      "normality": {
+        "test": "Shapiro-Wilk",
+        "alpha": 0.05,
+        "baseline": {
+          "statistic": 0.6644,
+          "p_value": 0.0015,
+          "is_normal": "False"
+        },
+        "advanced": {
+          "statistic": 0.7805,
+          "p_value": 0.0261,
+          "is_normal": "False"
+        },
+        "both_normal": "False"
+      },
+      "hypothesis_test": {
+        "test": "Wilcoxon Signed-Rank Test",
+        "reason": "Data tidak berdistribusi normal",
+        "statistic": 1.5,
+        "p_value": 0.75,
+        "alpha": 0.05,
+        "significant": false,
+        "conclusion": "H0 DITERIMA (p=0.750000 >= α=0.05): Tidak terdapat perbedaan signifikan."
+      }
+    },
+    {
+      "metric": "recall_at_k",
+      "n_samples": 7,
+      "descriptive": {
+        "baseline": {
+          "mean": 0.0857,
+          "std": 0.1069,
+          "min": 0.0,
+          "max": 0.2
+        },
+        "advanced": {
+          "mean": 0.1714,
+          "std": 0.2138,
+          "min": 0.0,
+          "max": 0.6
+        }
+      },
+      "normality": {
+        "test": "Shapiro-Wilk",
+        "alpha": 0.05,
+        "baseline": {
+          "statistic": 0.6644,
+          "p_value": 0.0015,
+          "is_normal": "False"
+        },
+        "advanced": {
+          "statistic": 0.7805,
+          "p_value": 0.0261,
+          "is_normal": "False"
+        },
+        "both_normal": "False"
+      },
+      "hypothesis_test": {
+        "test": "Wilcoxon Signed-Rank Test",
+        "reason": "Data tidak berdistribusi normal",
+        "statistic": 1.5,
+        "p_value": 0.75,
+        "alpha": 0.05,
+        "significant": false,
+        "conclusion": "H0 DITERIMA (p=0.750000 >= α=0.05): Tidak terdapat perbedaan signifikan."
+      }
+    }
+  ]
+}
