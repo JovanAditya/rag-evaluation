@@ -67,9 +67,9 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Konfigurasi retry untuk error 503/overloaded/rate-limit
-MAX_RETRIES = 5
+MAX_RETRIES = 100   # Diperbanyak agar tidak di-skip jika Gemini High Demand
 INITIAL_WAIT = 15   # Detik awal tunggu sebelum retry
-MAX_WAIT = 120      # Maksimum waktu tunggu (detik)
+MAX_WAIT = 300      # Maksimum waktu tunggu (detik) (5 menit)
 BACKOFF_FACTOR = 2  # Faktor pengali exponential backoff
 
 # Pattern error yang bisa di-retry (503, 429, overloaded, dsb)
@@ -285,44 +285,59 @@ def compute_ragas_metrics(
         return None
 
     try:
-        judge_model = ragas_config.get("judge_model", "ollama")
+        # Konfigurasi Provider (default fallback jika belum diubah di config)
+        llm_provider = ragas_config.get("llm_provider", ragas_config.get("judge_model", "ollama"))
+        embed_provider = ragas_config.get("embed_provider", ragas_config.get("judge_model", "ollama"))
+        
         llm = None
         embeddings = None
-
-        if judge_model == "ollama":
-            # Pakai Ollama lokal — gratis, tanpa API key
+        
+        # 1. SETUP LLM JUDGE
+        if llm_provider == "ollama":
             try:
-                from langchain_ollama import ChatOllama, OllamaEmbeddings
+                from langchain_ollama import ChatOllama
                 ollama_model = ragas_config.get("ollama_model", "llama3.2:latest")
                 llm = ChatOllama(model=ollama_model, format="json", temperature=0)
-                embeddings = OllamaEmbeddings(model=ollama_model)
-                logger.info(f"  RAGAS menggunakan Ollama ({ollama_model}) dengan strict JSON")
+                logger.info(f"  RAGAS LLM: Ollama ({ollama_model})")
             except ImportError:
                 logger.warning("langchain-ollama tidak tersedia. Install: pip install langchain-ollama")
                 return None
-
-        elif judge_model == "gemini":
-            # Pakai Gemini API
+        elif llm_provider == "gemini":
             try:
-                from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
+                from langchain_google_genai import ChatGoogleGenerativeAI
                 api_key = os.environ.get("GEMINI_API_KEY")
                 if not api_key:
                     logger.warning("GEMINI_API_KEY tidak ditemukan di environment.")
                     return None
                 gemini_model = ragas_config.get("gemini_model", "gemini-2.5-flash")
-                ollama_model = ragas_config.get("ollama_model", "llama3.2:latest")
                 llm = ChatGoogleGenerativeAI(model=gemini_model, google_api_key=api_key)
-                
-                # Gunakan OllamaLokal untuk embeddings agar terhindar dari Error 404 Gemini & Limit Kuota
-                try:
-                    from langchain_ollama import OllamaEmbeddings
-                    embeddings = OllamaEmbeddings(model=ollama_model)
-                    logger.info(f"  RAGAS: LLM Gemini ({gemini_model}) | Embeddings Ollama ({ollama_model})")
-                except ImportError:
-                    logger.error("Silakan install: pip install langchain-ollama")
-                    return None
+                logger.info(f"  RAGAS LLM: Gemini ({gemini_model})")
             except ImportError:
                 logger.warning("langchain-google-genai tidak tersedia. Install: pip install langchain-google-genai")
+                return None
+                
+        # 2. SETUP EMBEDDINGS
+        if embed_provider == "ollama":
+            try:
+                from langchain_ollama import OllamaEmbeddings
+                ollama_embed_model = ragas_config.get("ollama_embed_model", "nomic-embed-text")
+                embeddings = OllamaEmbeddings(model=ollama_embed_model)
+                logger.info(f"  RAGAS Embeddings: Ollama ({ollama_embed_model})")
+            except ImportError:
+                logger.warning("langchain-ollama tidak tersedia untuk embeddings.")
+                return None
+        elif embed_provider == "gemini":
+            try:
+                from langchain_google_genai import GoogleGenerativeAIEmbeddings
+                api_key = os.environ.get("GEMINI_API_KEY")
+                if not api_key:
+                    logger.warning("GEMINI_API_KEY tidak ditemukan di environment.")
+                    return None
+                gemini_embed_model = ragas_config.get("gemini_embed_model", "gemini-embedding-001")
+                embeddings = GoogleGenerativeAIEmbeddings(model=gemini_embed_model, google_api_key=api_key)
+                logger.info(f"  RAGAS Embeddings: Gemini ({gemini_embed_model})")
+            except Exception as e:
+                logger.warning(f"Gagal memuat Gemini Embeddings: {e}")
                 return None
 
         # Buat dataset untuk RAGAS

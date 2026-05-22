@@ -1,0 +1,558 @@
+{
+  "total": 55,
+  "failures": 0,
+  "success_rate": "100.0%",
+  "results": [
+    {
+      "id": "Q001",
+      "category": "Kerja Praktek (KP)",
+      "question": "Apa tujuan utama dari pelaksanaan Kerja Praktek (KP) di Program Studi Ilmu Komputer UMB?",
+      "ground_truth": "Memberikan pengalaman nyata di dunia industri, membantu mahasiswa mengaplikasikan teori ke praktik profesional, serta mendapatkan paparan langsung terhadap perkembangan teknologi informasi.",
+      "answer": "Tujuan utama dari pelaksanaan Kerja Praktek (KP) di Program Studi Ilmu Komputer UMB adalah memberikan pengalaman nyata di dunia industri/instansi dan membantu mahasiswa mengaplikasikan teori yang dipelajari ke dalam praktik profesional.",
+      "top_source": "doc_6a0f16ebbb001_1779373803_chunk_0",
+      "sources_count": 5,
+      "time": 20.22
+    },
+    {
+      "id": "Q002",
+      "category": "Kerja Praktek (KP)",
+      "question": "Berapa durasi pelaksanaan Magang Mandiri?",
+      "ground_truth": "Durasi magang mandiri adalah 4-6 bulan",
+      "answer": "Durasi pelaksanaan Magang Mandiri adalah 4-6 bulan.",
+      "top_source": "doc_6a0f16ebbb001_1779373803_chunk_0",
+      "sources_count": 5,
+      "time": 4.73
+    },
+    {
+      "id": "Q003",
+      "category": "Kerja Praktek (KP)",
+      "question": "Apa syarat minimal SKS untuk mengambil mata kuliah Kerja Praktek?",
+      "ground_truth": "Mahasiswa harus telah lulus minimal 90 SKS.",
+      "answer": "Syarat minimal SKS untuk mengambil mata kuliah Kerja Praktek adalah sebesar 90 SKS.",
+      "top_source": "doc_6a0f16ebc3e21_1779373803_chunk_20",
+      "sources_count": 5,
+      "time": 5.03
+    },
+    {
+      "id": "Q004",
+      "category": "Kerja Praktek (KP)",
+      "question": "Berapa IPK minimal yang disyaratkan untuk mendaftar Kerja Praktek?",
+      "ground_truth": "IPK minimal adalah 2,75.",
+      "answer": "IPK minimal yang disyaratkan untuk mendaftar Kerja Praktek adalah **2,75**.",
+      "top_source": "doc_6a0f16ebc3e21_1779373803_chunk_28",
+      "sources_count": 5,
+      "time": 4.9
+    },
+    {
+      "id": "Q005",
+      "category": "Kerja Praktek (KP)",
+      "question": "Apa yang harus dilakukan mahasiswa jika belum mendapatkan tempat magang setelah 4 minggu perkuliahan KP dimulai?",
+      "ground_truth": "Program Studi Teknik Informatika akan memberikan daftar magang yang tersedia dan wajib diikuti oleh mahasiswa tersebut.",
+      "answer": "Mahasiswa harus mengikuti daftar magang yang disediakan oleh Program Studi Teknik Informatika UMB setelah 4 minggu perkuliahan KP dimulai jika belum mendapatkan tempat magang.",
+      "top_source": "doc_6a0f16ebbb001_1779373803_chunk_0",
+      "sources_count": 5,
+      "time": 6.11
+    },
+    {
+      "id": "Q006",
+      "category": "Kerja Praktek (KP)",
+      "question": "Berapa kali minimal konsultasi dengan dosen pembimbing yang harus dicatat pada lembar konsultasi KP?",
+      "ground_truth": "Minimal sebanyak 6 kali konsultasi.",
+      "answer": "Minimal konsultasi dengan dosen pembimbing yang harus dicatat pada lembar konsultasi KP adalah sebanyak 6 kali. Lembar konsultasi tersebut didapatkan dari Tata Usaha Fasilkom.",
+      "top_source": "doc_6a0f16ebc3e21_1779373803_chunk_51",
+      "sources_count": 5,
+      "time": 6.13
+    },
+    {
+      "id": "Q007",
+      "category": "Tugas Akhir (TA)",
+      "question": "Sebutkan 4 skema penyusunan Laporan Tugas Akhir yang tersedia di Fakultas Ilmu Komputer UMB!",
+      "ground_truth": "Skema Aplikatif, Skema Riset, Skema Publikasi Ilmiah, dan Skema Media Ilmiah.",
+      "answer": "Skema penyusunan Laporan Tugas Akhir yang tersedia di Fakultas Ilmu Komputer UMB meliputi:\n\n1. Skema Aplikatif,\n2. Riset,\n3. Publikasi Ilmiah, dan\n4. Media Ilmiah.",
+      "top_source": "doc_6a0f16ebc9c1e_1779373803_chunk_223",
+      "sources_count": 5,
+      "time": 6.85
+    },
+    {
+      "id": "Q008",
+      "category": "Tugas Akhir (TA)",
+      "question": "Apa syarat jumlah SKS untuk dapat mengambil (Klik) mata kuliah Tugas Akhir?",
+      "ground_truth": "Jumlah SKS Lulus + SKS Tempuh + TA harus >= 144 SKS.",
+      "answer": "Syarat jumlah SKS untuk dapat mengambil mata kuliah Tugas Akhir (Klik TA) adalah minimal 144 SKS yang terdiri dari SKS lulus, SKS tempuh, dan SKS Klik TA itu sendiri.",
+      "top_source": "doc_6a0f16ebbd1f9_1779373803_chunk_15",
+      "sources_count": 5,
+      "time": 6.4
+    },
+    {
+      "id": "Q009",
+      "category": "Tugas Akhir (TA)",
+      "question": "Berapa nilai minimal mata kuliah MKCU (seperti Bahasa Indonesia dan Pancasila) untuk mengambil TA?",
+      "ground_truth": "Minimal mendapatkan nilai B.",
+      "answer": "Nilai minimal mata kuliah Ciri Universitas (MKCU) seperti Bahasa Indonesia dan Pancasila untuk mengambil Tugas Akhir adalah nilai B.",
+      "top_source": "doc_6a0f16ebbd1f9_1779373803_chunk_15",
+      "sources_count": 5,
+      "time": 5.37
+    },
+    {
+      "id": "Q010",
+      "category": "Tugas Akhir (TA)",
+      "question": "Apa perbedaan utama antara Skema TA Aplikatif dan Skema TA Riset?",
+      "ground_truth": "Skema Aplikatif berfokus pada proyek pengembangan produk konkret/solusi praktis, sedangkan Skema Riset berfokus pada eksplorasi dan pemecahan masalah menggunakan metode riset ilmiah.",
+      "answer": "Skema Tugas Akhir Aplikatif berfokus pada proyek penelitian atau pengembangan yang memiliki tujuan praktis atau aplikatif, dengan tujuan menghasilkan solusi konkret untuk permasalahan tertentu. Sementara itu, Skema Tugas Akhir Riset lebih bersifat teoritis dan konseptual, dengan fokus pada penelitian ilmiah yang bertujuan untuk menambah pemahaman atau menemukan pengetahuan baru dalam bidang studi.",
+      "top_source": "doc_6a0f16ebbd1f9_1779373803_chunk_3",
+      "sources_count": 5,
+      "time": 9.48
+    },
+    {
+      "id": "Q011",
+      "category": "Tugas Akhir (TA)",
+      "question": "Apa saja contoh bentuk produk yang dihasilkan dari skema Tugas Akhir Media Ilmiah?",
+      "ground_truth": "Bentuk produk yang dihasilkan dapat berupa video dokumenter, podcast, atau situs web interaktif.",
+      "answer": "Contoh bentuk produk yang dihasilkan dari skema Tugas Akhir Media Ilmiah meliputi video dokumenter, podcast, dan situs web interaktif.",
+      "top_source": "doc_6a0f16ebbd1f9_1779373803_chunk_3",
+      "sources_count": 5,
+      "time": 5.64
+    },
+    {
+      "id": "Q012",
+      "category": "Tugas Akhir (TA)",
+      "question": "Sebutkan apa saja kriteria penilaian 'Atitude' dalam ujian sidang Tugas Akhir!",
+      "ground_truth": "Kriteria penilaian 'Atitude' terdiri dari disiplin, sikap, komunikasi, dan penampilan presentasi (skor 10-20).",
+      "answer": "Kriteria penilaian 'Atitude' dalam ujian sidang Tugas Akhir terdiri dari:\n\n1. Disiplin, Sikap, komunikasi, dan penampilan presentasi (10-20).\n\nUntuk Tugas Akhir Aplikatif (Proyek, prototipe), kriteria 'Atitude' adalah:\n\n1. Disiplin, Sikap, komunikasi, dan penampilan presentasi (10-20).\n\nSedangkan untuk Skripsi (Tugas Akhir Riset), kriteria 'Atitude' adalah:\n\n1. Sikap, komunikasi, dan penampilan presentasi (10-20).",
+      "top_source": "doc_6a0f16ebc9c1e_1779373803_chunk_227",
+      "sources_count": 5,
+      "time": 11.11
+    },
+    {
+      "id": "Q013",
+      "category": "Tugas Akhir (TA)",
+      "question": "Berapa jumlah maksimal halaman Skripsi Program Sarjana menurut ketentuan penulisan Tugas Akhir?",
+      "ground_truth": "Skripsi Program Sarjana maksimal 90 halaman. Ketentuan jumlah halaman dihitung dari halaman nomor 1 di Bab Pendahuluan sampai dengan halaman Daftar Pustaka.",
+      "answer": "Jumlah maksimal halaman Skripsi Program Sarjana menurut ketentuan penulisan Tugas Akhir adalah 90 halaman.",
+      "top_source": "doc_6a0f16ebbd1f9_1779373803_chunk_37",
+      "sources_count": 5,
+      "time": 5.4
+    },
+    {
+      "id": "Q014",
+      "category": "Tugas Akhir (TA)",
+      "question": "Jenis kertas dan berat apa yang digunakan untuk pencetakan laporan Tugas Akhir?",
+      "ground_truth": "Kertas HVS Putih polos, ukuran A4 dengan berat 80 gram.",
+      "answer": "Jenis kertas yang digunakan untuk pencetakan isi laporan Tugas Akhir adalah HVS Putih polos, dengan ukuran A4 dan berat 80 gram.",
+      "top_source": "doc_6a0f16ebbd1f9_1779373803_chunk_27",
+      "sources_count": 5,
+      "time": 5.72
+    },
+    {
+      "id": "Q015",
+      "category": "Pasca Sidang & Yudisium",
+      "question": "Berapa batas waktu maksimal untuk melakukan revisi setelah dinyatakan lulus sidang TA?",
+      "ground_truth": "Maksimal 14 hari kerja setelah tanggal sidang.",
+      "answer": "Batas waktu maksimal untuk melakukan revisi setelah dinyatakan lulus sidang TA adalah 14 hari kerja setelah tanggal sidang.",
+      "top_source": "doc_6a0f16ebbeacd_1779373803_chunk_1",
+      "sources_count": 5,
+      "time": 5.39
+    },
+    {
+      "id": "Q016",
+      "category": "Tugas Akhir (TA)",
+      "question": "Berapa lama durasi waktu maksimal yang diberikan kepada mahasiswa untuk melakukan presentasi saat sidang Tugas Akhir?",
+      "ground_truth": "Durasi presentasi maksimal adalah 7 menit.",
+      "answer": "Waktu maksimal yang diberikan kepada mahasiswa untuk melakukan presentasi saat sidang Tugas Akhir adalah 7 menit.",
+      "top_source": "doc_6a0f16ebbd1f9_1779373803_chunk_80",
+      "sources_count": 5,
+      "time": 5.19
+    },
+    {
+      "id": "Q017",
+      "category": "Pasca Sidang & Yudisium",
+      "question": "Bukti tanda tangan revisi dari pembimbing dan penguji harus berupa apa di halaman pengesahan?",
+      "ground_truth": "Wajib berupa tanda tangan basah.",
+      "answer": "Bukti tanda tangan revisi dari pembimbing dan penguji harus berupa TANDA TANGAN BASAH pada halaman pengesahan.",
+      "top_source": "doc_6a0f16ebbc026_1779373803_chunk_0",
+      "sources_count": 5,
+      "time": 5.53
+    },
+    {
+      "id": "Q018",
+      "category": "Pasca Sidang & Yudisium",
+      "question": "Apa format penamaan file PowerPoint presentasi sidang yang harus diunggah setelah mahasiswa melakukan revisi?",
+      "ground_truth": "Format penamaan filenya adalah PRESI+NIM+NAMA.ppt atau PRESI+NIM+NAMA.pptx.",
+      "answer": "Format penamaan file PowerPoint presentasi sidang yang harus diunggah setelah mahasiswa melakukan revisi adalah:\n\nPRESI+NIM+NAMA.ppt",
+      "top_source": "doc_6a0f16ebbc026_1779373803_chunk_2",
+      "sources_count": 5,
+      "time": 5.48
+    },
+    {
+      "id": "Q019",
+      "category": "Pasca Sidang & Yudisium",
+      "question": "Bagi mahasiswa yang membuat aplikasi, apa format penamaan folder aplikasi yang diunggah ke Google Drive?",
+      "ground_truth": "APP+NIM+NAMA",
+      "answer": "Format penamaan folder aplikasi yang diunggah ke Google Drive adalah **APP+NIM+NAMA**.",
+      "top_source": "doc_6a0f16ebbc026_1779373803_chunk_2",
+      "sources_count": 5,
+      "time": 4.97
+    },
+    {
+      "id": "Q020",
+      "category": "Pasca Sidang & Yudisium",
+      "question": "Sebutkan skor minimal TOEFL/TOEIC yang menjadi syarat administrasi pasca sidang!",
+      "ground_truth": "Skor minimal TOEIC adalah 550 atau TOEFL adalah 450.",
+      "answer": "Skor minimal TOEFL adalah 450 atau skor TOEIC adalah 550, standar Lembaga Bahasa.",
+      "top_source": "doc_6a0f16ebc9c1e_1779373803_chunk_305",
+      "sources_count": 5,
+      "time": 5.3
+    },
+    {
+      "id": "Q021",
+      "category": "Pasca Sidang & Yudisium",
+      "question": "Di mana mahasiswa dapat mengakses laporan keuangan untuk bukti sumbangan alumni?",
+      "ground_truth": "Diakses pada laman SIA melalui menu Login -> Detail Mahasiswa -> Tagihan.",
+      "answer": "Mahasiswa dapat mengakses laporan keuangan untuk bukti sumbangan alumni pada laman SIA (Sistem Informasi Akademik). Prosesnya adalah dengan login ke SIA, kemudian memilih menu Detail Mahasiswa dan menavigasi ke bagian Tagihan. Jika terdapat kesulitan dalam membuka tagihan tersebut, mahasiswa dapat menghubungi Biro Administrasi Keuangan (BAK) untuk bantuan.",
+      "top_source": "doc_6a0f16ebbc026_1779373803_chunk_3",
+      "sources_count": 5,
+      "time": 8.75
+    },
+    {
+      "id": "Q022",
+      "category": "Metodologi Penelitian (MPTI)",
+      "question": "Berapa lama durasi sesi tanya jawab antara penguji dan mahasiswa dalam sidang proposal MPTI?",
+      "ground_truth": "Sesi tanya jawab dan diskusi dalam sidang proposal MPTI berlangsung selama kurang lebih 20 menit.",
+      "answer": "Durasi sesi tanya jawab antara penguji dan mahasiswa dalam sidang proposal MPTI adalah sekitar 20 menit.",
+      "top_source": "doc_6a0f16ebc1ac2_1779373803_chunk_146",
+      "sources_count": 5,
+      "time": 5.45
+    },
+    {
+      "id": "Q023",
+      "category": "Pasca Sidang & Yudisium",
+      "question": "Bagaimana prosedur penyerahan Tugas Akhir ke perpustakaan bagi mahasiswa kampus Meruya, Warung Buncit, dan Menteng?",
+      "ground_truth": "Penyerahan TA ke perpustakaan dilakukan secara langsung (offline) dalam bentuk CD untuk kampus Meruya dan Warung Buncit, kecuali untuk kampus Menteng.",
+      "answer": "Prosedur penyerahan Tugas Akhir ke perpustakaan bagi mahasiswa kampus Meruya, Warung Buncit, dan Menteng dapat dilakukan sebagai berikut:\n\n1. **Kampus Meruya:**\n   - Mahasiswa dapat menyerahkan Tugas Akhir dalam bentuk CD ke Perpustakaan UMB Kampus Meruya melalui Nomor Pelayanan 082311232229 atau melalui Link Pelayanan bit.ly/lib_meruya.\n\n2. **Kampus Warung Buncit/Pejaten:**\n   - Mahasiswa dapat menyerahkan Tugas Akhir dalam bentuk CD ke Perpustakaan UMB Kampus Warung Buncit/Pejaten melalui Nomor Pelayanan 082135935955 atau melalui Link Pelayanan bit.ly/warungbuncit_lib.\n\n3. **Kampus Menteng:**\n   - Mahasiswa dapat menyerahkan Tugas Akhir dalam bentuk CD ke Perpustakaan UMB Kampus Menteng melalui Nomor Pelayanan 085219542932 atau melalui Link Pelayanan bit.ly/menteng_lib.\n\nMohon pastikan untuk mengikuti prosedur yang telah disediakan dan menggunakan bentuk CD sebagai media penyampaian Tugas Akhir.",
+      "top_source": "doc_6a0f16ebbc026_1779373803_chunk_5",
+      "sources_count": 5,
+      "time": 19.16
+    },
+    {
+      "id": "Q024",
+      "category": "Administrasi Akademik & SKPI",
+      "question": "Berapa minimal sertifikat/kegiatan yang harus ada di SKPI?",
+      "ground_truth": "Minimal 10 sertifikat.",
+      "answer": "Minimal sertifikat/kegiatan yang harus ada di SKPI adalah 10 sertifikat. Dari 10 sertifikat tersebut, minimal 7 sertifikat harus sesuai bidang ilmu dan maksimal 2 sertifikat dapat berupa kegiatan minat dan bakat.",
+      "top_source": "doc_6a0f16ebbeacd_1779373803_chunk_0",
+      "sources_count": 5,
+      "time": 7.15
+    },
+    {
+      "id": "Q025",
+      "category": "Administrasi Akademik & SKPI",
+      "question": "Berapa jumlah maksimal sertifikat dari kategori 'Minat dan Bakat' yang boleh dimasukkan oleh mahasiswa untuk keperluan SKPI?",
+      "ground_truth": "Mahasiswa diperbolehkan memasukkan maksimal 2 sertifikat dari kategori Minat dan Bakat.",
+      "answer": "Maksimal jumlah sertifikat dari kategori 'Minat dan Bakat' yang boleh dimasukkan oleh mahasiswa untuk keperluan SKPI adalah 2.",
+      "top_source": "doc_6a0f16ebbeacd_1779373803_chunk_0",
+      "sources_count": 5,
+      "time": 5.71
+    },
+    {
+      "id": "Q026",
+      "category": "Administrasi Akademik & SKPI",
+      "question": "Apa menu yang dipilih di SIA untuk memulai pengisian data sertifikat SKPI?",
+      "ground_truth": "Pilih menu 'Pengalaman Mahasiswa (SKPI)' pada kolom Aksi Cepat.",
+      "answer": "Pada kolom Aksi Cepat di SIA, pilih \"Pengalaman Mahasiswa (SKPI)\" untuk memulai pengisian data sertifikat SKPI.",
+      "top_source": "doc_6a0f16ebbeacd_1779373803_chunk_0",
+      "sources_count": 5,
+      "time": 5.84
+    },
+    {
+      "id": "Q027",
+      "category": "Metodologi Penelitian (MPTI)",
+      "question": "Berapa bobot penilaian dari dosen pembimbing dan dosen penguji pada saat sidang proposal MPTI?",
+      "ground_truth": "Bobot penilaian adalah 60% dari Dosen Pembimbing dan 40% dari Dosen Penguji.",
+      "answer": "Bobot penilaian dari dosen pembimbing pada saat sidang proposal MPTI adalah 60%, sedangkan bobot penilaian dari dosen penguji adalah 40%.",
+      "top_source": "doc_6a0f16ebc1ac2_1779373803_chunk_150",
+      "sources_count": 5,
+      "time": 5.84
+    },
+    {
+      "id": "Q028",
+      "category": "Administrasi Akademik & SKPI",
+      "question": "Apa fungsi dari menu 'Verifikasi Data Mahasiswa' di SIA?",
+      "ground_truth": "Untuk memastikan kesesuaian data yang akan digunakan pada ijazah, transkrip, dan laporan PDDIKTI.",
+      "answer": "Menu 'Verifikasi Data Mahasiswa' di SIA berfungsi untuk memverifikasi data pribadi mahasiswa yang terdaftar dalam sistem. Melalui menu ini, mahasiswa dapat memeriksa kebenaran data yang telah dimasukkan dan mencetak bukti verifikasi jika data sudah sesuai. Jika ada data yang belum sesuai, mahasiswa perlu menghubungi Biro Administrasi Pembelajaran (BAP) untuk melakukan perbaikan sebelum mencetak bukti verifikasi.",
+      "top_source": "doc_6a0f16ebbeacd_1779373803_chunk_3",
+      "sources_count": 5,
+      "time": 9.15
+    },
+    {
+      "id": "Q029",
+      "category": "Administrasi Akademik & SKPI",
+      "question": "Dokumen apa yang harus dilampirkan oleh mahasiswa jika terdapat kekeliruan data tanggal lahir, tempat lahir, atau nama ibu kandung saat verifikasi data di SIA?",
+      "ground_truth": "Mahasiswa harus melampirkan dokumen pendukung seperti KTP, KK, Akte Kelahiran, atau Ijazah Terakhir dan melaporkannya ke Biro Administrasi Pembelajaran (BAP).",
+      "answer": "Jika terdapat kekeliruan data tanggal lahir, tempat lahir, atau nama ibu kandung saat verifikasi data di SIA, mahasiswa harus edit biodata di SIA terlebih dahulu. Setelah perbaikan data, centang tidak sesuai pada form lalu lampirkan dokumen pendukungnya seperti KTP/KK/Akte Kelahiran/Ijazah Terakhir.",
+      "top_source": "doc_6a0f16ebbc026_1779373803_chunk_4",
+      "sources_count": 5,
+      "time": 8.44
+    },
+    {
+      "id": "Q030",
+      "category": "Metodologi Penelitian (MPTI)",
+      "question": "Apa syarat jumlah SKS minimal untuk mengambil mata kuliah Metodologi Penelitian (MPTI)?",
+      "ground_truth": "Jumlah minimal SKS Lulus adalah 110 SKS.",
+      "answer": "Syarat jumlah SKS minimal yang harus ditempuh oleh mahasiswa sebelum dapat mengambil mata kuliah Metodologi Penelitian Teknologi Informasi (MPTI) adalah **110 SKS**.",
+      "top_source": "doc_6a0f16ebc1ac2_1779373803_chunk_16",
+      "sources_count": 5,
+      "time": 6.2
+    },
+    {
+      "id": "Q031",
+      "category": "Metodologi Penelitian (MPTI)",
+      "question": "Berapa IPK minimal untuk mengambil mata kuliah MPTI?",
+      "ground_truth": "IPK minimal adalah 2,50.",
+      "answer": "IPK minimal yang harus dicapai oleh mahasiswa sebelum mengambil mata kuliah Metodologi Penelitian Teknologi Informasi (MPTI) adalah **2,50**.",
+      "top_source": "doc_6a0f16ebc1ac2_1779373803_chunk_19",
+      "sources_count": 5,
+      "time": 5.82
+    },
+    {
+      "id": "Q032",
+      "category": "Metodologi Penelitian (MPTI)",
+      "question": "Bolehkah mahasiswa mengambil MPTI dan TA secara berbarengan? Jika ya, apa syaratnya?",
+      "ground_truth": "Boleh, mahasiswa dapat mengambil MPTI dan TA secara berbarengan dengan syarat:\n1. Mengunggah surat komitmen/perjanjian kesanggupan menyelesaikan MPTI dan TA dalam 1 semester yang ditandatangani orang tua/wali di atas materai. Apabila MPTI tidak lulus, maka otomatis sidang TA juga gagal.\n2. Memiliki dan mengunggah IPK >= 3.25.\n3. Mengunggah Transkrip Nilai.\n4. Mengunggah Persetujuan Dosen Pembimbing Akademik (PA).",
+      "answer": "Ya, mahasiswa dapat mengambil Metodologi Penelitian Teknologi Informasi (MPTI) dan Tugas Akhir (TA) secara berbarengan. Syarat-syaratnya antara lain:\n\n1. Mahasiswa harus mencapai minimal IPK 3.25.\n2. Mahasiswa disarankan telah menyelesaikan seluruh Mata Kuliah Wajib Praktik (MKWP), Mata Kuliah Penunjang Praktik (MKPP), Mata Kuliah Wajib Fokus (MKWF).\n3. Mahasiswa harus mengupload surat komitmen dengan tanda tangan orang tua/wali yang menyatakan dapat menyelesaikan MPTI dan TA secara berbarengan.\n4. Mahasiswa harus mengupload Transkrip Nilai.\n5. Mahasiswa harus mengupload Persetujuan Dosen Pembimbing Akademik (PA).\n6. Mahasiswa harus memiliki 10 sertifikat kegiatan ilmiah, terdiri dari 7 bidang IT dan 3 bidang non-IT.\n7. Mahasiswa harus memiliki sertifikat bela negara/LKMM/pengembangan karakter bangsa (Reguler 1).\n8. Mahasiswa harus memiliki sertifikat seni budaya (Reguler 1).\n9. Mahasiswa harus lulus Bahasa Inggris 1 dengan nilai B dan Bahasa Inggris 2 dengan nilai C atau TOEFL minimal 450.\n10. Mahasiswa harus mengupload Surat Komitmen.\n\nDengan memenuhi syarat-syarat di atas, mahasiswa dapat mendaftarkan diri untuk mengambil MPTI dan TA secara berbarengan.",
+      "top_source": "doc_6a0f16ebc1ac2_1779373803_chunk_20",
+      "sources_count": 5,
+      "time": 22.25
+    },
+    {
+      "id": "Q033",
+      "category": "Metodologi Penelitian (MPTI)",
+      "question": "Apa konsekuensi jika mahasiswa yang mengambil MPTI dan TA berbarengan ternyata tidak lulus mata kuliah MPTI?",
+      "ground_truth": "Otomatis sidang TA juga dinyatakan gagal.",
+      "answer": "Jika mahasiswa yang mengambil MPTI dan TA berbarengan ternyata tidak lulus mata kuliah MPTI, maka otomatis sidang Tugas Akhir juga akan gagal.",
+      "top_source": "doc_6a0f16ebc1ac2_1779373803_chunk_20",
+      "sources_count": 5,
+      "time": 6.02
+    },
+    {
+      "id": "Q034",
+      "category": "Metodologi Penelitian (MPTI)",
+      "question": "Sebutkan hak dan kewajiban mahasiswa (bukan dosen) dalam proses bimbingan MPTI!",
+      "ground_truth": "Hak Mahasiswa MPTI: (1) Mendapatkan bimbingan yang optimal; (2) Memperoleh klarifikasi dan penjelasan terkait tugas penelitian; (3) Mengajukan pertanyaan dan permohonan; (4) Diperlakukan dengan menghargai. Kewajiban Mahasiswa MPTI: (1) Melaksanakan penelitian dengan integritas (patuhi etika, hindari plagiarisme); (2) Menghormati waktu dan aturan; (3) Memanfaatkan bimbingan dengan baik; (4) Bertanggung jawab atas proposal dan hasil penelitian; (5) Berkomunikasi secara efektif.",
+      "answer": "Hak mahasiswa MPTI dalam proses bimbingan MPTI adalah sebagai berikut:\n\n1. **Mendapatkan Bimbingan yang Optimal:** Mahasiswa berhak menerima bimbingan yang efektif dan optimal dari dosen pembimbing.\n2. **Memperoleh Klarifikasi dan Penjelasan:** Mahasiswa berhak untuk memperoleh klarifikasi dan penjelasan yang diperlukan terkait dengan tugas dan tujuan penelitian.\n3. **Mengajukan Pertanyaan dan Permohonan:** Mahasiswa berhak mengajukan pertanyaan, permohonan, atau usulan terkait dengan penelitian dan proses Proposal Penelitian.\n\nKewajiban mahasiswa MPTI dalam proses bimbingan MPTI adalah sebagai berikut:\n\n1. **Mengikuti Pedoman yang Diberikan:** Setelah pertemuan, pastikan untuk mengikuti pedoman dan saran yang telah diberikan oleh dosen pembimbing.\n2. **Tidak Ragu Meminta Bantuan atau Klarifikasi:** Jangan ragu untuk meminta bantuan atau klarifikasi jika ada hal yang tidak jelas.\n\nSemoga jawaban ini membantu!",
+      "top_source": "doc_6a0f16ebc1ac2_1779373803_chunk_21",
+      "sources_count": 5,
+      "time": 17.41
+    },
+    {
+      "id": "Q035",
+      "category": "Metodologi Penelitian (MPTI)",
+      "question": "Sebutkan langkah-langkah penyelesaian konflik antara mahasiswa dan dosen pembimbing dalam proses MPTI!",
+      "ground_truth": "Langkah penyelesaian konflik MPTI: (1) Komunikasi Terbuka dan Jujur; (2) Identifikasi Akar Permasalahan; (3) Cari Solusi Bersama; (4) Tetap Mengutamakan Tujuan Akademik; (5) Melibatkan Struktural Program Studi Teknik Informatika jika diperlukan (sebagai mediator); (6) Jaga Etika dan Profesionalisme.",
+      "answer": "Langkah-langkah penyelesaian konflik antara mahasiswa dan dosen pembimbing dalam proses MPTI adalah sebagai berikut:\n\n1. Komunikasi Terbuka dan Jujur: Mahasiswa dan dosen pembimbing harus saling mengungkapkan pendapat, harapan, dan masalah dengan jujur dan transparan.\n2. Identifikasi Akar Permasalahan: Menganalisis penyebab konflik untuk memahami sumber utama permasalahan yang terjadi.\n3. Cari Solusi Bersama: Menemukan solusi yang dapat menerima kedua belah pihak melalui diskusi dan brainstorming.\n4. Tetap Mengutamakan Tujuan Akademik: Memastikan bahwa penyelesaian konflik tidak mengurangi kualitas atau tujuan akademis dari penelitian.\n5. Melibatkan Struktural Program Studi Teknik Informatika jika diperlukan (sebagai mediator): Jika konflik belum dapat diselesaikan, struktur program studi dapat melibatkan diri untuk membantu mencari solusi yang lebih baik.\n6. Jaga Etika dan Profesionalisme: Menjaga tingkat etika dan profesionalisme selama proses penyelesaian konflik agar hubungan antara mahasiswa dan dosen tetap sehat dan produktif.",
+      "top_source": "doc_6a0f16ebc1ac2_1779373803_chunk_29",
+      "sources_count": 5,
+      "time": 19.24
+    },
+    {
+      "id": "Q036",
+      "category": "Metodologi Penelitian (MPTI)",
+      "question": "Apakah mahasiswa diperkenankan mengganti Judul atau Topik riset yang telah disidangkan di MPTI saat menyusun Tugas Akhir?",
+      "ground_truth": "Mahasiswa diperkenankan mengganti Judul Tugas Akhir, namun dilarang keras mengganti Topik riset yang telah dibawakan pada saat sidang Mata Kuliah MPTI.",
+      "answer": "Mahasiswa **diperkenankan** mengganti Judul tetapi tidak diperbolehkan mengganti Topik riset yang telah disidangkan di MPTI saat menyusun Tugas Akhir. Hal ini berdasarkan informasi pada Dokumen Referensi 2, yang menyatakan bahwa mahasiswa **diperkenankan mengganti Judul Tugas akhir** dengan syarat tidak mengganti Topik yang telah dibawakan pada saat sidang yang telah dilaksanakan pada Mata Kuliah MPTI.",
+      "top_source": "doc_6a0f16ebc1ac2_1779373803_chunk_73",
+      "sources_count": 5,
+      "time": 9.66
+    },
+    {
+      "id": "Q037",
+      "category": "Metodologi Penelitian (MPTI)",
+      "question": "Gaya penulisan referensi apa yang wajib digunakan dalam penulisan proposal MPTI?",
+      "ground_truth": "Wajib menggunakan gaya penulisan referensi APA style.",
+      "answer": "Wajib menggunakan gaya penulisan referensi APA style dalam penulisan proposal MPTI.",
+      "top_source": "doc_6a0f16ebc1ac2_1779373803_chunk_144",
+      "sources_count": 5,
+      "time": 4.87
+    },
+    {
+      "id": "Q038",
+      "category": "Pasca Sidang & Yudisium",
+      "question": "Apa saja informasi yang harus disertakan dalam format konfirmasi revisi laporan TA ke dosen penguji?",
+      "ground_truth": "Format konfirmasi revisi TA ke dosen penguji harus mencantumkan: (1) Hari/Tanggal Sidang; (2) Room 1/2/3 (sesuaikan dengan room masing-masing); (3) Nama/NIM; (4) Link Google Drive File Revisi Laporan TA; (5) Link Lembar Revisi Sidang TA.",
+      "answer": "Informasi yang harus disertakan dalam format konfirmasi revisi laporan TA ke dosen penguji adalah:\n\n**REVISI LAPORAN TA**\n\nHARI / TANGGAL SIDANG : [Isikan Hari/Tanggal Sidang]\n\nROOM 1/2/3 (Sesuaikan dengan room masing-masing)\n\nNAMA / NIM : [Isikan Nama dan NIM]\n\nLink Google Drive File Revisi Laporan TA : [Isikan Link Google Drive yang berisi file revisi laporan TA]\n\nLink Lembar Revisi Sidang TA : [Isikan Link Lembar Revisi Sidang TA]",
+      "top_source": "doc_6a0f16ebbc026_1779373803_chunk_0",
+      "sources_count": 5,
+      "time": 10.66
+    },
+    {
+      "id": "Q039",
+      "category": "Pasca Sidang & Yudisium",
+      "question": "Sebutkan syarat administrasi yudisium nomor 2 mengenai kelulusan mata kuliah!",
+      "ground_truth": "Telah lulus mata kuliah Kewarganegaraan, Pancasila, Etik UMB, Bahasa Indonesia, Bahasa Inggris, Agama, dan MPTI dengan nilai minimal B.",
+      "answer": "Syarat administrasi yudisium nomor 2 mengenai kelulusan mata kuliah adalah sebagai berikut:\n\nMahasiswa wajib lulus minimal nilai B untuk 7 mata kuliah, yaitu Kewarganegaraan, Pancasila, Etik UMB, Bahasa Indonesia, Bahasa Inggris, Agama, dan MPTI.",
+      "top_source": "doc_6a0f16ebda1ae_1779373803_chunk_69",
+      "sources_count": 5,
+      "time": 7.8
+    },
+    {
+      "id": "Q040",
+      "category": "Pasca Sidang & Yudisium",
+      "question": "Ke mana mahasiswa harus menghubungi jika tagihan Pembayaran Sumbangan Buku Alumni belum muncul di bank?",
+      "ground_truth": "Mahasiswa harus menghubungi BAK (Biro Administrasi Keuangan) untuk membuka tagihan Buku Alumni tersebut.",
+      "answer": "Jika tagihan Pembayaran Sumbangan Buku Alumni belum muncul di bank, mahasiswa harus menghubungi Biro Administrasi Keuangan (BAK) untuk membuka tagihan tersebut.",
+      "top_source": "doc_6a0f16ebbeacd_1779373803_chunk_6",
+      "sources_count": 5,
+      "time": 5.95
+    },
+    {
+      "id": "Q041",
+      "category": "Tugas Akhir (TA)",
+      "question": "Sebutkan lampiran khusus yang wajib diunggah oleh mahasiswa yang mengambil Skema Publikasi Ilmiah setelah melakukan revisi!",
+      "ground_truth": "Mahasiswa wajib melampirkan Lampiran Luaran Tugas Akhir, Bukti submit jurnal, dan Naskah Jurnal yang disubmit.",
+      "answer": "Lampiran khusus yang wajib diunggah oleh mahasiswa yang mengambil Skema Publikasi Ilmiah setelah melakukan revisi adalah:\n\n1. Asistensi Bimbingan\n2. Lampiran Luaran Tugas Akhir (khusus skema publikasi ilmiah)\n3. Bukti submit jurnal (khusus skema publikasi ilmiah)\n4. Naskah Jurnal yang disubmit (khusus skema publikasi ilmiah)\n5. Curiculum Vitae (CV)\n6. Surat ijin riset Dari Perusahaan/Instansi tempat survey data\n7. Lampiran Surat HKI (isi data diri aja)\n8. Lampiran ikut serta / sertifikat BNSP sesuai bidang ilmu",
+      "top_source": "doc_6a0f16ebbc026_1779373803_chunk_1",
+      "sources_count": 5,
+      "time": 12.8
+    },
+    {
+      "id": "Q042",
+      "category": "Tugas Akhir (TA)",
+      "question": "Informasi apa yang harus dicantumkan pada Halaman Sampul TA?",
+      "ground_truth": "Judul, jenis karya ilmiah, identitas penulis, institusi, dan tahun pengesahan.",
+      "answer": "Informasi yang harus dicantumkan pada Halaman Sampul Tugas Akhir (TA) antara lain:\n\n1. Judul TA.\n2. Jenis karya ilmiah, yaitu \"Laporan Kerja Praktek\".\n3. Identitas penulis, termasuk NIM dan nama lengkap.\n4. Institusi, yaitu Universitas Mercu Buana (UMB).\n5. Tahun pengesahan dalam format 4 digit.\n\nSemua informasi tersebut ditulis dengan huruf besar dan menggunakan jenis huruf Times New Roman 12 poin, serta disusun di tengah halaman sampul.",
+      "top_source": "doc_6a0f16ebc3e21_1779373803_chunk_91",
+      "sources_count": 5,
+      "time": 10.6
+    },
+    {
+      "id": "Q043",
+      "category": "Tugas Akhir (TA)",
+      "question": "Apa guna dari Halaman Pernyataan Orisinalitas?",
+      "ground_truth": "Berisi pernyataan tertulis bahwa tugas akhir adalah hasil karya sendiri dan bukan plagiat.",
+      "answer": "Halaman Pernyataan Orisinalitas berfungsi untuk menyatakan bahwa tugas akhir yang disusun adalah hasil karya penulis sendiri dan ditulis dengan mengikuti kaidah penulisan ilmiah. Pernyataan ini bertujuan untuk memastikan keaslian dan kelengkapan informasi dalam tugas akhir tersebut.",
+      "top_source": "doc_6a0f16ebbd1f9_1779373803_chunk_31",
+      "sources_count": 5,
+      "time": 7.85
+    },
+    {
+      "id": "Q044",
+      "category": "Tugas Akhir (TA)",
+      "question": "Berapa jarak spasi yang digunakan di antara satu referensi dengan referensi lainnya dalam Daftar Pustaka?",
+      "ground_truth": "Jarak antara satu referensi dengan referensi yang berikutnya adalah 1,5 spasi.",
+      "answer": "Jarak antara satu referensi dengan referensi yang berikutnya dalam Daftar Pustaka adalah 1,5 spasi.",
+      "top_source": "doc_6a0f16ebbd1f9_1779373803_chunk_64",
+      "sources_count": 5,
+      "time": 5.21
+    },
+    {
+      "id": "Q045",
+      "category": "Tugas Akhir (TA)",
+      "question": "Reference Manager apa yang direkomendasikan untuk mengelola daftar pustaka?",
+      "ground_truth": "Menggunakan Reference Manager 'Mendeley'.",
+      "answer": "Reference Manager yang direkomendasikan untuk mengelola daftar pustaka adalah Mendeley.",
+      "top_source": "doc_6a0f16ebbd1f9_1779373803_chunk_45",
+      "sources_count": 5,
+      "time": 4.84
+    },
+    {
+      "id": "Q046",
+      "category": "Pasca Sidang & Yudisium",
+      "question": "Apa saja kriteria kelulusan mahasiswa untuk mendapatkan predikat 'Dengan Pujian'?",
+      "ground_truth": "Kriterianya adalah: IPK > 3,75, lulus tepat waktu, dan nilai C pada transkrip maksimal dua mata kuliah (bukan mata kuliah utama).",
+      "answer": "Kriteria kelulusan mahasiswa untuk mendapatkan predikat 'Dengan Pujian' adalah memiliki indeks prestasi kumulatif (IPK) lebih dari 3,75.",
+      "top_source": "doc_6a0f16ebc9c1e_1779373803_chunk_239",
+      "sources_count": 5,
+      "time": 5.84
+    },
+    {
+      "id": "Q047",
+      "category": "Tugas Akhir (TA)",
+      "question": "Berapa jarak margin (tepi kertas) kiri untuk pengetikan laporan TA?",
+      "ground_truth": "Batas kiri adalah 4 cm.",
+      "answer": "Jarak margin kiri untuk pengetikan laporan Tugas Akhir adalah 4 cm dari tepi kertas.",
+      "top_source": "doc_6a0f16ebc1ac2_1779373803_chunk_111",
+      "sources_count": 5,
+      "time": 5.05
+    },
+    {
+      "id": "Q048",
+      "category": "Tugas Akhir (TA)",
+      "question": "Menurut ketentuan pengetikan dalam panduan TA, jenis huruf apa dan berapa ukuran poin yang harus digunakan untuk pengetikan isi laporan?",
+      "ground_truth": "Huruf menggunakan jenis huruf Times New Roman 12 poin (ukuran sebenarnya) dan diketik rapi (rata kiri kanan – justify).",
+      "answer": "Jenis huruf yang harus digunakan untuk pengetikan isi laporan adalah _Times New Roman_ dengan ukuran 12 poin.",
+      "top_source": "doc_6a0f16ebc3e21_1779373803_chunk_134",
+      "sources_count": 5,
+      "time": 5.32
+    },
+    {
+      "id": "Q049",
+      "category": "Tugas Akhir (TA)",
+      "question": "Berapa jumlah minimal referensi artikel jurnal yang harus ada dalam laporan Tugas Akhir?",
+      "ground_truth": "Referensi artikel jurnal harus minimal sebanyak 15 (lima belas) referensi dengan maksimal usia terbit 5 tahun terakhir dari tanggal penelitian.",
+      "answer": "Jumlah minimal referensi artikel jurnal yang harus ada dalam laporan Tugas Akhir adalah sebanyak 15 (lima belas) referensi.",
+      "top_source": "doc_6a0f16ebbd1f9_1779373803_chunk_77",
+      "sources_count": 5,
+      "time": 5.5
+    },
+    {
+      "id": "Q050",
+      "category": "Unit Layanan Terpadu (ULT)",
+      "question": "Bagaimana cara registrasi akun ULT bagi mahasiswa yang belum memiliki akun?",
+      "ground_truth": "Langkah registrasi akun ULT: (1) Tekan tombol Login di tampilan awal; (2) Klik link \"Belum punya akun? Daftar sekarang\"; (3) Pilih tipe pendaftar \"Mahasiswa\"; (4) Isi NIM dan klik tombol \"Periksa NIM\"; (5) Isi alamat email aktif dan buat password; (6) Klik tombol \"Daftar\".",
+      "answer": "Untuk registrasi akun ULT bagi mahasiswa yang belum memiliki akun, dapat dilakukan sebagai berikut:\n\n1. Mahasiswa mengakses tampilan awal website ULT dan menekan tombol Login.\n2. Klik pada text Daftar sekarang untuk melakukan registrasi akun.\n3. Pada halaman Daftar Akun Mahasiswa, mahasiswa perlu mengisi form NIM, Nama, Email, Kata Sandi, dan Konfirmasi Kata Sandi.\n4. Setelah itu, klik tombol Periksa NIM. Jika NIM benar dan terdaftar, maka Form Nama dan Email akan secara otomatis terisi.\n5. Mahasiswa hanya perlu mengisi form No. Telepon, Kata Sandi, dan Konfirmasi Kata Sandi.\n6. Setelah memastikan data sudah sesuai, klik tombol Daftar.\n\nDengan langkah-langkah di atas, mahasiswa dapat berhasil mendaftarkan akunnya di Unit Layanan Terpadu (ULT).",
+      "top_source": "doc_6a0f16ebb5f0a_1779373803_chunk_0",
+      "sources_count": 5,
+      "time": 14.8
+    },
+    {
+      "id": "Q051",
+      "category": "Unit Layanan Terpadu (ULT)",
+      "question": "Apakah mahasiswa dapat mengubah data pribadi yang ditampilkan pada fitur Profile di sistem ULT?",
+      "ground_truth": "Tidak, data diambil langsung dari database sehingga mahasiswa tidak dapat melakukan penambahan, perubahan, maupun penghapusan data.",
+      "answer": "Tidak, mahasiswa tidak dapat mengubah data pribadi yang ditampilkan pada fitur Profile di sistem ULT. Data tersebut diambil langsung dari database dan hanya dapat dilihat oleh mahasiswa, namun tidak dapat dilakukan penambahan, perubahan, atau penghapusan oleh mereka.",
+      "top_source": "doc_6a0f16ebb5f0a_1779373803_chunk_0",
+      "sources_count": 5,
+      "time": 6.99
+    },
+    {
+      "id": "Q052",
+      "category": "Unit Layanan Terpadu (ULT)",
+      "question": "Untuk keperluan apa saja fitur Pengajuan Surat Pengantar di ULT dapat digunakan oleh mahasiswa?",
+      "ground_truth": "Fitur ini dapat digunakan untuk mengajukan surat pengantar dengan keperluan Riset, Penelitian, atau Magang.",
+      "answer": "Fitur Pengajuan Surat Pengantar di ULT dapat digunakan oleh mahasiswa untuk keperluan Riset, Penelitian, atau Magang.",
+      "top_source": "doc_6a0f16ebb5f0a_1779373803_chunk_2",
+      "sources_count": 5,
+      "time": 5.55
+    },
+    {
+      "id": "Q053",
+      "category": "Unit Layanan Terpadu (ULT)",
+      "question": "Berapa minimal jumlah bimbingan proposal dan bimbingan akhir yang harus dilakukan mahasiswa di ULT untuk dapat mendaftar sidang?",
+      "ground_truth": "Mahasiswa harus melakukan minimal 5 (lima) kali bimbingan proposal dan 8 (delapan) kali bimbingan akhir.",
+      "answer": "Mahasiswa di ULT harus melakukan minimal 5 kali bimbingan proposal dan 8 kali bimbingan akhir untuk dapat mendaftar sidang.",
+      "top_source": "doc_6a0f16ebb5f0a_1779373803_chunk_4",
+      "sources_count": 5,
+      "time": 5.51
+    },
+    {
+      "id": "Q054",
+      "category": "Unit Layanan Terpadu (ULT)",
+      "question": "Apakah mahasiswa dapat mengubah atau menghapus data pengajuan bimbingan yang sudah dikirimkan di sistem ULT?",
+      "ground_truth": "Mahasiswa hanya dapat melakukan satu kali pengajuan bimbingan dalam satu periode dan data yang sudah dikirimkan tidak dapat diubah maupun dihapus.",
+      "answer": "Ya, mahasiswa masih dapat melakukan perubahan, penambahan, dan penghapusan data pengajuan sebelum dikirimkan. Jika sudah yakin datanya sesuai, mahasiswa dapat mengirimkan pengajuan dengan menekan tombol “Kirim”.",
+      "top_source": "doc_6a0f16ebb5f0a_1779373803_chunk_7",
+      "sources_count": 5,
+      "time": 6.72
+    },
+    {
+      "id": "Q055",
+      "category": "Unit Layanan Terpadu (ULT)",
+      "question": "Bagaimana prosedur pendaftaran wisuda melalui sistem ULT?",
+      "ground_truth": "Mahasiswa menekan tombol Tambah pada halaman Pendaftaran Wisuda jika semua persyaratan terpenuhi, mengisi semua form dan upload dokumen yang dibutuhkan, lalu tekan Simpan. Setelah yakin, tekan tombol Kirim. Setelah disetujui, statusnya berubah menjadi SUDAH DIVERIFIKASI dan mahasiswa mendapatkan nomor wisuda.",
+      "answer": "Prosedur pendaftaran wisuda melalui sistem ULT dapat dilakukan oleh mahasiswa dengan langkah-langkah sebagai berikut:\n\n1. Mahasiswa mengakses halaman Pendaftaran Wisuda di Unit Layanan Terpadu (ULT).\n2. Mahasiswa memastikan bahwa semua persyaratan telah terpenuhi sebelumnya.\n3. Jika semua persyaratan sudah terpenuhi, mahasiswa dapat menekan tombol \"Tambah\" pada halaman Pendaftaran Wisuda.\n4. Mahasiswa mengisi form pendaftaran wisuda yang wajib diisi dan melakukan upload dokumen yang dibutuhkan sesuai dengan judul filenya.\n5. Setelah semua data terisi, mahasiswa dapat menekan tombol \"Simpan\".\n6. Jika diperlukan, mahasiswa masih bisa mengubah data pendaftaran wisuda.\n\nDengan mengikuti langkah-langkah di atas, mahasiswa dapat melaksanakan proses pendaftaran wisuda dengan lancar melalui sistem ULT.",
+      "top_source": "doc_6a0f16ebb5f0a_1779373803_chunk_7",
+      "sources_count": 5,
+      "time": 15.31
+    }
+  ],
+  "failure_ids": []
+}

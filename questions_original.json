@@ -352,7 +352,7 @@
     {
       "id": "Q049",
       "question": "Berapa jumlah minimal referensi artikel jurnal yang harus ada dalam laporan Tugas Akhir?",
-      "ground_truth_answer": "Daftar pustaka yang digunakan harus merupakan terbitan terbaru (maksimal 5 tahun terakhir) dari jurnal ilmiah berindex.",
+      "ground_truth_answer": "Referensi artikel jurnal harus minimal sebanyak 15 (lima belas) referensi dengan maksimal usia terbit 5 tahun terakhir dari tanggal penelitian.",
       "category": "Tugas Akhir (TA)",
       "source_document": "Panduan Tugas Akhir - SI-TI 20232024_NewCover.pdf"
     },

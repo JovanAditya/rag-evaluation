@@ -49,9 +49,18 @@ evaluation:
   # API key dibaca otomatis dari .env (hanya jika pakai Gemini)
   ragas:
     enabled: false  # Set true atau gunakan --ragas flag
-    judge_model: "gemini"  # ollama (lokal, gratis) / gemini (API)
-    ollama_model: "llama3.1:latest" # Model Ollama untuk RAGAS judge
-    gemini_model: "gemini-2.5-flash"  # Model Gemini (gratis)
+    
+    # Provider Selection (ollama / gemini)
+    llm_provider: "gemini"    # Model untuk penalaran RAGAS
+    embed_provider: "gemini"  # Model untuk hitung jarak vektor
+    
+    # Konfigurasi jika pakai Ollama Lokal
+    ollama_model: "qwen2.5:7b" 
+    ollama_embed_model: "nomic-embed-text"
+    
+    # Konfigurasi jika pakai Gemini API
+    gemini_model: "gemini-2.5-flash"  
+    gemini_embed_model: "gemini-embedding-001"
 
   # Statistik (otomatis berjalan setelah evaluasi)
   statistics:
