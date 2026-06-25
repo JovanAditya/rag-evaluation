@@ -984,10 +984,15 @@ def print_summary(results: Dict):
         },
     }
 
+    if not summary:
+        print("\n⚠️  Tidak ada data summary — semua run mungkin gagal.")
+        return
+
     for group_name, metrics in metric_groups.items():
         # Check if any metric in this group exists
+        first_pipeline = list(summary.keys())[0]
         has_data = any(
-            metric_key in summary.get(list(summary.keys())[0], {})
+            metric_key in summary.get(first_pipeline, {})
             for metric_key in metrics
         )
         if not has_data:
